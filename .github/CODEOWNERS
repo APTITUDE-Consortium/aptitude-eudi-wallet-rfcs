@@ -1,0 +1,3 @@
+# Example CODEOWNERS file
+# Each line: <pattern> <owner>
+*       @wp2-leads
