@@ -1,0 +1,3 @@
+# Example CODEOWNERS file
+# Each line: <pattern> <owner>
+*       @APTITUDE-Consortium/wp2-leads
