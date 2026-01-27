@@ -3,56 +3,44 @@
 
 ## Project Purpose
 
-This repository manages technical requirements for the APTITUDE project, piloting the European Digital Identity Wallet (EUDI Wallet). Requirements are described as RFCs and tracked via GitHub Issues and Pull Requests. The structure is inspired by [EWC RFCs](https://github.com/EWC-consortium/eudi-wallet-rfcs).
+This repository captures and evolves the technical specifications for the APTITUDE project, piloting the European Digital Identity Wallet (EUDI Wallet). Everything is managed as Markdown RFCs and tracked through GitHub Issues and Pull Requests, following patterns from [EWC RFCs](https://github.com/EWC-consortium/eudi-wallet-rfcs).
 
-## Architecture & Workflow
+## Collaboration Workflow
 
-- **Documentation-Driven:** All requirements and technical decisions are documented in Markdown files and GitHub Issues/PRs. There is no application code; the focus is on clear, versioned documentation.
-- **RFC Management:** Each requirement is an RFC, discussed and updated through GitHub Issues and PRs. Use the PR template and link issues for traceability.
-- **Images:** Store diagrams and illustrations in `/images` for use in documentation and issues.
-- **Diagrams:** Use `mermaid.js` syntax for flowcharts and sequence diagrams within Markdown files.
-- **Automation:** GitHub Actions automate workflow tasks (e.g., labeling, status checks). If updating workflows, follow existing patterns in `.github/workflows/`.
+- **Docs first:** No application code. All changes are RFC edits or supporting assets. Keep changes small, well-scoped, and reviewable.
+- **Issue linkage:** Every meaningful change should reference the related Issue and/or RFC number for traceability. Prefer one RFC per PR.
+- **Review friendly:** Favor concise diffs, clear rationale in PR descriptions, and note open questions. Avoid drive-by format churn unless requested.
+- **Consensus:** If requirements are ambiguous, propose options and tag the relevant Issue for discussion rather than guessing.
 
-## Conventions
+## RFC Authoring Guidelines
 
-- **Markdown Style:** Use clear headings, bullet points, and code blocks for technical clarity. Reference RFCs and issues by number.
-- **Diagrams:** Embed mermaid diagrams using fenced code blocks:
-	```
-	```mermaid
-	graph TD;
-		A-->B;
-	```
-	```
-- **Issue/PR Linking:** Always link related issues and PRs in documentation for traceability.
-- **Images:** Reference images with relative paths, e.g. `![Diagram](../images/architecture.png)`.
+- **Structure:** Clear headings, numbered lists where ordering matters, and short paragraphs. Summaries up top; details below.
+- **Versioning:** Note status (draft/accepted/deprecated) near the top of each RFC. When superseding, cross-link both documents.
+- **Rationale:** Capture assumptions, dependencies, and trade-offs so future readers understand choices.
+- **Mermaid diagrams:** Use fenced `mermaid` blocks for flows/sequences. Keep diagrams close to the text they explain.
+- **Images:** Store binaries in `/images`; reference with relative paths (e.g., `![Auth flow](../images/auth-flow.png)`).
 
-## Key Files & Directories
+## Repository Layout
 
 - `.github/copilot-instructions.md`: Guidance for AI agents (this file).
-- `README.md`: High-level project overview.
-- `/images`: Store all visual assets for documentation.
-- `.github/workflows/`: Automation scripts (if present).
+- `README.md`: High-level project overview and entry points to RFCs.
+- `/images`: Visual assets for documentation.
+- `/build`: Generated artifacts (e.g., PDFs from CI).
+- `.github/workflows/`: Automation (labeling, status checks, PDF generation).
 
-## Example Patterns
+## Automation Notes
 
-- **Adding a New Requirement:**
-	1. Create a new RFC as a Markdown file.
-	2. Open a GitHub Issue for discussion.
-	3. Submit a PR referencing the issue, including diagrams if needed.
+- The workflow `convert-md-to-pdf.yml` converts `test.md` to PDF using pandoc on push; outputs land in `/build`.
+- When touching workflows, mirror existing patterns and keep secrets/paths unchanged unless explicitly requested.
 
-- **Updating Documentation:**
-	- Edit Markdown files directly.
-	- Use mermaid for diagrams.
-	- Store supporting images in `/images`.
+## Contribution Patterns
 
-## External Dependencies
-
-- **mermaid.js:** For diagrams in Markdown.
-- **GitHub Actions:** For workflow automation.
+- **Add a requirement:** Open an Issue, draft a new RFC file, and submit a PR that links the Issue. Include diagrams if they improve clarity.
+- **Update a requirement:** Edit the RFC, summarize intent and impact in the PR, and link the Issue/RFC. Keep unrelated formatting changes out.
+- **Cross-referencing:** Link related RFCs and Issues inline to show lineage and impacts.
 
 ## Productivity Tips
 
-- Focus on documentation clarity and traceability.
-- Use mermaid diagrams for visualizing flows and architectures.
-- Reference issues/PRs for all changes.
-- Follow the established Markdown and image conventions.
+- Optimize for reader comprehension: short sentences, explicit references, and consistent terminology.
+- Prefer incremental, reviewable changes; batch large rewrites only when coordinated in an Issue.
+- Use mermaid diagrams for flows; keep them simple and aligned with the text.
