@@ -1,5 +1,3 @@
-![EU-cofunded](images/eu-cofunded-logo.png)
-
 # aptitude-eudi-wallet-rfcs
 
 This repository manages technical requirements for the APTITUDE project, piloting the European Digital Identity Wallet (EUDI Wallet).

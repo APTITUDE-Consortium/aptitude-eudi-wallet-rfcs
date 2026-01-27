@@ -1,0 +1,17 @@
+# OS artifacts
+.DS_Store
+
+# Editor settings
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Python caches/environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Generated build outputs
+build/
