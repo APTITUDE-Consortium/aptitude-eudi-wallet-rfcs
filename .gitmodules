@@ -4,7 +4,7 @@
 [submodule "references/eudi-doc-standards-and-technical-specifications"]
 	path = references/eudi-doc-standards-and-technical-specifications
 	url = https://github.com/eu-digital-identity-wallet/eudi-doc-standards-and-technical-specifications.git
-[submodule "references/eudi-wallet-rulebooks-and-schemas"]
+[submodule "references/ewc-eudi-wallet-rulebooks-and-schemas"]
 	path = references/ewc-eudi-wallet-rulebooks-and-schemas
 	url = https://github.com/EWC-consortium/eudi-wallet-rulebooks-and-schemas
 [submodule "references/eid-wallet-it-docs"]
