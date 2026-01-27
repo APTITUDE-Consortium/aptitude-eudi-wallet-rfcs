@@ -27,6 +27,13 @@ This repository captures and evolves the technical specifications for the APTITU
 - `/images`: Visual assets for documentation.
 - `/build`: Generated artifacts (e.g., PDFs from CI).
 - `.github/workflows/`: Automation (labeling, status checks, PDF generation).
+- `/references`: Git submodules with upstream rulebooks/schemas; use them as authoritative context.
+
+## Reference Usage
+
+- Treat all submodules under `/references` as the shared knowledge base. Consult them to align terminology, data models, and process flows before drafting or updating RFCs.
+- When citing external rules or schemas, reference the relevant submodule path and document so reviewers can verify the source.
+- Avoid editing submodule contents unless explicitly tasked with a submodule update; otherwise keep them read-only for context.
 
 ## Contribution Patterns
 
