@@ -28,11 +28,6 @@ This repository captures and evolves the technical specifications for the APTITU
 - `/build`: Generated artifacts (e.g., PDFs from CI).
 - `.github/workflows/`: Automation (labeling, status checks, PDF generation).
 
-## Automation Notes
-
-- The workflow `convert-md-to-pdf.yml` converts `test.md` to PDF using pandoc on push; outputs land in `/build`.
-- When touching workflows, mirror existing patterns and keep secrets/paths unchanged unless explicitly requested.
-
 ## Contribution Patterns
 
 - **Add a requirement:** Open an Issue, draft a new RFC file, and submit a PR that links the Issue. Include diagrams if they improve clarity.
