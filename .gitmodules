@@ -13,3 +13,13 @@
 [submodule "references/wp4-architecture"]
 	path = references/webuild-wp4-architecture
 	url = https://github.com/webuild-consortium/wp4-architecture
+[submodule "eid-wallet-it-docs"]
+	branch = versione-corrente
+[submodule "eudi-doc-architecture-and-reference-framework"]
+	branch = main
+[submodule "eudi-doc-standards-and-technical-specifications"]
+	branch = main
+[submodule "ewc-eudi-wallet-rulebooks-and-schemas"]
+	branch = main
+[submodule "webuild-wp4-architecture"]
+	branch = main
