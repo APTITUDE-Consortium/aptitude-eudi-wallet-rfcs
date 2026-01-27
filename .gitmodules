@@ -1,0 +1,15 @@
+[submodule "references/eudi-doc-architecture-and-reference-framework"]
+	path = references/eudi-doc-architecture-and-reference-framework
+	url = https://github.com/eu-digital-identity-wallet/eudi-doc-architecture-and-reference-framework.git
+[submodule "references/eudi-doc-standards-and-technical-specifications"]
+	path = references/eudi-doc-standards-and-technical-specifications
+	url = https://github.com/eu-digital-identity-wallet/eudi-doc-standards-and-technical-specifications.git
+[submodule "references/ewc-eudi-wallet-rulebooks-and-schemas"]
+	path = references/ewc-eudi-wallet-rulebooks-and-schemas
+	url = https://github.com/EWC-consortium/eudi-wallet-rulebooks-and-schemas
+[submodule "references/eid-wallet-it-docs"]
+	path = references/eid-wallet-it-docs
+	url = https://github.com/italia/eid-wallet-it-docs
+[submodule "references/wp4-architecture"]
+	path = references/webuild-wp4-architecture
+	url = https://github.com/webuild-consortium/wp4-architecture

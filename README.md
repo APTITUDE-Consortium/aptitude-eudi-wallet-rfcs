@@ -4,6 +4,8 @@
 
 This repository manages technical requirements for the APTITUDE project, piloting the European Digital Identity Wallet (EUDI Wallet).
 
+See [CONTRIBUTING.md](CONTRIBUTING.md) for how to propose and land changes.
+
 ## Funding
 
 ![image](images/eu-cofunded.png)
