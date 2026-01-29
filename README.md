@@ -2,6 +2,13 @@
 
 This repository manages technical requirements for the APTITUDE project, piloting the European Digital Identity Wallet (EUDI Wallet).
 
+
+## Repository structure
+
+- `/roolbooks` for the attestation rulebooks
+- `/images` for images included in the documents
+- `/references` contains references to relevant repositories from the European Commission and other projects related to the EUDI Wallet (see [git submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules))
+
 See [CONTRIBUTING.md](CONTRIBUTING.md) for how to propose and land changes.
 
 ## Funding
