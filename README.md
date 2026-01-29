@@ -5,7 +5,7 @@ This repository manages technical requirements for the APTITUDE project, pilotin
 
 ## Repository structure
 
-- `/roolbooks` for the attestation rulebooks
+- `/rulebooks` for the attestation rulebooks
 - `/images` for images included in the documents
 - `/references` contains references to relevant repositories from the European Commission and other projects related to the EUDI Wallet (see [git submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules))
 
