@@ -2,7 +2,6 @@
 
 This repository manages technical requirements for the APTITUDE project, piloting the European Digital Identity Wallet (EUDI Wallet).
 
-
 ## Repository structure
 
 - `/rulebooks` for the attestation rulebooks

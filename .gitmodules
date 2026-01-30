@@ -23,3 +23,6 @@
 	branch = main
 [submodule "webuild-wp4-architecture"]
 	branch = main
+[submodule "references/eudi-doc-attestation-rulebooks-catalog"]
+	path = references/eudi-doc-attestation-rulebooks-catalog
+	url = https://github.com/eu-digital-identity-wallet/eudi-doc-attestation-rulebooks-catalog.git
