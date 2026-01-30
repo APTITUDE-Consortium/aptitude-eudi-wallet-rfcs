@@ -161,7 +161,7 @@ Merging finalizes the change and closes the loop with the issue.
 
 This workflow is demonstrated in the project’s internal video tutorial:
 
-- [APTITUDE GitHub Demo](https://studio.youtube.com/video/gE_wK7YNz4w/edit)
+- [APTITUDE GitHub Demo](https://youtu.be/gE_wK7YNz4w)
 
 ## Quick Checklist
 
