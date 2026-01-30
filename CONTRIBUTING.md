@@ -10,7 +10,7 @@ This repository captures and evolves the technical specifications for the APTITU
 
 ## Workflow (short version)
 
-1. Review context: README, existing RFCs, and relevant documents under `/references`.
+1. Review context: README, existing RFCs, and relevant documents under `/reference`.
 2. Open an Issue describing the change (link prior RFCs/Issues if relevant).
 3. Draft or update the RFC in a PR; keep scope to one RFC when possible.
 4. Link the Issue in the PR and note rationale and open questions.
@@ -20,16 +20,16 @@ This repository captures and evolves the technical specifications for the APTITU
 
 - Start with a short summary and status (draft/accepted/deprecated).
 - Capture rationale, assumptions, dependencies, and trade-offs.
-- Align terminology and data models with `/references` submodules; cite specific documents/sections.
+- Align terminology and data models with `/reference` submodules; cite specific documents/sections.
 - Cross-link related RFCs and Issues for traceability.
 - Use `mermaid` blocks for flows/sequences; keep diagrams near the text they explain.
-- Store images in `/images` and reference with relative paths (e.g., `![Auth flow](images/auth-flow.png)`).
+- Store images in `/image` and reference with relative paths (e.g., `![Auth flow](image/auth-flow.png)`).
 - Keep paragraphs short; prefer numbered lists where order matters.
 
-## Using the `/references` submodules
+## Using the `/reference` submodules
 
-- Treat all content under `/references` as the shared knowledge base for rulebooks and schemas.
-- Cite the exact submodule path/doc when deriving requirements (e.g., `references/eudi-wallet-rulebooks-and-schemas/...`).
+- Treat all content under `/reference` as the shared knowledge base for rulebooks and schemas.
+- Cite the exact submodule path/doc when deriving requirements (e.g., `reference/eudi-wallet-rulebooks-and-schemas/...`).
 - Do not edit submodule contents!
 
 ## Pull request expectations

@@ -18,20 +18,20 @@ This repository captures and evolves the technical specifications for the APTITU
 - **Versioning:** Note status (draft/accepted/deprecated) near the top of each RFC. When superseding, cross-link both documents.
 - **Rationale:** Capture assumptions, dependencies, and trade-offs so future readers understand choices.
 - **Mermaid diagrams:** Use fenced `mermaid` blocks for flows/sequences. Keep diagrams close to the text they explain.
-- **Images:** Store binaries in `/images`; reference with relative paths (e.g., `![Auth flow](../images/auth-flow.png)`).
+- **Images:** Store binaries in `/image`; reference with relative paths (e.g., `![Auth flow](../image/auth-flow.png)`).
 
 ## Repository Layout
 
 - `.github/copilot-instructions.md`: Guidance for AI agents (this file).
 - `README.md`: High-level project overview and entry points to RFCs.
-- `/images`: Visual assets for documentation.
+- `/image`: Visual assets for documentation.
 - `/build`: Generated artifacts (e.g., PDFs from CI).
 - `.github/workflows/`: Automation (labeling, status checks, PDF generation).
-- `/references`: Git submodules with upstream rulebooks/schemas; use them as authoritative context.
+- `/reference`: Git submodules with upstream rulebooks/schemas; use them as authoritative context.
 
 ## Reference Usage
 
-- Treat all submodules under `/references` as the shared knowledge base. Consult them to align terminology, data models, and process flows before drafting or updating RFCs.
+- Treat all submodules under `/reference` as the shared knowledge base. Consult them to align terminology, data models, and process flows before drafting or updating RFCs.
 - When citing external rules or schemas, reference the relevant submodule path and document so reviewers can verify the source.
 - Avoid editing submodule contents unless explicitly tasked with a submodule update; otherwise keep them read-only for context.
 
