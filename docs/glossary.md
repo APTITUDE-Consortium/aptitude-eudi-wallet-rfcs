@@ -3,7 +3,7 @@
 This glossary centralizes the terms most frequently used across the APTITUDE RFCs. All definitions are derived from the EUDI submodules pulled into this repository, primarily the Architecture Reference Framework (ARF) Annex 1 and the Commission Implementing Regulations it cites. Use the source links to trace back to the original wording when drafting or reviewing requirements.
 
 ## Sources
-- ARF Annex 1 – Definitions: [reference/eudi-doc-architecture-and-reference-framework/docs/annexes/annex-1/annex-1-definitions.md](https://github.com/eu-digital-identity-wallet/eudi-doc-architecture-and-reference-framework/blob/main/docs/annexes/annex-1/annex-1-definitions.md)
+- ARF Annex 1 – Definitions: [reference/eudi-doc-architecture-and-reference-framework](https://github.com/eu-digital-identity-wallet/eudi-doc-architecture-and-reference-framework)
 - Attestation Rulebooks Catalog (templates and rulebooks reference the ARF terminology): [reference/eudi-doc-attestation-rulebooks-catalog](https://github.com/eu-digital-identity-wallet/eudi-doc-attestation-rulebooks-catalog)
 - Standards and Technical Specifications (terminology in the TS series builds on ARF Annex 1): [reference/eudi-doc-standards-and-technical-specifications](https://github.com/eu-digital-identity-wallet/eudi-doc-standards-and-technical-specifications)
 
