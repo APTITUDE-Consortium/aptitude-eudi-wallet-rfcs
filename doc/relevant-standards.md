@@ -1,0 +1,106 @@
+# Relevant Standards
+
+| Deliverables | Title | Organisation | Type | Version | Status | Link | Relevance | Applicable to credentials issuance process? | Applicable to credentials issuance protocol? | Applicable to credentials presentation protocol? | Applicable to credentials format? | Applicable to Trust models? | Applicable to credentials validation? | Other applicable aspects? |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| TS 119 602  | Electronic Signatures and Trust Infrastructures (ESI);
+Lists of trusted entities;
+Data model | ETSI | TS | 1.1.1 | Published | https://www.etsi.org/deliver/etsi_ts/119600_119699/119602/01.01.01_60/ts_119602v010101p.pdf  | Trusted list |  |  |  |  | ✅ Y |  |  |
+| TS 119 612 | Electronic Signatures and Trust Infrastructures (ESI);
+Trusted Lists  | ETSI | TS | 2.4.1 | Published | https://www.etsi.org/deliver/etsi_ts/119600_119699/119612/02.04.01_60/ts_119612v020401p.pdf  | Trusted list |  |  |  |  | ✅ Y |  |  |
+| TS 119 612 | Electronic Signatures and Trust Infrastructures (ESI);
+Trusted Lists  | ETSI | TS | 1.2.1 | Published | https://www.etsi.org/deliver/etsi_ts/119600_119699/119612/01.02.01_60/ts_119612v010201p.pdf | Trusted list |  |  |  |  | ✅ Y |  |  |
+| EN 319 411-1 | Electronic Signatures and Trust Infrastructures (ESI);
+Policy and security requirements for Trust Service Providers issuing certificates;
+Part 1: General requirements | ETSI | EN | 1.5.1 | Published | https://www.etsi.org/deliver/etsi_en/319400_319499/31941101/01.05.01_60/en_31941101v010501p.pdf |  |  |  |  |  | ✅ Y |  |  |
+| TS 119 411-8 | Electronic Signatures and Trust Infrastructures (ESI);
+Policy and security requirements for Trust Service Providers issuing certificates;
+Part 8: Access Certificate Policy for EUDI Wallet Relying Parties | ETSI | TS | 1.1.1 | Published | https://www.etsi.org/deliver/etsi_ts/119400_119499/11941108/01.01.01_60/ts_11941108v010101p.pdf  |  |  |  |  |  | ✅ Y |  |  |
+|  TS 119 461 | Electronic Signatures and Trust Infrastructures (ESI);
+Policy and security requirements for trust service components providing identity proofing of trust service subjects | ETSI | TS | 2.1.1 | Published | https://www.etsi.org/deliver/etsi_ts/119400_119499/119461/02.01.01_60/ts_119461v020101p.pdf  |  | ✅ Y | ✅ Y? |  |  |  |  |  |
+| TS 119 475 | Electronic Signatures and Trust Infrastructures (ESI);
+Relying party attributes supporting EUDI Wallet user's authorization decisions | ETSI | TS | 1.1.1 | Published | https://www.etsi.org/deliver/etsi_ts/119400_119499/119475/01.01.01_60/ts_119475v010101p.pdf |  |  |  |  |  | ✅ Y |  |  |
+| TR 119 476 | Electronic Signatures and Trust Infrastructures (ESI);
+Analysis of selective disclosure and zero-knowledge proofs applied to Electronic Attestation of Attributes | ETSI | TR | 1.2.1 | Published | https://www.etsi.org/deliver/etsi_tr/119400_119499/119476/01.02.01_60/tr_119476v010201p.pdf  | Useful where ZKP are considered |  |  | ✅ Y | ✅ Y |  |  |  |
+| TR 119 476-1 | Electronic Signatures and Trust Infrastructures (ESI);
+Selective disclosure and zero-knowledge proofs applied to Electronic Attestation of Attributes;
+Part 1: Feasibility study | ETSI | TR | 1.3.1 | Published | https://www.etsi.org/deliver/etsi_tr/119400_119499/11947601/01.03.01_60/tr_11947601v010301p.pdf  | Useful where ZKP are considered |  |  | ✅ Y | ✅ Y |  |  |  |
+| EN 319 412-1 | Electronic Signatures and Trust Infrastructures (ESI);
+Certificate Profiles;
+Part 1: Overview and common data structures | ETSI | EN | 1.6.1 | Published | https://www.etsi.org/deliver/etsi_en/319400_319499/31941201/01.06.01_60/en_31941201v010601p.pdf |  |  |  |  |  | ✅ Y |  |  |
+| EN 319 412-2 | Electronic Signatures and Trust Infrastructures (ESI);
+Certificate Profiles;
+Part 2: Certificate profile for certificates issued to natural persons  | ETSI | EN | 2.4.1 | Published | https://www.etsi.org/deliver/etsi_en/319400_319499/31941202/02.04.01_60/en_31941202v020401p.pdf |  |  |  |  |  | ✅ Y |  |  |
+| EN 319 412-3 | Electronic Signatures and Infrastructures (ESI);
+Certificate Profiles;
+Part 3: Certificate profile for certificates issued to legal persons | ETSI | EN | 1.3.1 | Published | https://www.etsi.org/deliver/etsi_en/319400_319499/31941203/01.03.01_60/en_31941203v010301p.pdf |  |  |  |  |  | ✅ Y |  |  |
+| TS 119 412-6 | Electronic Signatures and Trust Infrastructures (ESI);
+Certificate Profiles;
+Part 6: Certificate profile requirements for PID, Wallet, EAA,
+QEAA, and PSBEAA providers  | ETSI | TS | 1.1.1 | Published | https://www.etsi.org/deliver/etsi_ts/119400_119499/11941206/01.01.01_60/ts_11941206v010101p.pdf |  |  |  |  |  | ✅ Y |  |  |
+| TS 119 431-1 | Electronic Signatures and Trust Infrastructures (ESI);
+Policy and security requirements for trust service providers;
+Part 1: TSP services operating a remote QSCD / SCDev | ETSI | TS | 1.3.1 | Published | https://www.etsi.org/deliver/etsi_ts/119400_119499/11943101/01.03.01_60/ts_11943101v010301p.pdf  | Applicable for electronic signature |  |  |  |  |  |  |  |
+| TS 119 431-2 | Electronic Signatures and Infrastructures (ESI);
+Policy and security requirements for trust service providers;
+Part 2: TSP service components supporting AdES digital signature creation | ETSI | TS | 1.2.1 | Published | https://www.etsi.org/deliver/etsi_ts/119400_119499/11943102/01.02.01_60/ts_11943102v010201p.pdf  | Applicable for electronic signature |  |  |  |  |  |  |  |
+| TS 119 432 | Electronic Signatures and Infrastructures (ESI);
+Protocols for remote digital signature creation | ETSI | TS | 1.2.1 | Published | https://www.etsi.org/deliver/etsi_ts/119400_119499/119432/01.02.01_60/ts_119432v010201p.pdf  | Applicable for electronic signature |  |  |  |  |  |  |  |
+| EN 319 132-1 | Electronic Signatures and Trust Infrastructures (ESI);
+XAdES digital signatures;
+Part 1: Building blocks and XAdES baseline signatures | ETSI | EN | 1.3.1 | Published | https://www.etsi.org/deliver/etsi_en/319100_319199/31913201/01.03.01_60/en_31913201v010301p.pdf  | Applicable for electronic signature |  |  |  |  |  |  |  |
+| TS 119 182-1 | Electronic Signatures and Trust Infrastructures (ESI);
+JAdES digital signatures;
+Part 1: Building blocks and JAdES baseline signatures | ETSI | TS | 1.2.1 | Published | https://www.etsi.org/deliver/etsi_ts/119100_119199/11918201/01.02.01_60/ts_11918201v010201p.pdf  | Applicable for electronic signature |  |  |  |  |  |  |  |
+| EN 319 122-1 | Electronic Signatures and Infrastructures (ESI);
+CAdES digital signatures;
+Part 1: Building blocks and CAdES baseline signatures | ETSI | EN | 1.3.1 | Published | https://www.etsi.org/deliver/etsi_en/319100_319199/31912201/01.03.01_60/en_31912201v010301p.pdf  | Applicable for electronic signature |  |  |  |  |  |  |  |
+| EN 319 162-1 | Electronic Signatures and Infrastructures (ESI);
+Associated Signature Containers (ASiC);
+Part 1: Building blocks and ASiC baseline containers | ETSI | EN | 1.1.1 | Published | https://www.etsi.org/deliver/etsi_en/319100_319199/31916201/01.01.01_60/en_31916201v010101p.pdf  | Applicable for electronic signature |  |  |  |  |  |  |  |
+| EN 319 142-1 | Electronic Signatures and Infrastructures (ESI);
+PAdES digital signatures;
+Part 1: Building blocks and PAdES baseline signatures | ETSI | EN | 1.2.1 | Published | https://www.etsi.org/deliver/etsi_en/319100_319199/31914201/01.02.01_60/en_31914201v010201p.pdf  | Applicable for electronic signature |  |  |  |  |  |  |  |
+| EN 319 142-2 | Electronic Signatures and Trust Infrastructures (ESI);
+PAdES digital signatures;
+Part 2: Additional PAdES signatures profiles | ETSI | EN | 1.2.1 | Published | https://www.etsi.org/deliver/etsi_en/319100_319199/31914202/01.02.01_60/en_31914202v010201p.pdf  | Applicable for electronic signature |  |  |  |  |  |  |  |
+| TS 18098 | Guidelines for the onboarding of user personal identification data within European Digital Identity Wallets | CEN | TS |  | Under publication |  |  | ✅ Y | ✅ Y |  |  |  |  |  |
+| OpenID4VCI | OpenID for Verifiable Credential Issuance 1.0 | OpenID |  | 1.0 | Published | https://openid.net/specs/openid-4-verifiable-credential-issuance-1_0.html |  | ✅ Y | ✅ Y |  | ✅ Y | ✅ Y |  |  |
+| OpenID4VP | OpenID for Verifiable Presentations 1.0 | OpenID |  | 1.0 | Published | https://openid.net/specs/openid-4-verifiable-presentations-1_0.html  |  |  |  | ✅ Y | ✅ Y | ✅ Y |  |  |
+| Oauth 2.0 | OAuth 2.0 Multiple Response Type Encoding Practices | OpenID |  | 1.0 | Published | https://openid.net/specs/oauth-v2-multiple-response-types-1_0.html | Response encoding |  | ✅ Y | ✅ Y |  |  |  |  |
+| HAIP | OpenID4VC High Assurance Interoperability Profile 1.0 - draft 05 | OpenID |  | v1.0 draft05 | Draft | https://openid.net/specs/openid4vc-high-assurance-interoperability-profile-1_0-05.html  |  | ✅ Y | ✅ Y | ✅ Y | ✅ Y | ✅ Y |  |  |
+|  | OpenID Connect Relying Party Metadata Choices 1.0 - draft 04 | OpenID |  | v1.0 draft04 | Draft | https://openid.net/specs/openid-connect-rp-metadata-choices-1_0.html |  |  |  | ✅ Y |  |  |  |  |
+|  | OpenID Federation 1.0 - draft 47 | OpenID |  | v1.0 draft47 | Draft | https://openid.net/specs/openid-federation-1_0.html |  |  |  |  |  | ✅ Y |  |  |
+|  | OpenID Federation for Wallet Architectures 1.0 - draft 04 | OpenID |  | v1.0 draft04 | Draft | https://openid.github.io/federation-wallet/main.html |  |  |  |  |  | ✅ Y |  |  |
+| VCDM | Verifiable Credentials Data Model v2.0 | W3C |  | 2.0 | Published | https://www.w3.org/TR/vc-data-model-2.0/  |  |  |  |  | ✅ Y |  |  |  |
+| VCDI | Verifiable Credential Data Integrity 1.0 | W3C |  | 1.0 | Published | https://www.w3.org/TR/vc-data-integrity/ | To be assessed in case ZKPs would be in scope |  |  | ✅ Y | ✅ Y | ✅ Y |  |  |
+| WebAuthn | Web Authentication: An API for accessing Public Key Credentials Level 2 | W3C |  | 8 April 2021 | Published | https://www.w3.org/TR/webauthn-2/ | Useful when implementing pseudonymisation with an external token containing a public key | ✅ Y | ✅ Y | ✅ Y |  |  |  |  |
+| Bitstring Status List | Bitstring Status List v1.0 | W3C |  | 15 May 2025 | Published | https://www.w3.org/TR/vc-bitstring-status-list/ | Useful for revocation/suspension |  |  |  |  | ✅ Y | ✅ Y | ✅ Y |
+| DID | Decentralized Identifiers (DIDs) v1.1 | W3C |  | 24 January 2026 | Published | https://www.w3.org/TR/did-1.1/  |  |  |  | ✅ Y | ✅ Y | ✅ Y |  |  |
+| JSON-LD | JSON-LD 1.1 | W3C |  | 16 July 2020 | Published | https://www.w3.org/TR/json-ld11 |  |  |  |  | ✅ Y |  |  |  |
+| DC API | Digital Credentials API | W3C |  | 03 July 2025 | Draft | https://w3c-fedid.github.io/digital-credentials/ | See HLR OIA_08 |  |  | ✅ Y |  |  |  |  |
+| CTAP | Client to Authenticator Protocol (CTAP) | FIDO |  | July 14, 2025 | Published | https://fidoalliance.org/specs/fido-v2.2-ps-20250714/fido-client-to-authenticator-protocol-v2.2-ps-20250714.html | Useful when implementing pseudonymisation with an external token containing a public key | ✅ Y | ✅ Y | ✅ Y |  |  |  |  |
+| RFC 7519 | RFC 7519 - JSON Web Token (JWT) | IETF | RFC |  | Published | https://datatracker.ietf.org/doc/html/rfc7519  |  |  |  |  | ✅ Y |  |  |  |
+| RFC 5280 | RFC 5280 - Internet X.509 Public Key Infrastructure Certificate and Certificate Revocation List (CRL) Profile | IETF | RFC |  | Published | https://datatracker.ietf.org/doc/html/rfc5280 |  |  |  |  |  | ✅ Y | ✅ Y | ✅ Y |
+| RFC 9162 | RFC 9162 - Certificate Transparency Version 2.0 | IETF | RFC |  | Published | https://datatracker.ietf.org/doc/html/rfc9162 |  |  |  |  |  | ✅ Y |  |  |
+| RFC 6960 | RFC 6960 - X.509 Internet Public Key Infrastructure Online Certificate Status Protocol - OCSP | IETF | RFC |  | Published | https://datatracker.ietf.org/doc/html/rfc6960 |  |  |  |  |  | ✅ Y | ✅   | ✅ Y |
+| RFC 6749 | RFC 6749 - The OAuth 2.0 Authorization Framework | IETF | RFC |  | Published | https://datatracker.ietf.org/doc/html/rfc6749 |  |  | ✅ Y | ✅ Y |  |  |  |  |
+| RFC 8949 | RFC 8949 - Concise Binary Object Representation (CBOR) | IETF | RFC |  | Published | https://datatracker.ietf.org/doc/html/rfc8949 |  |  |  |  | ✅ Y |  |  |  |
+| RFC 8152 | RFC 8152 - CBOR Object Signing and Encryption (COSE) | IETF | RFC |  | Published | https://datatracker.ietf.org/doc/html/rfc8152 |  |  |  |  | ✅ Y |  |  |  |
+| RFC 9901 | RFC 9901 - Selective Disclosure for JSON Web Tokens | IETF | RFC |  | Published | https://datatracker.ietf.org/doc/rfc9901 |  |  |  |  | ✅ Y |  |  |  |
+| SD-JWT-VC | SD-JWT-based Verifiable Credentials (SD-JWT VC) | IETF | RFC | draft-ietf-oauth-sd-jwt-vc-13 | Draft | https://datatracker.ietf.org/doc/draft-ietf-oauth-sd-jwt-vc/ | Credential format supporting selective disclosure |  |  |  | ✅ Y |  |  |  |
+| Client authentication | OAuth 2.0 Attestation-Based Client Authentication | IETF | RFC | draft-ietf-oauth-attestation-based-client-auth-07 | Draft | https://datatracker.ietf.org/doc/draft-ietf-oauth-attestation-based-client-auth/  | Client authentication |  |  | ✅ Y |  |  |  |  |
+| Oauth 2.1 | The OAuth 2.1 Authorization Framework | IETF | RFC | draft-ietf-oauth-v2-1-14 | Draft | https://datatracker.ietf.org/doc/draft-ietf-oauth-v2-1/ |  |  | ✅ Y | ✅ Y |  |  |  |  |
+| Token Status List | Token Status List (TSL) | IETF | RFC | draft-ietf-oauth-status-list-16 | Draft | https://datatracker.ietf.org/doc/draft-ietf-oauth-status-list/ | Useful for revocation/suspension |  |  |  |  |  | ✅ Y | ✅ Y |
+| 18013-5 | Personal identification — ISO-compliant driving licence
+Part 5: Mobile driving licence (mDL) application | ISO/IEC | IS | 2021 | Published |  |  |  |  | ✅ Y | ✅ Y | ✅ Y | ✅ Y |  |
+| 18013-7 | Personal identification — ISO-compliant driving licence
+Part 7: Mobile driving licence (mDL) add-on functions | ISO/IEC | TS | 2025 | Published |  |  |  |  | ✅ Y | ✅ Y | ✅ Y | ✅ Y |  |
+| 23220-1 | Cards and security devices for personal identification — Building blocks for identity management via mobile devices
+Part 1: Generic system architectures of mobile eID systems | ISO/IEC | TS | 2023 | Published |  |  | ✅ Y | ✅ Y | ✅ Y |  |  |  | ✅ Y |
+| 23220-2 | Cards and security devices for personal identification — Building blocks for identity management via mobile devicesPart 2: Data objects and encoding rules for generic eID systems | ISO/IEC | TS | 2024 | Published |  |  |  | ✅ Y | ✅ Y | ✅ Y |  |  |  |
+| 23220-3 | Cards and security devices for personal identification — Building blocks for identity management via mobile devices
+Part 3: Protocols and services for installation and issuing phase | ISO/IEC | TS |  | Draft (DTS) |  |  |  | ✅ Y |  |  |  |  |  |
+| 23220-4 | Cards and security devices for personal identification — Building blocks for identity management via mobile devices
+Part 4: Protocols and services for operational phase | ISO/IEC | TS |  | Draft (DTS) |  |  |  |  | ✅ Y | ✅ Y |  |  |  |
+| CSC API | CSC API version 2.2.0.0 | CSC |  | 2.2.0.0 | Published | https://cloudsignatureconsortium.org/resources/csc-api-v2-2/  | Applicable for electronic signature |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
