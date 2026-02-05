@@ -103,4 +103,3 @@ Part 3: Protocols and services for installation and issuing phase | ISO/IEC | TS
 | 23220-4 | Cards and security devices for personal identification — Building blocks for identity management via mobile devices
 Part 4: Protocols and services for operational phase | ISO/IEC | TS |  | Draft (DTS) |  |  |  |  | ✅ Y | ✅ Y |  |  |  |
 | CSC API | CSC API version 2.2.0.0 | CSC |  | 2.2.0.0 | Published | https://cloudsignatureconsortium.org/resources/csc-api-v2-2/  | Applicable for electronic signature |  |  |  |  |  |  |  |
-|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
