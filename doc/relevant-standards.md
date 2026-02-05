@@ -82,7 +82,7 @@ Part 2: Additional PAdES signatures profiles | ETSI | EN | 1.2.1 | Published | h
 | RFC 7519 | RFC 7519 - JSON Web Token (JWT) | IETF | RFC |  | Published | https://datatracker.ietf.org/doc/html/rfc7519  |  |  |  |  | ✅ Y |  |  |  |
 | RFC 5280 | RFC 5280 - Internet X.509 Public Key Infrastructure Certificate and Certificate Revocation List (CRL) Profile | IETF | RFC |  | Published | https://datatracker.ietf.org/doc/html/rfc5280 |  |  |  |  |  | ✅ Y | ✅ Y | ✅ Y |
 | RFC 9162 | RFC 9162 - Certificate Transparency Version 2.0 | IETF | RFC |  | Published | https://datatracker.ietf.org/doc/html/rfc9162 |  |  |  |  |  | ✅ Y |  |  |
-| RFC 6960 | RFC 6960 - X.509 Internet Public Key Infrastructure Online Certificate Status Protocol - OCSP | IETF | RFC |  | Published | https://datatracker.ietf.org/doc/html/rfc6960 |  |  |  |  |  | ✅ Y | ✅   | ✅ Y |
+| RFC 6960 | RFC 6960 - X.509 Internet Public Key Infrastructure Online Certificate Status Protocol - OCSP | IETF | RFC |  | Published | https://datatracker.ietf.org/doc/html/rfc6960 |  |  |  |  |  | ✅ Y | ✅ Y | ✅ Y |
 | RFC 6749 | RFC 6749 - The OAuth 2.0 Authorization Framework | IETF | RFC |  | Published | https://datatracker.ietf.org/doc/html/rfc6749 |  |  | ✅ Y | ✅ Y |  |  |  |  |
 | RFC 8949 | RFC 8949 - Concise Binary Object Representation (CBOR) | IETF | RFC |  | Published | https://datatracker.ietf.org/doc/html/rfc8949 |  |  |  |  | ✅ Y |  |  |  |
 | RFC 8152 | RFC 8152 - CBOR Object Signing and Encryption (COSE) | IETF | RFC |  | Published | https://datatracker.ietf.org/doc/html/rfc8152 |  |  |  |  | ✅ Y |  |  |  |
