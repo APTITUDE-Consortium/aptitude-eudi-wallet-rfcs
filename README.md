@@ -7,7 +7,9 @@ This repository manages technical requirements for the APTITUDE project, pilotin
 - `/rulebook` attestation rulebooks
 - `/image` images included in the documents
 - `/data-schema` shared schemas used across examples
-- `/doc` supporting documents (e.g., [glossary](doc/glossary.md))
+- `/doc` supporting documents
+  - [standards](doc/relevant-standards.md)
+  - [glossary](doc/glossary.md)
 - `/sample-data` example payloads
 - `/reference` git submodules with upstream rulebooks and specifications (see [git submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules))
 - `/build` generated artifacts (e.g., PDFs from CI)
