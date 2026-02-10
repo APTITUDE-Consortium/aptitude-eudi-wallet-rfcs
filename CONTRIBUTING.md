@@ -45,4 +45,4 @@ This repository captures and evolves the technical specifications for the APTITU
 
 ## Need more?
 
-- See [GitHub Co‑Editing Workflow for Technical Docs](doc\github-coediting-workflow.md) for an introduction to Git.
+- See [GitHub Co‑Editing Workflow for Technical Docs](doc/github-coediting-workflow.md) for an introduction to Git.

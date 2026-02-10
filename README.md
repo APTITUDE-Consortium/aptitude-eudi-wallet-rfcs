@@ -15,7 +15,7 @@ This repository manages technical requirements for the APTITUDE project, pilotin
 - `/build` generated artifacts (e.g., PDFs from CI)
 - `/script` helper scripts
 
-See [CONTRIBUTING.md](doc/CONTRIBUTING.md) for how to propose and land changes.
+See [CONTRIBUTING.md](CONTRIBUTING.md) for how to propose and land changes.
 
 ## Funding
 
