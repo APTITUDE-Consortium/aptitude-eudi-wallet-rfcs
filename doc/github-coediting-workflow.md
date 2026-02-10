@@ -41,6 +41,8 @@ Issues capture intent and provide a shared place for discussion.
 
 **Success criteria:** clear scope, traceable context, and agreed ownership.
 
+[![GitHub Tutorial 01 - Create a new issue](../image/tutorial_01.png)](https://www.youtube.com/watch?v=2nB20Zrgp6k)
+
 ---
 
 ### 2) Discuss and Refine Scope
@@ -66,6 +68,8 @@ Work in an isolated branch to keep changes reviewable.
 - Create a branch named after the issue or topic (e.g., `docs-issue-123`).
 
 **Success criteria:** changes are isolated to a single topic.
+
+[![GitHub Tutorial 02 - Create a new branch](../image/tutorial_02.png)](https://www.youtube.com/watch?v=Gf9kHsdcLP4)
 
 ---
 
@@ -94,6 +98,9 @@ PRs are the central review artifact for documentation changes.
 4. Summarize what changed and why.
 
 **Success criteria:** reviewers can understand the change quickly.
+https://www.youtube.com/watch?v=EUU0MfJ5Xl4
+
+[![GitHub Tutorial 02 - Create a new branch](../image/tutorial_03.png)](https://www.youtube.com/watch?v=EUU0MfJ5Xl4)
 
 ---
 
@@ -173,3 +180,13 @@ This workflow is demonstrated in the project’s internal video tutorial:
 - [ ] Review comments addressed
 - [ ] Approval recorded
 - [ ] PR merged and issue closed
+
+## External references
+
+- Tutorials
+  - [Visual Tutorial on Git](https://learngitbranching.js.org/)
+  - [Git Basics](https://docs.github.com/en/get-started/git-basics)
+- Tools
+  - [Visual Studio Code](https://code.visualstudio.com/download)
+  - [GitHub Desktop](https://desktop.github.com/download/)
+  

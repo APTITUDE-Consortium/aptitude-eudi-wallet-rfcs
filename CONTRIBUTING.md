@@ -45,4 +45,4 @@ This repository captures and evolves the technical specifications for the APTITU
 
 ## Need more?
 
-- See `.github/copilot-instructions.md` for additional project conventions and AI agent guidance.
+- See [GitHub Co‑Editing Workflow for Technical Docs](doc\github-coediting-workflow.md) for an introduction to Git.
