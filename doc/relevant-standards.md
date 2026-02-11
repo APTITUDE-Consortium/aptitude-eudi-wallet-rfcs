@@ -1,12 +1,13 @@
-# Table of Contents
+# Standards grouped by applicability area
+
+## Table of Contents
+
 - [Issuance Process](#issuance-process)
 - [Issuance Protocol](#issuance-protocol)
 - [Presentation Protocol](#presentation-protocol)
 - [Credentials Format](#credentials-format)
 - [Trust Models](#trust-models)
 - [Validation](#validation)
-
-# Standards grouped by applicability area (short links)
 
 ## Issuance Process
 
