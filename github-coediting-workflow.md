@@ -6,6 +6,15 @@ This document summarizes the standard GitHub workflow for co‑editing technical
 
 Use this workflow when multiple contributors collaborate on documentation updates (RFCs, guides, or specifications). It focuses on clarity, traceability, and review quality.
 
+## How to Contribute
+
+You can contribute to this project in two ways:
+
+1. **Using the GitHub Web UI** — Edit files directly on GitHub without installing anything on your computer. This is the simplest option for small changes like fixing text, adding content, or updating a single file. Just navigate to the file, click the edit (pencil) icon, make your changes, and open a Pull Request.
+2. **Using a local clone** — Clone the repository to your machine, edit files with your preferred editor, and push changes back. This approach is better for larger changes, working with multiple files, or previewing the MkDocs site locally (see [CONTRIBUTING.md](CONTRIBUTING.md) for local setup instructions).
+
+Both approaches follow the same workflow described below.
+
 ## End‑to‑End Flow (Summary)
 
 ```text
@@ -41,7 +50,7 @@ Issues capture intent and provide a shared place for discussion.
 
 **Success criteria:** clear scope, traceable context, and agreed ownership.
 
-[![GitHub Tutorial 01 - Create a new issue](../image/tutorial_01.png)](https://www.youtube.com/watch?v=2nB20Zrgp6k)
+[![GitHub Tutorial 01 - Create a new issue](docs/img/tutorial_01.png)](https://www.youtube.com/watch?v=2nB20Zrgp6k)
 
 ---
 
@@ -69,7 +78,7 @@ Work in an isolated branch to keep changes reviewable.
 
 **Success criteria:** changes are isolated to a single topic.
 
-[![GitHub Tutorial 02 - Create a new branch](../image/tutorial_02.png)](https://www.youtube.com/watch?v=Gf9kHsdcLP4)
+[![GitHub Tutorial 02 - Create a new branch](docs/img/tutorial_02.png)](https://www.youtube.com/watch?v=Gf9kHsdcLP4)
 
 ---
 
@@ -83,6 +92,9 @@ Edit the relevant documentation files and commit small, coherent updates.
 - Reference the issue in the commit message (e.g., “Closes #123”).
 
 **Success criteria:** changes are scoped, readable, and traceable.
+
+
+[![GitHub Tutorial 05  - work on the new branch](docs/img/tutorial_05.jpg)](https://youtu.be/K6luurzhRLw)
 
 ---
 
@@ -98,9 +110,8 @@ PRs are the central review artifact for documentation changes.
 4. Summarize what changed and why.
 
 **Success criteria:** reviewers can understand the change quickly.
-https://www.youtube.com/watch?v=EUU0MfJ5Xl4
 
-[![GitHub Tutorial 02 - Create a new branch](../image/tutorial_03.png)](https://www.youtube.com/watch?v=EUU0MfJ5Xl4)
+[![GitHub Tutorial 02 - Create a new branch](docs/img/tutorial_03.png)](https://www.youtube.com/watch?v=EUU0MfJ5Xl4)
 
 ---
 
@@ -115,6 +126,8 @@ Collaborative review improves quality and alignment.
 - Ask for clarification rather than assuming intent.
 
 **Success criteria:** feedback is actionable and respectful.
+
+[![itHub Tutorial 07 - Collaborate on a pull request](docs/img/tutorial_07.jpg)](https://youtu.be/iYuXv7acKws)
 
 ---
 

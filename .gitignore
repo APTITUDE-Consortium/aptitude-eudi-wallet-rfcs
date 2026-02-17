@@ -15,3 +15,5 @@ venv/
 
 # Generated build outputs
 build/
+site/
+.cache/
