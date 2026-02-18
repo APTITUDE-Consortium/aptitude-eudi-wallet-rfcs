@@ -40,7 +40,6 @@ nav:
     - Template: rulebook/attestation-rulebook-template.md
 plugins:
   - tags
-  - privacy
   - search
   - git-revision-date
   - git-revision-date-localized:  
