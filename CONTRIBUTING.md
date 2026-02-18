@@ -37,7 +37,7 @@ This repository uses MkDocs Material to generate documentation. To preview chang
 3. **Install dependencies:**
 
    ```bash
-   pip install mkdocs-material mkdocs-git-revision-date-plugin mkdocs-git-revision-date-localized-plugin
+   pip install -r requirements.txt
    ```
 
 ### Running the dev server
