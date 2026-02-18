@@ -68,9 +68,11 @@ The [standards page](docs/standards.md) is auto-generated from `doc/standards.xl
 
 1. Edit `doc/standards.xlsx` (modify the "Identification of standards&TS" sheet)
 2. Run the conversion script:
+
    ```bash
    .venv/bin/python script/excel_to_markdown.py
    ```
+
 3. Commit both the Excel file and the generated `docs/standards.md`
 
 ## RFC authoring checklist
