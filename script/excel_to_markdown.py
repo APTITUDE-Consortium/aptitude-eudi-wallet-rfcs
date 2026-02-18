@@ -9,6 +9,7 @@ Usage:
 """
 
 import sys
+import re
 from pathlib import Path
 
 try:
@@ -17,6 +18,16 @@ except ImportError:
     print("Error: openpyxl is not installed.", file=sys.stderr)
     print("Install it with: pip install openpyxl", file=sys.stderr)
     sys.exit(1)
+
+
+def wrap_urls(text: str) -> str:
+    """
+    Wrap bare URLs in angle brackets to comply with MD034.
+    Converts http://... or https://... to <http://...> or <https://...>
+    """
+    # Pattern for bare URLs (not already in angle brackets or markdown links)
+    url_pattern = r'(?<![\(<\[])(https?://[^\s\)<\]]+)(?![\)>\]])'
+    return re.sub(url_pattern, r'<\1>', text)
 
 
 def wrap_text(text: str, max_length: int = 40) -> str:
@@ -97,10 +108,10 @@ def excel_to_markdown(excel_path: Path, sheet_name: str, output_path: Path):
     
     # Build markdown table
     # Header row
-    header_row = "| " + " | ".join(str(h or "") for h in headers[:num_cols]) + " |"
+    header_row = "|" + "|".join(str(h or "") for h in headers[:num_cols]) + "|"
     markdown_lines.append(header_row)
     
-    # Separator row (align left for all columns)
+    # Separator row (align left for all columns, with spacing to match MD060 requirements)
     separator = "|" + "|".join(":---" for _ in range(num_cols)) + "|"
     markdown_lines.append(separator)
     
@@ -113,19 +124,26 @@ def excel_to_markdown(excel_path: Path, sheet_name: str, output_path: Path):
         # Convert cells to strings, handle None values
         cells = [str(cell if cell is not None else "") for cell in row[:num_cols]]
         
-        # Process each cell: wrap long text (comments), escape special chars
+        # Process each cell: wrap long text (comments), escape special chars, wrap URLs
         processed_cells = []
         for cell in cells:
             # Replace newlines with <br> first
             cell = cell.replace("\n", "<br>")
+            # Wrap bare URLs in angle brackets (MD034 compliance)
+            cell = wrap_urls(cell)
             # Wrap long text (likely comments/descriptions) at 40 chars
             if len(cell) > 80:  # Only wrap if longer than 80 chars
                 cell = wrap_text(cell, max_length=40)
             # Escape pipe characters
             cell = cell.replace("|", "\\|")
+            # Trim outer whitespace to keep tight table style
+            cell = cell.strip()
+            # Keep empty cells truly empty for tight table style
+            if not cell:
+                cell = ""
             processed_cells.append(cell)
         
-        row_text = "| " + " | ".join(processed_cells) + " |"
+        row_text = "|" + "|".join(processed_cells) + "|"
         markdown_lines.append(row_text)
     
     markdown_lines.append("")
