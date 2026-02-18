@@ -4,7 +4,7 @@ This repository manages technical requirements for the APTITUDE project, pilotin
 
 ## Repository structure
 
-This repository produces **MkDocs-generated documentation** from the `/docs/` folder. View the built site at [aptitude-project.eu](https://aptitude-project.eu/).
+This repository produces **MkDocs-generated documentation** from the `/docs/` folder. View the built site at [APTITUDE Technical Specification](https://aptitude-consortium.github.io/aptitude-eudi-wallet-rfcs/).
 
 - **`/docs/`** - Documentation source (RFCs, rulebooks, images, media)
   - `/docs/rulebook/` - Attestation rulebook templates
@@ -18,6 +18,7 @@ This repository produces **MkDocs-generated documentation** from the `/docs/` fo
 - **`/script/`** - Helper scripts for maintenance
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for how to propose and land changes.
+See [github-coediting-workflow.md](github-coediting-workflow.md) for an introduction to GitHub.
 
 ## Funding
 
