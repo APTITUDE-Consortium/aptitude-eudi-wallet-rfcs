@@ -4,22 +4,24 @@ This repository manages technical requirements for the APTITUDE project, pilotin
 
 ## Repository structure
 
-- `/rulebook` attestation rulebooks
-- `/image` images included in the documents
-- `/data-schema` shared schemas used across examples
-- `/doc` supporting documents
-  - [standards](doc/relevant-standards.md)
-  - [glossary](doc/glossary.md)
-- `/sample-data` example payloads
-- `/reference` git submodules with upstream rulebooks and specifications (see [git submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules))
-- `/build` generated artifacts (e.g., PDFs from CI)
-- `/script` helper scripts
+This repository produces **MkDocs-generated documentation** from the `/docs/` folder. View the built site at [aptitude-project.eu](https://aptitude-project.eu/).
+
+- **`/docs/`** - Documentation source (RFCs, rulebooks, images, media)
+  - `/docs/rulebook/` - Attestation rulebook templates
+  - `/docs/img/` - Images and diagrams
+  - `/docs/media/` - CSS and styling
+  - `/docs/overrides/` - MkDocs theme customizations
+- **`/doc/`** - Supporting documents (not built into site)
+  - [Standards reference](doc/relevant-standards.md)
+- **`/reference/`** - Git submodules with upstream rulebooks and specifications ([git submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules))
+- **`mkdocs.yml`** - MkDocs site configuration
+- **`/script/`** - Helper scripts for maintenance
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for how to propose and land changes.
 
 ## Funding
 
-![image](image/eu-cofunded.png)
+![image](docs/img/eu-cofunded.png)
 
 The project is co-funded by the European Union. However, the views and opinions expressed are those of the author(s) only and do not necessarily reflect those of the European Union or the granting authority. Neither the European Union nor the granting authority can be held responsible.
 

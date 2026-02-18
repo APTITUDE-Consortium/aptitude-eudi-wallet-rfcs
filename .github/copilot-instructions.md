@@ -18,16 +18,22 @@ This repository captures and evolves the technical specifications for the APTITU
 - **Versioning:** Note status (draft/accepted/deprecated) near the top of each RFC. When superseding, cross-link both documents.
 - **Rationale:** Capture assumptions, dependencies, and trade-offs so future readers understand choices.
 - **Mermaid diagrams:** Use fenced `mermaid` blocks for flows/sequences. Keep diagrams close to the text they explain.
-- **Images:** Store binaries in `/image`; reference with relative paths (e.g., `![Auth flow](../image/auth-flow.png)`).
+- **Images:** Store binaries in `/docs/img/`; reference with paths relative to the docs folder (e.g., `![Auth flow](img/auth-flow.png)`).
 
 ## Repository Layout
 
-- `.github/copilot-instructions.md`: Guidance for AI agents (this file).
-- `README.md`: High-level project overview and entry points to RFCs.
-- `/image`: Visual assets for documentation.
-- `/build`: Generated artifacts (e.g., PDFs from CI).
-- `.github/workflows/`: Automation (labeling, status checks, PDF generation).
-- `/reference`: Git submodules with upstream rulebooks/schemas; use them as authoritative context.
+This repository is structured around **MkDocs-generated documentation**. The project output is a static documentation site built from the `/docs/` folder.
+
+- **`/docs/`** - All documentation source: RFCs, rulebooks, images, media, and markdown content
+  - `/docs/img/` - Images and diagrams
+  - `/docs/media/` - CSS and other media assets
+  - `/docs/rulebook/` - Attestation rulebook templates and specifications
+  - `/docs/overrides/` - MkDocs theme customizations
+- **`/doc/`** - Supporting documents (referenced from README, not built into the site)
+- **`/reference/`** - Git submodules with upstream rulebooks/schemas; use them as authoritative context
+- **`mkdocs.yml`** - MkDocs configuration
+- **`.github/workflows/`** - CI/CD automation (site builds, labeling, checks)
+- **Root level** - README.md, CONTRIBUTING.md, LICENSE, and configuration files only
 
 ## Reference Usage
 
