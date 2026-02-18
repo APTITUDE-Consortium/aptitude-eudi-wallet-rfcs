@@ -1,25 +1,25 @@
+# Attestation Rulebook for attestations of type  *ADD THE ATTESTATION TYPE HERE*
+
 | Version | Date | Description |
-|---------|------------|------------|
+| --- | --- | --- |
 | 1.0 | 24-06-2025 | First version |
 | 1.1 | 20-08-2025 | Allowing private names specific to the attestation type for JSON claims; adding requirements to specify whether a claim is selectively disclosable. |
 | 1.2 | 07-10-2025 | Fixing markdown issues; adding requirement to Chapter 4 regarding the need to specify whether an attestation is device-bound or non device-bound. |
 | 1.3 | 02-12-2025 | Add complete change history; include the optional ``cryptographically_bound_to`` attribute specified in ARB_28; removed recommendation to define a JSON schema for SD-JWT VC-based attestations. |
 
-# Attestation Rulebook for attestations of type  *ADD THE ATTESTATION TYPE HERE*
-
 *Provide information about the author(s) of this Rulebook in the following form:*
 
 * Author(s):
-    * [NAME SURNAME, AFFILIATION]
-    * [NAME SURNAME, AFFILIATION]
+  * [NAME SURNAME, AFFILIATION]
+  * [NAME SURNAME, AFFILIATION]
 * Previous Authors
-    * [NAME SURNAME, AFFILIATION (versions)]
-    * [NAME SURNAME, AFFILIATION (versions)]
+  * [NAME SURNAME, AFFILIATION (versions)]
+  * [NAME SURNAME, AFFILIATION (versions)]
 
 *Provide versioning information about the Rulebook in the following form:*
 
 | Version | Date | Description |
-|---------|------------|------------|
+| --- | --- | --- |
 | [VERSION NUMBER] | [PUBLICATION DATE] | [DESCRIPTION OR LINK TO THE CHANGELOG] |
 | [VERSION NUMBER] | [PUBLICATION DATE] | [DESCRIPTION OR LINK TO THE CHANGELOG] |
 
@@ -56,7 +56,7 @@ attributes and metadata are encoded in case the attestation complies with [ISO/I
 
 ### 1.3 Key words
 
-*The following are the recommended keywords. Modify if necessary*
+The following are the recommended keywords. Modify if necessary.
 
 This document uses the capitalised key words 'SHALL', 'SHOULD' and 'MAY' as
 specified in [RFC 2119], i.e., to indicate requirements, recommendations and
@@ -92,7 +92,7 @@ SHOULD be considered (see ARB_07 in [Topic 12]).*
 *[Topic 12] of Annex 2 of the ARF defines the following High-Level Requirements with
 respect to the Attestation Rulebooks:*
 
-**Requirements for QEAA**
+#### Requirements for QEAA
 
 * An attribute as meant in Annex V point a)  of the [European Digital Identity Regulation]
 SHALL be included (see ARB_11 in [Topic 12]). See also section 2.1.
@@ -107,7 +107,7 @@ of the [European Digital Identity Regulation] SHALL be included. This location S
 indicate at least the URL at which a machine-readable version of the trust anchor to be
 used for verifying the QEAA can be found or looked up (see ARB_20 in [Topic 12]).
 
-**Requirements for PuB-EAA**
+#### Requirements for PuB-EAA
 
 * Αn attribute as meant in  Annex VII point a) of the [European Digital Identity Regulation]
 SHALL be included (see ARB_11 in [Topic 12]). See also section 2.1.
@@ -122,7 +122,7 @@ of the [European Digital Identity Regulation] SHALL be included. This location S
 indicate at least the URL at which a machine-readable version of the qualified
 certificate that signed the PuB-EAA can be found or looked up. (see ARB_20 in [Topic 12])
 
-**Requirements for non-qualified EAA**
+#### Requirements for non-qualified EAA
 
 * An attribute indicating that the attestation is an EAA should be included (see ARB_12 in [Topic 12]).
 See also section 2.1.
@@ -156,50 +156,50 @@ the value "QEAA" or "PuB-EAA" or "non-qualified-EAA".*
 mandatory, optional, and conditional attributes and metadata. In each subsection
 provide a table of the following form:*
 
-| **Data Identifier** | **Definition** |**Data type** |**Example value** |
-|------------------------|--------------|--------------|--------------|
-| *Provide a unique attribute identifier* | *Briefly describe the semantic of this attribute*|*Provide a type, e.g., integer, string, boolean, date.*|*Give an example value* |
+| **Data Identifier** | **Definition** | **Data type** | **Example value** |
+| --- | --- | --- | --- |
+| *Provide a unique attribute identifier* | *Briefly describe the semantic of this attribute* | *Provide a type, e.g., integer, string, boolean, date.* | *Give an example value* |
 
 *NOTE Data identifiers should be unambiguous, machine-readable where possible, and
 avoid natural-language ambiguities.*
 
 ### 2.2 Mandatory attributes
 
-| **Data Identifier** | **Definition** |**Data type** |**Example value** |
-|------------------------|--------------|--------------|--------------|
-| *Provide a value* | *Provide succinct text*|*Provide a value*|*Provide a value* |
+| **Data Identifier** | **Definition** | **Data type** | **Example value** |
+| --- | --- | --- | --- |
+| *Provide a value* | *Provide succinct text* | *Provide a value* | *Provide a value* |
 
 ### 2.3 Optional attributes
 
-| **Data Identifier** | **Definition** |**Data type** |**Example value** |
-|------------------------|--------------|--------------|--------------|
-| *Provide a value* | *Provide succinct text*|*Provide a value*|*Provide a value* |
+| **Data Identifier** | **Definition** | **Data type** | **Example value** |
+| --- | --- | --- | --- |
+| *Provide a value* | *Provide succinct text* | *Provide a value* | *Provide a value* |
 
 ### 2.4 Conditional attributes
 
-| **Data Identifier** | **Definition** |**Data type** |**Example value** |
-|------------------------|--------------|--------------|--------------|
-| *Provide a value* | *Provide succinct text*|*Provide a value*|*Provide a value* |
+| **Data Identifier** | **Definition** | **Data type** | **Example value** |
+| --- | --- | --- | --- |
+| *Provide a value* | *Provide succinct text* | *Provide a value* | *Provide a value* |
 
 ### 2.5 Mandatory metadata
 
-| **Data Identifier** | **Definition** |**Data type** |**Example value** |
-|------------------------|--------------|--------------|--------------|
-| *Provide a value* | *Provide succinct text*|*Provide a value*|*Provide a value* |
+| **Data Identifier** | **Definition** | **Data type** | **Example value** |
+| --- | --- | --- | --- |
+| *Provide a value* | *Provide succinct text* | *Provide a value* | *Provide a value* |
 
 ### 2.6 Optional metadata
 
-| **Data Identifier** | **Definition** |**Data type** |**Example value** |
-|------------------------|--------------|--------------|--------------|
-| *Provide a value* | *Provide succinct text*|*Provide a value*|*Provide a value* |
+| **Data Identifier** | **Definition** | **Data type** | **Example value** |
+| --- | --- | --- | --- |
+| *Provide a value* | *Provide succinct text* | *Provide a value* | *Provide a value* |
 
 ### 2.7 Conditional metadata
 
-| **Data Identifier** | **Definition** |**Data type** |**Example value** |
-|------------------------|--------------|--------------|--------------|
-| *Provide a value* | *Provide succinct text*|*Provide a value*|*Provide a value* |
+| **Data Identifier** | **Definition** | **Data type** | **Example value** |
+| --- | --- | --- | --- |
+| *Provide a value* | *Provide succinct text* | *Provide a value* | *Provide a value* |
 
-# 3 Attestation encoding
+## 3 Attestation encoding
 
 ## 3.1 ISO/IEC 18013-5-compliant encoding
 
@@ -223,29 +223,29 @@ date formats, etc). For example:*
 
 * tstr, uint, bstr, bool and tdate are CDDL representation types defined in
   [RFC 8610].
-    * Regarding type tstr: this document confirms that, as specified in [RFC
+  * Regarding type tstr: this document confirms that, as specified in [RFC
     8949], a tstr SHALL be encoded in UTF-8 and SHALL support the full Unicode
     range.
-    * All attributes having encoding type tstr SHALL have a maximum length of
+  * All attributes having encoding type tstr SHALL have a maximum length of
     150 characters.
-    * This document specifies full-date as full-date = #6.1004(tstr), where tag
+  * This document specifies full-date as full-date = #6.1004(tstr), where tag
     1004 is specified in [RFC 8943].
-    * In accordance with [RFC 8949], section 3.4.1, a tdate attribute SHALL
+  * In accordance with [RFC 8949], section 3.4.1, a tdate attribute SHALL
     contain a date-time string as specified in [RFC 3339]. In accordance with
     [RFC 8943], a full-date attribute SHALL contain a full-date string as
     specified in [RFC 3339].
-    * The following requirements apply to the representation of dates in
+  * The following requirements apply to the representation of dates in
     attributes, unless otherwise indicated:
-        * Fractions of seconds SHALL NOT be used;
-        * A local offset from UTC SHALL NOT be used; the time-offset defined in
+    * Fractions of seconds SHALL NOT be used;
+    * A local offset from UTC SHALL NOT be used; the time-offset defined in
         [RFC 3339] SHALL be to "Z".
-    * [RFC 8949], section 4.2, describes four rules for canonical CBOR. Three of
+  * [RFC 8949], section 4.2, describes four rules for canonical CBOR. Three of
     those rules SHALL be implemented for all CBOR structures, as
     follows:
-        * integers (major types 0 and 1) SHALL be as small as possible;
-        * the expression of the length in a bstr, tstr, array or map SHALL be as
+    * integers (major types 0 and 1) SHALL be as small as possible;
+    * the expression of the length in a bstr, tstr, array or map SHALL be as
         short as possible;
-        * indefinite-length items SHALL be made into definite-length items.
+    * indefinite-length items SHALL be made into definite-length items.
 
 *This section should include a table the data identifier specified in
 Chapter 2,  the corresponding attribute identifier to be used in
@@ -258,26 +258,26 @@ of each attribute.*
 for attribute identifier values and attribute syntaxes SHOULD
 be considered (see ARB_07 in [Topic 12]).
 * Each attribute SHALL be defined within an attribute namespace.
-    * An attribute namespace
+  * An attribute namespace
 SHALL fully define the identifier, the syntax, and the semantics of each attribute
 within that namespace.
-    * An attribute namespace SHALL have an identifier that is
+  * An attribute namespace SHALL have an identifier that is
 unique within the scope of the EUDI Wallet ecosystem, and each attribute
 identifier SHALL be unique within that namespace (see ARB_06a in [Topic 12])
-    * A domestic namespace MAY defined
+  * A domestic namespace MAY defined
 to specify attributes that are specific to this Rulebook and are not included in
 the applicable EU-wide or sectoral namespace (see ARB_10 in [Topic 12]).
 
-| **Data Identifier** | **Attribute identifier** | **Encoding format** | **Namespace**|
-|------------------------|--------------|------------------|------------------|
-| family_name | family_name | tstr | com.example.att.1|
+| **Data Identifier** | **Attribute identifier** | **Encoding format** | **Namespace** |
+| --- | --- | --- | --- |
+| family_name | family_name | tstr | com.example.att.1 |
 
 *The corresponding entry for the "attestation_legal_category" attribute defined
 in Section 2.1 SHALL be:*
 
-| **Data Identifier** | **Attribute identifier** | **Encoding format** |**Namespace**|
-|------------------------|--------------|------------------|------------------|
-| attestation_legal_category | attestation_legal_category | tstr |com.example.att.1|
+| **Data Identifier** | **Attribute identifier** | **Encoding format** | **Namespace** |
+| --- | --- | --- | --- |
+| attestation_legal_category | attestation_legal_category | tstr | com.example.att.1 |
 
 Finally, illustrative examples SHALL be included.
 
@@ -327,24 +327,24 @@ in [Topic 12]).*
 includes their data identifier, attribute identifier,
 encoding format, and reference or note. For example,*
 
-| **Data Identifier** | **Attribute identifier** | **Encoding format** |**Reference/Notes** |**Disclosable**|
-|-------------------- |--------------------------|---------------------|--------------------|---------------|
+| **Data Identifier** | **Attribute identifier** | **Encoding format** | **Reference/Notes** | **Disclosable** |
+| --- | --- | --- | --- | --- |
 | family_name | family_name | string | Section 5.1 of [OIDC] | MUST |
 
 *A similar table should be used for Public Names and for Private Names specific
 to the attestation type defined in this document. For
 example:*
 
-| **Data Identifier** | **Attribute identifier** | **Encoding format** | **Notes** |**Disclosable**|
-|---------------------|--------------------------|---------------------|-----------|---------------|
+| **Data Identifier** | **Attribute identifier** | **Encoding format** | **Notes** | **Disclosable** |
+| --- | --- | --- | --- | --- |
 | trust_anchor | trust_anchor | string | The trust anchor defined in Section 5 | MUST NOT |
 
 *The corresponding entry for the "attestation_legal_category" attribute defined
 in Section 2.1 SHALL be:*
 
-| **Data Identifier** | **Attribute identifier** | **Encoding format** | **Notes** |**Disclosable**|
-|---------------------|--------------------------|---------------------|-----------|---------------|
-| attestation_legal_category | attestation_legal_category | string | Defined in Attestation Rulebook template |MUST NOT|
+| **Data Identifier** | **Attribute identifier** | **Encoding format** | **Notes** | **Disclosable** |
+| --- | --- | --- | --- | --- |
+| attestation_legal_category | attestation_legal_category | string | Defined in Attestation Rulebook template | MUST NOT |
 
 Finally, illustrative examples SHALL be included.
 
@@ -457,20 +457,20 @@ general EUDI framework, ARF, and relevant regulations*
 
 ## 8 References
 
-| **Item Reference** | **Standard name/details**|
-|--------------------|---------------------------|
+| **Item Reference** | **Standard name/details** |
+| --- | --- |
 | [European Digital Identity Regulation] | [Regulation (EU) 2024/1183](https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202401183) of the European Parliament and of the Council of 11 April 2024 amending Regulation (EU) No 910/2014 as regards establishing the European Digital Identity Framework |
 | [HAIP] | Yasuda, K. *et al,* OpenID4VC High Assurance Interoperability Profile, OpenId Foundation, Version draft-03 |
 | [IANA-JWT-Claims] | IANA JSON Web Token Claims Registry. Available: <https://www.iana.org/assignments/jwt/jwt.xhtml> |
-| [ISO/IEC 18013-5] |  ISO/IEC 18013-5, Personal identification --- ISO-compliant driving licence - Part 5: Mobile driving licence (mDL) application, First edition, 2021-09 |
+| [ISO/IEC 18013-5] | ISO/IEC 18013-5, Personal identification --- ISO-compliant driving licence - Part 5: Mobile driving licence (mDL) application, First edition, 2021-09 |
 | [OIDC] | Sakimura, N. et al., "OpenID Connect Core 1.0", OpenID Foundation. Available: <https://openid.net/specs/openid-connect-core-1_0.html> |
-| [RFC 3339] | RFC 3339  - Date and Time on the Internet: Timestamps, G. Klyne et al., July 2002 |
-| [RFC 8610] | RFC 8610  - Concise Data Definition Language (CDDL): A Notational Convention to Express Concise Binary Object Representation (CBOR) and JSON Data Structures, H. Birkholz et al., June 2019 |
-| [RFC 8943] | RFC 8943  - Concise Binary Object Representation (CBOR) Tags for Date, M. Jones et al., November 2020 |
+| [RFC 3339] | RFC 3339 - Date and Time on the Internet: Timestamps, G. Klyne et al., July 2002 |
+| [RFC 8610] | RFC 8610 - Concise Data Definition Language (CDDL): A Notational Convention to Express Concise Binary Object Representation (CBOR) and JSON Data Structures, H. Birkholz et al., June 2019 |
+| [RFC 8943] | RFC 8943 - Concise Binary Object Representation (CBOR) Tags for Date, M. Jones et al., November 2020 |
 | [RFC 8949] | RFC 8949 - Concise Binary Object Representation (CBOR), C. Bormann et al., December 2020 |
-| [SD-JWT VC] |  SD-JWT-based Verifiable Credentials (SD-JWT VC). Available: <https://datatracker.ietf.org/doc/draft-ietf-oauth-sd-jwt-vc/>, version draft-ietf-oauth-sd-jwt-vc-09  |
-| [Topic 7] | ARF Annex 2 - Topic 7 - Attestation revocation and revocation checking Available: <https://eu-digital-identity-wallet.github.io/eudi-doc-architecture-and-reference-framework/latest/annexes/annex-2/annex-2-high-level-requirements/#a237-topic-7-attestation-revocation-and-revocation-checking>|
-| [Topic 10] | ARF Annex 2 - Topic 10 - Issuing a PID or attestation to a Wallet Unit: <https://eu-digital-identity-wallet.github.io/eudi-doc-architecture-and-reference-framework/latest/annexes/annex-2/annex-2-high-level-requirements/#a2310-topic-10-issuing-a-pid-or-attestation-to-a-wallet-unit>|
-| [Topic 12] | ARF Annex 2 - Topic 12 - Attestation Rulebooks, Available: <https://eu-digital-identity-wallet.github.io/eudi-doc-architecture-and-reference-framework/latest/annexes/annex-2/annex-2-high-level-requirements/#a2312-topic-12-attestation-rulebooks>|
-| [Topic 20] | ARF Annex 2 - Strong User authentication for electronic payments, Available: <https://eu-digital-identity-wallet.github.io/eudi-doc-architecture-and-reference-framework/latest/annexes/annex-2/annex-2-high-level-requirements/#a2320-topic-20-strong-user-authentication-for-electronic-payments>|
-| [W3C VCDM v2.0] | Sporny, M. *et al,* Verifiable Credentials Data Model v2.0, W3C Recommendation.  |
+| [SD-JWT VC] | SD-JWT-based Verifiable Credentials (SD-JWT VC). Available: <https://datatracker.ietf.org/doc/draft-ietf-oauth-sd-jwt-vc/>, version draft-ietf-oauth-sd-jwt-vc-09 |
+| [Topic 7] | ARF Annex 2 - Topic 7 - Attestation revocation and revocation checking Available: <https://eu-digital-identity-wallet.github.io/eudi-doc-architecture-and-reference-framework/latest/annexes/annex-2/annex-2-high-level-requirements/#a237-topic-7-attestation-revocation-and-revocation-checking> |
+| [Topic 10] | ARF Annex 2 - Topic 10 - Issuing a PID or attestation to a Wallet Unit: <https://eu-digital-identity-wallet.github.io/eudi-doc-architecture-and-reference-framework/latest/annexes/annex-2/annex-2-high-level-requirements/#a2310-topic-10-issuing-a-pid-or-attestation-to-a-wallet-unit> |
+| [Topic 12] | ARF Annex 2 - Topic 12 - Attestation Rulebooks, Available: <https://eu-digital-identity-wallet.github.io/eudi-doc-architecture-and-reference-framework/latest/annexes/annex-2/annex-2-high-level-requirements/#a2312-topic-12-attestation-rulebooks> |
+| [Topic 20] | ARF Annex 2 - Strong User authentication for electronic payments, Available: <https://eu-digital-identity-wallet.github.io/eudi-doc-architecture-and-reference-framework/latest/annexes/annex-2/annex-2-high-level-requirements/#a2320-topic-20-strong-user-authentication-for-electronic-payments> |
+| [W3C VCDM v2.0] | Sporny, M. *et al,* Verifiable Credentials Data Model v2.0, W3C Recommendation. |

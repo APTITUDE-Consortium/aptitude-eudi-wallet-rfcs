@@ -34,10 +34,11 @@ markdown_extensions:
   - tables
 nav:
   - Home: index.md
+  - Rulebook:
+    - Placeholder 1: rulebook/attestation-rulebook-1.md
+    - Placeholder 2: rulebook/attestation-rulebook-2.md
   - Standards: standards.md
   - Glossary: glossary.md
-  - Rulebook:
-    - Template: rulebook/attestation-rulebook-template.md
 plugins:
   - tags
   - search
