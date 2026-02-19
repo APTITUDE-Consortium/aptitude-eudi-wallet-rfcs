@@ -2,7 +2,7 @@
 |---------|------------|------------|
 | 0.1 | 11-02-2026 | First draft version - Filled par 1.1 |
 
-# Attestation Rulebook for attestations of type  *DTC - Digital Travel Credential*
+# APTITUDE - *Digital Travel Credential (DTC) rulebook*
 
 * Author(s):
     * ...
