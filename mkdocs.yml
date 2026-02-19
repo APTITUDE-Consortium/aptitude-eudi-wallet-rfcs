@@ -1,0 +1,49 @@
+site_name: APTITUDE Technical Specification
+site_description: APTITUDE Technical Specification
+site_author: APTITUDE Consortium
+site_url: https://aptitude-project.eu/
+theme:
+  name: material
+  custom_dir: docs/overrides
+  palette:
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.path
+    - navigation.top
+    - toc.integrate
+    - toc.follow
+
+  logo: img/logo.png
+extra_css:
+  - media/extra.css
+
+markdown_extensions:
+  - footnotes
+  - sane_lists
+  - tables
+nav:
+  - Home: index.md
+  - Rulebook:
+    - Placeholder 1: rulebook/attestation-rulebook-1.md
+    - Placeholder 2: rulebook/attestation-rulebook-2.md
+  - Standards: standards.md
+  - Glossary: glossary.md
+plugins:
+  - tags
+  - search
+  - git-revision-date
+  - git-revision-date-localized:  
+      locale: en
+      fallback_to_build_date: true
+      type: datetime  
