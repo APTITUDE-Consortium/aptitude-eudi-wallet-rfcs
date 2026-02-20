@@ -30,8 +30,12 @@ The DTC attestation type is intended for use by national authorities issuing tra
 
 ## 2 Attestation attributes and metadata
 ### Chapter overview and requirements
+| Index | Requirement specification |
+| --- | --- |
+| XX_XX | According to ICAO’s DTC data model, the APTITUDE DTC SHALL contain DG1, DG2, SOD as from the physical eMRTD passport |
 
 ## 3 Attestation encoding
+ 
 
 ## 4 Attestation usage
 
