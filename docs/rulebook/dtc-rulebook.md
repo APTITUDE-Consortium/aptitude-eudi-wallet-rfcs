@@ -45,9 +45,17 @@ The DTC attestation type is intended for use by national authorities issuing tra
 | XX_XX | APTITUDE DTC MAY contain additional attributes beyond the derived eMRTD dataset |
 
 
-## 3 Attestation 
+## 3 Attestation encoding
 ### Chapter overview and requirements
- 
+| Index | Requirement specification |
+| --- | --- |
+| XX_XX | APTITUDE DTC SHALL be encoded as an eIDAS2 attestation compliant | 
+| XX_XX | APTITUDE DTC SHALL encode the photoID profile as per ISO/IEC 23220‑4 Annex C | 
+| XX_XX | APTITUDE DTC SHALL preserve the ICAO LDS semantics | 
+| XX_XX | APTITUDE DTC SHALL support SD‑JWT VC encoding | 
+| XX_XX | APTITUDE DTC SHALL ISO/IEC 18013‑5 mdoc-cbor encoding | 
+| XX_XX | APTITUDE DTC SHALL implement an encoding approach that addresses the incompatibility between ARF selective disclosure and ICAO LDS integrity‑bound | 
+| XX_XX | APTITUDE DTC SHALL adopt open, standard-based credential encodings to maximize interoperability and avoid vendor lock-in | 
 
 ## 4 Attestation usage
 ### Chapter overview and requirements
