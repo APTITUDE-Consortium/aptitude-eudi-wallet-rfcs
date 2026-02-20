@@ -45,11 +45,11 @@ The DTC attestation type is intended for use by national authorities issuing tra
 | XX_XX | APTITUDE DTC MAY contain additional attributes beyond the derived eMRTD dataset |
 
 
-## 3 Attestation encoding
+## 3 Attestation 
+### Chapter overview and requirements
  
 
 ## 4 Attestation usage
-
 ### Chapter overview and requirements
 #### Presentation
 | Index | Requirement specification |
@@ -66,9 +66,10 @@ The DTC attestation type is intended for use by national authorities issuing tra
 | XX_XX | APTITUDE DTC SHALL support cryptographic integrity verification |
 
 ## 5 Trust anchors
+### Chapter overview and requirements
 
 ## 6 Revocation
-### Requirements
+### Chapter overview and requirements
 | Index | Requirement specification |
 | --- | --- |
 | XX_XX | APTITUDE DTC SHALL support a full DTC lifecycle covering issuance, verification, and revocation |
@@ -76,6 +77,7 @@ The DTC attestation type is intended for use by national authorities issuing tra
 | XX_XX | APTITUDE DTC SHALL support alignment between EUDI Wallet attestation lifecycle and ICAO DTC lifecycle requirements |
 
 ## 7 Compliance
+### Chapter overview and requirements
 | Index | Requirement specification |
 | --- | --- |
 | XX_XX | APTITUDE DTC SHALL support privacy-by-design expectations |
