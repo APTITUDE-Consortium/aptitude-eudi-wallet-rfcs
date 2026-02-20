@@ -1,7 +1,7 @@
 site_name: APTITUDE Technical Specification
 site_description: APTITUDE Technical Specification
 site_author: APTITUDE Consortium
-site_url: https://aptitude-project.eu/
+site_url: https://aptitude-consortium.github.io/aptitude-eudi-wallet-rfcs/
 theme:
   name: material
   custom_dir: docs/overrides
@@ -27,6 +27,11 @@ theme:
   logo: img/logo.png
 extra_css:
   - media/extra.css
+
+extra:
+  version:
+    provider: mike
+    alias: true
 
 markdown_extensions:
   - footnotes
