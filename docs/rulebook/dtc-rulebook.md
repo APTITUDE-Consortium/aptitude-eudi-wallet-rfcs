@@ -23,3 +23,26 @@ This rulebook specifies:
 * The trust anchor mechanisms, revocation procedures and compliance requirements that apply to DTC attestations.
 
 The DTC attestation type is intended for use by national authorities issuing travel documents and by border control agencies as Relying Parties.
+
+### 1.2 Document structure
+### 1.3 Key words
+### 1.4 Terminology
+
+## 2 Attestation attributes and metadata
+### Chapter overview and requirements
+
+## 3 Attestation encoding
+
+## 4 Attestation usage
+
+## 5 Trust anchors
+
+## 6 Revocation
+
+## 7 Compliance
+
+## 8 References
+| **Item Reference** | **Standard name/details** |
+| --- | --- |
+| ... | ...|
+| ... | ... |
