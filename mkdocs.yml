@@ -60,6 +60,17 @@ plugins:
         - 'rulebook/wp2-trust-specifications/README.md'
         - 'rulebook/wp2-trust-specifications/CONTRIBUTING.md'
   - search
+  - ezglossary:
+      strict: true 
+      ignore_case: true
+      plurals: en
+      markdown_links: true
+      tooltip: full
+      templates: docs/overrides/ezglossary
+      sections:
+        - roles
+        - components
+        - credentials
   - git-revision-date
   - git-revision-date-localized:
       locale: en
@@ -71,6 +82,7 @@ markdown_extensions:
   - footnotes
   - sane_lists
   - tables
+  - def_list
   - toc:
       permalink: true
 
