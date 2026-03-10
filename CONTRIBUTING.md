@@ -1,96 +1,116 @@
 # Contributing Guide
 
-This repository captures and evolves the technical specifications for the APTITUDE project (EUDI Wallet pilot). The project output is a **MkDocs-generated documentation site** built from the `/docs/` folder. Contributions focus on Markdown RFCs and supporting assets—no application code.
+This repository contains the technical documentation for the APTITUDE EUDI Wallet pilot.
 
-## Ways to contribute
+Most contributions are text updates (requirements, RFC content, clarifications, diagrams). This is not an application code repository.
 
-- Propose or refine requirements via RFCs and Issues.
-- Add clarifying diagrams or examples in support of existing RFCs.
-- Flag gaps, ambiguities, or conflicts with upstream rulebooks/schemas.
+## What You Can Contribute
 
-## Workflow (short version)
+- Propose a new requirement.
+- Improve or clarify an existing RFC.
+- Add examples or diagrams.
+- Report gaps, unclear wording, or conflicts with rulebooks/schemas.
 
-1. Review context: README, existing RFCs,   and relevant documents under `/reference`.
-2. Open an Issue describing the change (link prior RFCs/Issues if relevant).
-3. Draft or update the RFC in a PR; keep scope to one RFC when possible.
-4. Link the Issue in the PR and note rationale and open questions.
-5. Respond to review feedback; aim for small, reviewable diffs.
+## Recommended Workflow
 
-## Local development setup
+1. Read the context first: `README.md`, related RFC pages, and relevant files under `reference/`.
+2. Open a GitHub Issue describing what you want to change and why.
+3. Create a pull request with a focused update (ideally one RFC/topic at a time).
+4. Link the Issue in the pull request and explain rationale and open questions.
+5. Address review comments and keep changes small and easy to review.
 
-This repository uses MkDocs Material to generate documentation. To preview changes locally:
+## If You Want To Preview Locally
 
-### First-time setup
+This documentation site is built with MkDocs.
 
-1. **Create a Python virtual environment:**
+You do not need to run MkDocs locally to suggest or submit documentation changes. A pull request with clear text updates is enough. Local preview is optional and useful when you want to check formatting before review.
+
+### First-Time Setup
+
+1. Create a Python virtual environment:
 
    ```bash
    python3 -m venv .venv
    ```
 
-2. **Activate the virtual environment:**
+2. Activate it:
 
    ```bash
    source .venv/bin/activate
    ```
 
-3. **Install dependencies:**
+3. Install dependencies:
 
    ```bash
    pip install -r requirements.txt
    ```
 
-### Running the dev server
+### Start The Preview Server
 
-After activating the virtual environment (step 2 above):
+After activation, run:
 
 ```bash
 mkdocs serve
 ```
 
-The site will be available at `http://127.0.0.1:8000/` with live reload enabled.
+Open: `http://127.0.0.1:8000/`
 
-**Alternative (without activation):**
+The page updates automatically when files change.
+
+Alternative without activation:
 
 ```bash
 .venv/bin/mkdocs serve
 ```
 
-### Why use a virtual environment?
+### Why The Virtual Environment Matters
 
 - Isolates project dependencies from system Python packages
 - Prevents version conflicts with other projects
 - Ensures reproducible builds across contributors and CI/CD
 
-## RFC authoring checklist
+## Writing Checklist
 
-- All RFCs and documentation must be created under the `/docs/` folder (this is the MkDocs source).
-- Start with a short summary and status (draft/accepted/deprecated).
-- Capture rationale, assumptions, dependencies, and trade-offs.
-- Align terminology and data models with `/reference` submodules; cite specific documents/sections.
-- Cross-link related RFCs and Issues for traceability.
-- Use `mermaid` blocks for flows/sequences; keep diagrams near the text they explain.
-- Store images in `/docs/img/` and reference with paths relative to the docs folder (e.g., `![Auth flow](img/auth-flow.png)`).
-- Keep paragraphs short; prefer numbered lists where order matters.
-- Add new pages to the `nav:` section in `mkdocs.yml` to make them appear in the site navigation.
+- Create and edit documentation under `docs/`.
+- Start each RFC with a short summary and status (`draft`, `accepted`, `deprecated`).
+- Explain assumptions, dependencies, and trade-offs.
+- Use consistent terms aligned with the content in `reference/`.
+- Link related RFCs and Issues.
+- Keep text short and clear.
+- Put images in `docs/img/` and link with relative paths.
+- Add new pages to `nav:` in `mkdocs.yml` so they appear in the site menu.
 
-## Using the `/reference` submodules
+### Glossary terms
 
-- Treat all content under `/reference` as the shared knowledge base for rulebooks and schemas.
-- Cite the exact submodule path/doc when deriving requirements (e.g., `reference/eudi-wallet-rulebooks-and-schemas/...`).
-- Do not edit submodule contents!
+Use glossary links for terms that need a consistent meaning across documents.
 
-## Pull request expectations
+- To reference an existing term in a page, use:
+  `<section:term|text shown to readers>`
+  Example: `<components:EUDI Wallet|European Digital Identity Wallet (EUDI Wallet)>`
+- To add a new term, edit `docs/glossary-definitions.md`:
+  add `section:term` on one line and the definition on the next line.
+  Then use that term in pages with the reference format above.
+
+If you are unsure which section to use, pick one of: `roles`, `components`, `credentials`.
+
+## About The `reference/` Folder
+
+- Treat `reference/` as read-only source material for rulebooks and schemas.
+- Cite the exact source path when deriving requirements.
+- Do not edit files inside `reference/` unless explicitly requested.
+
+## Pull Request Expectations
 
 - One focused change per PR; avoid drive-by formatting.
-- Link the Issue and the affected RFC(s); summarize intent and impact.
-- Call out any unresolved questions or decisions needed from reviewers.
+- Link the Issue and affected RFC(s); summarize intent and impact.
+- Clearly list open questions for reviewers.
 - Follow existing workflow patterns in `.github/workflows/` if automation changes are required.
 
 ## Licensing
 
-- Contributions are under Apache 2.0 unless a specific RFC notes otherwise. Some RFCs (e.g., payments) may carry different terms—respect existing notices.
+- Contributions are under Apache 2.0 unless a specific RFC says otherwise.
+- Some RFCs (for example payments) may have different terms. Respect existing notices.
 
 ## Need more?
 
-- See [github-coediting-workflow.md](github-coediting-workflow.md) for an introduction to Git.
+- See `github-coediting-workflow.md` for a Git introduction.
