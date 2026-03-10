@@ -1,4 +1,4 @@
-name: Update Submodules
+name: Update submodule wp2-trust-specifications 
 
 on:
   repository_dispatch:
