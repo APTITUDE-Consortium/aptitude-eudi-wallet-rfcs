@@ -61,7 +61,7 @@ plugins:
         - 'rulebook/wp2-trust-specifications/CONTRIBUTING.md'
   - search
   - ezglossary:
-      strict: true 
+      strict: true
       ignore_case: true
       plurals: en
       markdown_links: true
