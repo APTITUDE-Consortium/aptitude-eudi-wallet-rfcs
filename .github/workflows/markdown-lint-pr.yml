@@ -33,7 +33,7 @@ jobs:
       - name: Collect changed markdown files
         id: changed_md
         run: |
-          git diff --name-only -z "${{ github.event.pull_request.base.sha }}" "${{ github.event.pull_request.head.sha }}" -- '*.md' > changed_markdown_files.zlist
+          git diff --diff-filter=ACMRT --name-only -z "${{ github.event.pull_request.base.sha }}" "${{ github.event.pull_request.head.sha }}" -- '*.md' > changed_markdown_files.zlist
 
           if [[ -s changed_markdown_files.zlist ]]; then
             echo "has_changes=true" >> "$GITHUB_OUTPUT"
