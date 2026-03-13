@@ -46,8 +46,8 @@
 |HAIP|OpenID4VC High Assurance Interoperability Profile 1.0 - draft 05|OpenID||24 December 2025 - v1.0|Published|<https://openid.net/specs/openid4vc-high-assurance-interoperability-profile-1_0-05.html>|Yes|||Y|Y|Y|Y|Y||||
 ||OpenID Connect Core 1.0 incorporating errata set 2|OpenID|||Published|<https://openid.net/specs/openid-connect-core-1_0.html>|Yes|||||||||||
 ||OpenID Connect Relying Party Metadata Choices 1.0 - draft 04|OpenID||v1.0 draft04|Draft|<https://openid.net/specs/openid-connect-rp-metadata-choices-1_0.html>|No|||||Y||||||
-||OpenID Federation 1.0 - draft 47|OpenID||v1.0 draft47|Draft|<https://openid.net/specs/openid-federation-1_0.html>|No|||||||Y||||
-||OpenID Federation for Wallet Architectures 1.0 - draft 04|OpenID||v1.0 draft04|Draft|<https://openid.github.io/federation-wallet/main.html>|No|||||||Y||||
+||OpenID Federation 1.0|OpenID||v1.0|Draft|<https://openid.net/specs/openid-federation-1_0.html>|No|||||||Y||||
+||OpenID Federation for Wallet Architectures 1.0 - draft 05|OpenID||v1.0 draft05|Draft|<https://openid.net/specs/openid-federation-wallet-1_0.html>|No|||||||Y||||
 ||OpenID Identity Assurance Schema Definition 1.0|OpenID||1.0|Published|<https://openid.net/specs/openid-ida-verified-claims-1_0-final.html>|Yes|||||||||||
 ||OpenID Connect for Identity Assurance Claims Registration|OpenID||1.0|Published|<https://openid.net/specs/openid-connect-4-ida-claims-1_0-final.html>|Yes|||||||||||
 |VCDM|Verifiable Credentials Data Model v2.0|W3C||2.0|Published|<https://www.w3.org/TR/vc-data-model-2.0/>|Yes||||||Y|||||
