@@ -1,8 +1,12 @@
-#!/usr/bin/env sh
+#!/usr/bin/env bash
 
-set -eu
+if [ -z "${BASH_VERSION:-}" ]; then
+	exec bash "$0" "$@"
+fi
 
-script_dir="$(cd "$(dirname "$0")" && pwd)"
+set -euo pipefail
+
+script_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 repo_root="$(cd "$script_dir/.." && pwd)"
 
 cd "$repo_root"
