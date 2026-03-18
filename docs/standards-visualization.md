@@ -60,5 +60,3 @@ flowchart LR
     click FED_BOX "./trust.md"
     click REVOC_BOX "./trust.md"
     click TRUST_BOX "./trust.md"
-
-    ```
