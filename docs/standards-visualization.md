@@ -228,3 +228,34 @@ flowchart LR
   click TS119475 href "https://www.etsi.org/deliver/etsi_ts/119400_119499/119475/01.01.01_60/ts_119475v010101p.pdf" _blank
   click TSL_t href "https://datatracker.ietf.org/doc/draft-ietf-oauth-status-list/" _blank
   click BSL_t href "https://www.w3.org/TR/vc-bitstring-status-list/" _blank
+
+  %% ── STYLES ───────────────────────────────────────────────────
+  classDef published fill:#1a6b3c,color:#fff,stroke:#0f4a2a
+  classDef draft fill:#b07d00,color:#fff,stroke:#7a5600
+
+  style WP_BOX fill:#eaf5e8,stroke:#1a6b3c,stroke-width:2px,color:#0f2540
+  style WUA fill:#d4ecd0,stroke:#1a6b3c,stroke-width:1px,color:#0f2540
+  style CRYPTO fill:#d4ecd0,stroke:#1a6b3c,stroke-width:1px,color:#0f2540
+
+  style IF_WP_W_BOX fill:#f0ebff,stroke:#7a50cc,stroke-width:2px,stroke-dasharray:6,color:#3d1a80
+  style IF_ISS_W_BOX fill:#f0ebff,stroke:#7a50cc,stroke-width:2px,stroke-dasharray:6,color:#3d1a80
+  style IF_W_RP_BOX fill:#f0ebff,stroke:#7a50cc,stroke-width:2px,stroke-dasharray:6,color:#3d1a80
+
+  style WALLET_BOX fill:#f3eeff,stroke:#6a3daa,stroke-width:2px,color:#0f2540
+  style W_STORE fill:#e4d8ff,stroke:#6a3daa,stroke-width:1px,color:#0f2540
+  style W_SIGN fill:#e4d8ff,stroke:#6a3daa,stroke-width:1px,color:#0f2540
+  style W_ZKP fill:#e4d8ff,stroke:#6a3daa,stroke-width:1px,color:#0f2540
+
+  style ISS_BOX fill:#fffae8,stroke:#b07d00,stroke-width:2px,color:#0f2540
+  style FMT fill:#f5eccc,stroke:#b07d00,stroke-width:1px,color:#0f2540
+  style PROOF fill:#f5eccc,stroke:#b07d00,stroke-width:1px,color:#0f2540
+
+  style RP_BOX fill:#fff0f0,stroke:#aa3d3d,stroke-width:2px,color:#0f2540
+  style RP_AUTH fill:#ffd8d8,stroke:#aa3d3d,stroke-width:1px,color:#0f2540
+  style VAL fill:#ffd8d8,stroke:#aa3d3d,stroke-width:1px,color:#0f2540
+
+  style TRUST_BOX fill:#e8f0fb,stroke:#2e6da4,stroke-width:3px,color:#0f2540
+  style TL_BOX fill:#d0e4f7,stroke:#2e6da4,stroke-width:1px,color:#0f2540
+  style CERT_BOX fill:#d0e4f7,stroke:#2e6da4,stroke-width:1px,color:#0f2540
+  style FED_BOX fill:#d0e4f7,stroke:#2e6da4,stroke-width:1px,color:#0f2540
+  style REVOC_BOX fill:#d0e4f7,stroke:#2e6da4,stroke-width:1px,color:#0f2540
