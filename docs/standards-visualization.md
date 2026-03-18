@@ -229,6 +229,13 @@ flowchart LR
   click TSL_t href "https://datatracker.ietf.org/doc/draft-ietf-oauth-status-list/" _blank
   click BSL_t href "https://www.w3.org/TR/vc-bitstring-status-list/" _blank
 
+  subgraph LEGEND["Legend"]
+    direction LR
+    L1("Published standard"):::published
+    L2("Draft standard"):::draft
+    L3("Interface protocol\nbetween actors"):::iface
+  end
+
   %% ── STYLES ───────────────────────────────────────────────────
   classDef published fill:#1a6b3c,color:#fff,stroke:#0f4a2a
   classDef draft fill:#b07d00,color:#fff,stroke:#7a5600
