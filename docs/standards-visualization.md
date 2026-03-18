@@ -166,16 +166,4 @@ flowchart LR
     classDef trust fill:#d0e4f7,stroke:#2e6da4,stroke-width:1px,color:#0f2540
     style TRUST_BOX fill:#e8f0fb,stroke:#2e6da4,stroke-width:3px,color:#0f2540
     style ECOSYSTEM fill:#f8f8f8,stroke:#cccccc,stroke-width:1px,color:#333
-    click WP_BOX "./wp.md"
-    click IF_WP_W_BOX "./wp.md"
-    click WALLET_BOX "./wallet.md"
-    click IF_ISS_W_BOX "./issuer.md"
-    click ISS_BOX "./issuer.md"
-    click IF_W_RP_BOX "./rp.md"
-    click RP_BOX "./rp.md"
-    click TL_BOX "./trust.md"
-    click CERT_BOX "./trust.md"
-    click FED_BOX "./trust.md"
-    click REVOC_BOX "./trust.md"
-    click TRUST_BOX "./trust.md"
 
