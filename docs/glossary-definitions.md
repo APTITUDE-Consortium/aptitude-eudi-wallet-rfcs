@@ -69,6 +69,9 @@ components:Wallet Instance Attestation (WIA)
 components:Keystore
 : Hardware-backed repository for generating, storing, and using non-critical cryptographic assets.
 
+component:Qualified Trust Service Provider (QTSP)
+: A qualified trust services provider authorised, among other things, to issue QEAA under eIDAS/eIDAS2.
+
 credentials:Person Identification Data (PID)
 : Data set that enables the establishment of a person's identity.
 
@@ -77,6 +80,9 @@ credentials:Electronic Attestation of Attributes (EAA)
 
 credentials:Qualified Electronic Attestation of Attributes (QEAA)
 : EAA issued by a Qualified Trust Service Provider in line with Annex V.
+
+credentials:Public Electronic Attestation of Attributes (PuB-EAA)
+: An attestation issued by a public sector body responsible for an authentic source of data (outside the qualified trust service regime).
 
 credentials:Attestation
 : Collective term for QEAA, PuB-EAA, or non-qualified EAA.
@@ -114,38 +120,59 @@ credentials:Pseudonym
 credentials:Selective Disclosure
 : Capability for a User to present only a subset of attributes from a PID or attestation.
 
-protocols:Credential Offer
-: Data structure created by a Credential Issuer to initiate issuer-initiated issuance, containing grant information and credential configuration references.
+credentials:EU-mVRC (European Union mobile Vehicle Registration Certificate)
+: The mobile (digital) vehicle registration certificate as an attestation in the EUDI Wallet; a profile of mVC under ISO/IEC 7367‑2.
 
-protocols:Pushed Authorisation Request (PAR)
-: Mechanism by which the Wallet sends an authorisation request directly to the Issuer's PAR Endpoint before user authorisation, receiving a `request_uri` in return.
+credentials:mVC (mobile Vehicle Certificate
+: The family of mobile vehicle certificates defined in ISO/IEC 7367‑2, on which the EU‑mVRC is profiled.
 
-protocols:Request Object
-: Signed JWT containing the parameters of a presentation or authorisation request, providing integrity protection and verifier identification.
+credentials:mTR (mobile Technical Report)
+: A mobile roadworthiness/inspection report (companion to mVRC/mDL) per ISO/IEC 7367‑3.
 
-protocols:Presentation Request
-: Request from a Verifier to a Wallet specifying the credentials, claims, and constraints for a verifiable presentation.
+credentilas:mDL (mobile Driving Licence)
+: The mobile driving licence per ISO/IEC 18013‑5; used alongside mVRC and mTR in the EUDI Wallet.
 
-protocols:DPoP
-: Demonstration of Proof-of-Possession; a mechanism for sender-constraining access tokens by binding them to a key held by the client.
+credentials:MSO (Mobile Security Object)
+: A security object carrying metadata and the issuer’s signature over data elements in mdoc/mDL/mVRC.
 
-protocols:PKCE
-: Proof Key for Code Exchange; a mechanism for protecting authorisation code flows against interception, using a code challenge and code verifier.
+credentials:mdoc
+: The generic model and protocols for mobile documents per ISO/IEC 23220‑4.
 
-protocols:Proof-of-possession
-: Mechanism by which a Wallet demonstrates control of a cryptographic key, used during issuance for holder binding and during presentation for response integrity.
+credentials:Proximity flow
+: Short‑range presentation protocol (NFC/BLE/Wi‑Fi Aware) per ISO/IEC 18013‑5/‑7.
 
-protocols:Key binding
-: Cryptographic binding of a credential to a key controlled by the Holder, enabling the Holder to prove possession during presentation.
+credentials:Remote flow
+: Remote presentation protocol (same‑device or cross‑device).
 
-protocols:Device binding
-: Binding of a credential to device-attested key material, typically through Wallet Unit Attestation, ensuring the credential is bound to a specific device.
+credentials:Trust anchor
+: The root of trust (certificates/chain) required to verify an attestation’s signature.
 
-protocols:Nonce
-: Single-use value included in protocol exchanges to ensure freshness and prevent replay attacks.
+credentials:IACA
+: The issuing authority/CA used in the mDL/mVRC trust infrastructure under ISO (may be shared with mDL or set up separately).
 
-protocols:SessionTranscript
-: ISO/IEC 18013-7 data structure providing cryptographic binding between an OpenID4VP request context and an ISO mdoc presentation response.
+credentials:CBOR (Concise Binary Object Representation)
+: The binary serialisation format used for mdoc transfers.
 
-protocols:DeviceResponse
-: ISO/IEC 18013-7 CBOR structure containing the mdoc presentation data returned by a Wallet in response to a presentation request.
+credentials:CDDL (Concise Data Definition Language)
+: The language to define CBOR structures (e.g., `tstr`, `uint`, `bstr`, `tdate`).
+
+credentials:eCoC (electronic Certificate of Conformity) 
+: Manufacturer’s electronic certificate; selected entries are mapped into EU‑mVRC.
+
+credentials:SD‑JWT VC (Selective Disclosure Java Web Token Verifiable Credential)
+: A verifiable credential format based on Selective Disclosure JWT; one of the formats supported in EUDI for some attestations.
+
+credentials:W3C VCDM v2.0 (W3C Verifiable Credentials Data Model v2.0)
+: A family of specifications for VC data models.
+
+credentials:OID4VCI (OpenID for Verifiable Credentials Issuance)
+: OID4VCI is an open standard that defines a secure API for issuing Verifiable Credentials (VCs) to a user's digital wallet.
+
+credentials:OID4VP (OpenID for Verifiable Presentation)
+: OID4VP is a standard that defines how a user presents Verifiable Credentials from their wallet to a verifier.
+
+credentials:HAIP (High Assurance Interoperability Profile)
+: OpenID4VC profile aimed at higher assurance interoperability.
+
+credentials:IANA JWT Claims (Internet Assigned Numbers Authority JSON Web Token Claims)
+: IANA registry of standard JWT claim names.
