@@ -18,6 +18,24 @@ roles:(Wallet-) Relying Party
 roles:Access Certificate Authority
 : Provider mandated by a Member State to issue wallet-relying party access certificates.
 
+roles:Holder
+: Natural person or legal representative controlling the Wallet and authorising credential issuance or presentation.
+
+roles:Verifier
+: Entity requesting verifiable presentations, validating the response, and making an authorisation or business decision based on the outcome.
+
+roles:Credential Issuer
+: Entity that decides to issue Verifiable Credentials and operates, or is associated with, the issuance service.
+
+roles:Authorisation Server
+: OAuth 2.0 / OpenID component responsible for authenticating the Holder and issuing tokens authorising access to protected endpoints.
+
+roles:Verifier Backend
+: Server-side component that creates presentation requests, receives presentation responses, validates them, and returns the result to the relying application.
+
+roles:Relying Application
+: User-facing application, service, or workflow in which credential verification is performed.
+
 roles:Holder (W2W)
 : User presenting attributes from their Wallet Unit to another Wallet Unit.
 
@@ -44,6 +62,9 @@ components:Wallet Secure Cryptographic Device (WSCD)
 
 components:Wallet Unit Attestation (WUA)
 : Data object describing Wallet Unit components or enabling their authentication/validation.
+
+components:Wallet Instance Attestation (WIA)
+: Client attestation material presented by a Wallet Instance at the PAR and Token endpoints to authenticate the Wallet during issuance flows.
 
 components:Keystore
 : Hardware-backed repository for generating, storing, and using non-critical cryptographic assets.
@@ -92,3 +113,39 @@ credentials:Pseudonym
 
 credentials:Selective Disclosure
 : Capability for a User to present only a subset of attributes from a PID or attestation.
+
+protocols:Credential Offer
+: Data structure created by a Credential Issuer to initiate issuer-initiated issuance, containing grant information and credential configuration references.
+
+protocols:Pushed Authorisation Request (PAR)
+: Mechanism by which the Wallet sends an authorisation request directly to the Issuer's PAR Endpoint before user authorisation, receiving a `request_uri` in return.
+
+protocols:Request Object
+: Signed JWT containing the parameters of a presentation or authorisation request, providing integrity protection and verifier identification.
+
+protocols:Presentation Request
+: Request from a Verifier to a Wallet specifying the credentials, claims, and constraints for a verifiable presentation.
+
+protocols:DPoP
+: Demonstration of Proof-of-Possession; a mechanism for sender-constraining access tokens by binding them to a key held by the client.
+
+protocols:PKCE
+: Proof Key for Code Exchange; a mechanism for protecting authorisation code flows against interception, using a code challenge and code verifier.
+
+protocols:Proof-of-possession
+: Mechanism by which a Wallet demonstrates control of a cryptographic key, used during issuance for holder binding and during presentation for response integrity.
+
+protocols:Key binding
+: Cryptographic binding of a credential to a key controlled by the Holder, enabling the Holder to prove possession during presentation.
+
+protocols:Device binding
+: Binding of a credential to device-attested key material, typically through Wallet Unit Attestation, ensuring the credential is bound to a specific device.
+
+protocols:Nonce
+: Single-use value included in protocol exchanges to ensure freshness and prevent replay attacks.
+
+protocols:SessionTranscript
+: ISO/IEC 18013-7 data structure providing cryptographic binding between an OpenID4VP request context and an ISO mdoc presentation response.
+
+protocols:DeviceResponse
+: ISO/IEC 18013-7 CBOR structure containing the mdoc presentation data returned by a Wallet in response to a presentation request.
