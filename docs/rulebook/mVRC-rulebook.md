@@ -419,7 +419,7 @@ Use Case of an mVC are given in Annex A.1 and A.2 of [ISO/IEC 7367-2]. Moreover,
 
 ## 5 Trust anchors
 
-The certifcates specified in Annex C of [ISO/IEC 7367-2] SHALL be used. The Pub-EAA providefr MAY use the IACA already set up for mDL according to Annex C of [ISO/IEC 7367-2] or may establish a separate IACA.
+The certificates specified in Annex C of [ISO/IEC 7367-2] SHALL be used. The Pub-EAA provider MAY use the IACA already set up for mDL according to Annex C of [ISO/IEC 7367-2] or may establish a separate IACA.
 
 ## 6 Revocation
 
