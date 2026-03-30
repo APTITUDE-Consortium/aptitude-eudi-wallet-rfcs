@@ -59,6 +59,10 @@ plugins:
       glob:
         - 'rulebook/wp2-trust-specifications/README.md'
         - 'rulebook/wp2-trust-specifications/CONTRIBUTING.md'
+        - 'rulebook/wp2-trust-specifications/terminology.md'
+        - 'rulebook/wp2-trust-specifications/references/**'
+        - 'rulebook/wp2-trust-specifications/requirements/**'
+        - 'rulebook/wp2-trust-specifications/topics/**'
   - search
   - ezglossary:
       strict: true
@@ -72,7 +76,6 @@ plugins:
         - components
         - credentials
         - protocols
-  - git-revision-date
   - git-revision-date-localized:
       locale: en
       fallback_to_build_date: true
