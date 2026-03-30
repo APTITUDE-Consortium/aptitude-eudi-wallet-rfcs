@@ -92,9 +92,8 @@ markdown_extensions:
 
 nav:
   - Home: index.md
-  - Rulebooks:
-    - Overview: rulebook/index.md
-    - mVRC: rulebook/wp5/mVRC-rulebook.md
+  - Rulebook:
+    - mVRC: rulebook/mVRC-rulebook.md
     - Trust Framework: rulebook/wp2-trust-specifications/deliverable-2.1-trust.md
   - RFCs:
     - Overview: horizontal-RFCs/index.md
