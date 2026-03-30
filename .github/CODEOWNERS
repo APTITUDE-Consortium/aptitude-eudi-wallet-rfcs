@@ -1,3 +1,7 @@
 # Example CODEOWNERS file
-# Each line: <pattern> <owner>
+
+## Each line: <pattern> <owner>
+
 *       @APTITUDE-Consortium/wp2-leads
+
+/docs/rulebook/mVRC-rulebook.md @APTITUDE-Consortium/wp5-code-owners
