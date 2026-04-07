@@ -27,7 +27,7 @@ updates:
       - "python"
     commit-message:
       prefix: "chore(deps)"
-    ignore:
+    ignore: []
       # Uncomment to pin major versions and avoid breaking changes
       # - dependency-name: "mkdocs-material"
       #   update-types: ["version-update:semver-major"]
