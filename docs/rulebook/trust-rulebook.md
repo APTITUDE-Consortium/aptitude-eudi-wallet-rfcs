@@ -9,6 +9,7 @@
 
 ___
 
+> **Note for contributors:** The content below is included from the `docs/rulebook/wp2-trust-specifications` submodule. Before running `mkdocs build` locally, initialize submodules with `git submodule update --init --recursive`.
 {% include-markdown "./wp2-trust-specifications/topics/trust-architecture.md" %}
 ___
 *Provide information about the author(s) of this Rulebook in the following form:*
