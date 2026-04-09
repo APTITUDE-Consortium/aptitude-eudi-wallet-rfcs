@@ -63,6 +63,7 @@ plugins:
         - 'rulebook/wp2-trust-specifications/references/**'
         - 'rulebook/wp2-trust-specifications/requirements/**'
         - 'rulebook/wp2-trust-specifications/topics/**'
+  - include-markdown
   - search
   - ezglossary:
       strict: true
