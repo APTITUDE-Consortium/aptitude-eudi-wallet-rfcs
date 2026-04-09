@@ -2,7 +2,7 @@
 if (typeof window.mermaid !== "undefined") {
   window.mermaid.initialize({
     startOnLoad: false,
-    securityLevel: "loose",
+    securityLevel: "strict",
   });
 }
 
