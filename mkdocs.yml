@@ -54,7 +54,7 @@ extra_css:
   - media/extra.css
 
 extra_javascript:
-  - https://unpkg.com/mermaid@10/dist/mermaid.min.js
+  - https://unpkg.com/mermaid@10.9.1/dist/mermaid.min.js
   - media/mermaid-init.js
 
 plugins:
