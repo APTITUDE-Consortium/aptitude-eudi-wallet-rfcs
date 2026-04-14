@@ -53,6 +53,10 @@ theme:
 extra_css:
   - media/extra.css
 
+extra_javascript:
+  - https://unpkg.com/mermaid@10.9.1/dist/mermaid.min.js
+  - media/mermaid-init.js
+
 plugins:
   - tags
   - exclude:
@@ -63,6 +67,8 @@ plugins:
         - 'rulebook/wp2-trust-specifications/references/**'
         - 'rulebook/wp2-trust-specifications/requirements/**'
         - 'rulebook/wp2-trust-specifications/topics/**'
+  - include-markdown:
+      comments: true
   - search
   - ezglossary:
       strict: true
@@ -89,7 +95,11 @@ markdown_extensions:
   - def_list
   - pymdownx.highlight:
       use_pygments: true
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - toc:
       permalink: true
 
@@ -98,6 +108,7 @@ nav:
   - Rulebook:
     - Overview: rulebook/index.md
     - mVRC: rulebook/mVRC-rulebook.md
+    - Trust Framework: rulebook/trust-rulebook.md
   - RFCs:
     - Overview: horizontal-RFCs/index.md
     - RFC-01 Credential Issuance Profile: horizontal-RFCs/RFC001.md

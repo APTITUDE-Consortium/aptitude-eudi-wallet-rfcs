@@ -1,3 +1,5 @@
+# APTITUDE - *Trust Framework rulebook*
+
 | Version | Date | Description |
 |---------|------------|------------|
 | ... | ... | ... |
@@ -5,16 +7,19 @@
 | ... | ... | ... |
 | ... | ... | ... |
 
-# APTITUDE - *Payments and Banking rulebook*
+___
 
+> **Note for contributors:** The content below is included from the `docs/rulebook/wp2-trust-specifications` submodule. Before running `mkdocs build` locally, initialize submodules with `git submodule update --init --recursive`.
+{% include-markdown "./wp2-trust-specifications/topics/trust-architecture.md" %}
+___
 *Provide information about the author(s) of this Rulebook in the following form:*
 
 * Author(s):
-    * [NAME SURNAME, AFFILIATION]
-    * [NAME SURNAME, AFFILIATION]
+  * [NAME SURNAME, AFFILIATION]
+  * [NAME SURNAME, AFFILIATION]
 * Previous Authors
-    * [NAME SURNAME, AFFILIATION (versions)]
-    * [NAME SURNAME, AFFILIATION (versions)]
+  * [NAME SURNAME, AFFILIATION (versions)]
+  * [NAME SURNAME, AFFILIATION (versions)]
 
 *Provide versioning information about the Rulebook in the following form:*
 
@@ -56,8 +61,6 @@ attributes and metadata are encoded in case the attestation complies with [ISO/I
 
 ### 1.3 Key words
 
-*The following are the recommended keywords. Modify if necessary*
-
 This document uses the capitalised key words 'SHALL', 'SHOULD' and 'MAY' as
 specified in [RFC 2119], i.e., to indicate requirements, recommendations and
 options specified in this document.
@@ -92,7 +95,7 @@ SHOULD be considered (see ARB_07 in [Topic 12]).*
 *[Topic 12] of Annex 2 of the ARF defines the following High-Level Requirements with
 respect to the Attestation Rulebooks:*
 
-**Requirements for QEAA**
+#### Requirements for QEAA
 
 * An attribute as meant in Annex V point a)  of the [European Digital Identity Regulation]
 SHALL be included (see ARB_11 in [Topic 12]). See also section 2.1.
@@ -107,7 +110,7 @@ of the [European Digital Identity Regulation] SHALL be included. This location S
 indicate at least the URL at which a machine-readable version of the trust anchor to be
 used for verifying the QEAA can be found or looked up (see ARB_20 in [Topic 12]).
 
-**Requirements for PuB-EAA**
+#### Requirements for PuB-EAA
 
 * Αn attribute as meant in  Annex VII point a) of the [European Digital Identity Regulation]
 SHALL be included (see ARB_11 in [Topic 12]). See also section 2.1.
@@ -122,7 +125,7 @@ of the [European Digital Identity Regulation] SHALL be included. This location S
 indicate at least the URL at which a machine-readable version of the qualified
 certificate that signed the PuB-EAA can be found or looked up. (see ARB_20 in [Topic 12])
 
-**Requirements for non-qualified EAA**
+#### Requirements for non-qualified EAA
 
 * An attribute indicating that the attestation is an EAA should be included (see ARB_12 in [Topic 12]).
 See also section 2.1.
@@ -199,9 +202,9 @@ avoid natural-language ambiguities.*
 |------------------------|--------------|--------------|--------------|
 | *Provide a value* | *Provide succinct text*|*Provide a value*|*Provide a value* |
 
-# 3 Attestation encoding
+## 3 Attestation encoding
 
-## 3.1 ISO/IEC 18013-5-compliant encoding
+### 3.1 ISO/IEC 18013-5-compliant encoding
 
 *If the attestation type supports the the format specified in ISO/IEC 18013-5,
 then in this section the  ISO/IEC 18013-5-compliant encoding of attributes and metadata
@@ -223,29 +226,29 @@ date formats, etc). For example:*
 
 * tstr, uint, bstr, bool and tdate are CDDL representation types defined in
   [RFC 8610].
-    * Regarding type tstr: this document confirms that, as specified in [RFC
+  * Regarding type tstr: this document confirms that, as specified in [RFC
     8949], a tstr SHALL be encoded in UTF-8 and SHALL support the full Unicode
     range.
-    * All attributes having encoding type tstr SHALL have a maximum length of
+  * All attributes having encoding type tstr SHALL have a maximum length of
     150 characters.
-    * This document specifies full-date as full-date = #6.1004(tstr), where tag
+  * This document specifies full-date as full-date = #6.1004(tstr), where tag
     1004 is specified in [RFC 8943].
-    * In accordance with [RFC 8949], section 3.4.1, a tdate attribute SHALL
+  * In accordance with [RFC 8949], section 3.4.1, a tdate attribute SHALL
     contain a date-time string as specified in [RFC 3339]. In accordance with
     [RFC 8943], a full-date attribute SHALL contain a full-date string as
     specified in [RFC 3339].
-    * The following requirements apply to the representation of dates in
+  * The following requirements apply to the representation of dates in
     attributes, unless otherwise indicated:
-        * Fractions of seconds SHALL NOT be used;
-        * A local offset from UTC SHALL NOT be used; the time-offset defined in
+    * Fractions of seconds SHALL NOT be used;
+    * A local offset from UTC SHALL NOT be used; the time-offset defined in
         [RFC 3339] SHALL be to "Z".
-    * [RFC 8949], section 4.2, describes four rules for canonical CBOR. Three of
+  * [RFC 8949], section 4.2, describes four rules for canonical CBOR. Three of
     those rules SHALL be implemented for all CBOR structures, as
     follows:
-        * integers (major types 0 and 1) SHALL be as small as possible;
-        * the expression of the length in a bstr, tstr, array or map SHALL be as
+    * integers (major types 0 and 1) SHALL be as small as possible;
+    * the expression of the length in a bstr, tstr, array or map SHALL be as
         short as possible;
-        * indefinite-length items SHALL be made into definite-length items.
+    * indefinite-length items SHALL be made into definite-length items.
 
 *This section should include a table the data identifier specified in
 Chapter 2,  the corresponding attribute identifier to be used in
@@ -258,13 +261,13 @@ of each attribute.*
 for attribute identifier values and attribute syntaxes SHOULD
 be considered (see ARB_07 in [Topic 12]).
 * Each attribute SHALL be defined within an attribute namespace.
-    * An attribute namespace
+  * An attribute namespace
 SHALL fully define the identifier, the syntax, and the semantics of each attribute
 within that namespace.
-    * An attribute namespace SHALL have an identifier that is
+  * An attribute namespace SHALL have an identifier that is
 unique within the scope of the EUDI Wallet ecosystem, and each attribute
 identifier SHALL be unique within that namespace (see ARB_06a in [Topic 12])
-    * A domestic namespace MAY defined
+  * A domestic namespace MAY defined
 to specify attributes that are specific to this Rulebook and are not included in
 the applicable EU-wide or sectoral namespace (see ARB_10 in [Topic 12]).
 
