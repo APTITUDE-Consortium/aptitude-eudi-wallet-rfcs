@@ -53,5 +53,6 @@ jobs:
           branch: "chore/update-wp2-trust-submodule"
           base: "main"
           title: "chore: update wp2-trust-specifications submodule"
+          author: "github-actions[bot] <github-actions[bot]@users.noreply.github.com>"
           body: |
             Automated update of `docs/rulebook/wp2-trust-specifications` submodule pointer.
