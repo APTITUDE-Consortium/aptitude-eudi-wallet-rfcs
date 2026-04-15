@@ -93,7 +93,7 @@ policy:Embedded Disclosure Policy (EDP)
 role:Entitlement
 :  It represents the WRP role and is uniquely identified by a suitable identifier in form of an OID or URI.
 
-component:European Member State Trusted List (EUMS TL)
+repository:European Member State Trusted List (EUMS TL)
 :  European Member State Trusted List.
 
 certificate:European Union Mobile Vehicle Registration Certificate (EU-MVRC)
@@ -120,13 +120,13 @@ entity:Intermediary
 mechanism:Key Binding
 :  Cryptographic binding of a credential to a specific key pair held by the Wallet, ensuring only the key holder can present that credential.
 
-repository:Keystore
+component:Keystore
 :  A hardware-backed repository and service in which non-critical cryptographic assets are generated, stored, and used exclusively inside a dedicated hardware security boundary.
 
 component:List of Trusted Entities (LOTE)
 :  It takes the form of a list of entities that have been granted a particular status under the given approval scheme.
 
-component:List of Trusted Lists (LOTL)
+repository:List of Trusted Lists (LOTL)
 :  In order to allow access to the TLs of all Member States in an easy manner, the European Commission (EC) publishes a central list, called the List Of Trusted Lists (LOTL), with links to the locations where the TLs are published as notified by Member States.
 
 data format:mdoc
@@ -202,7 +202,7 @@ component:Public Key Infrastructure (PKI)
 entity:Public Sector Body
 :  A state, regional or local authority, a body governed by public law or an association formed by one or several such authorities or one or several such bodies governed by public law, or a private entity mandated by at least one of those authorities, bodies or associations to provide public services, when acting under such a mandate.
 
-component:Qualified Electronic Attestation of Attributes (QEAA)
+data object:Qualified Electronic Attestation of Attributes (QEAA)
 :  An electronic attestation of attributes which is issued by a qualified trust service provider and meets the requirements laid down in [Annex V](https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:32024R1183#d1e46-54-1).
 
 entity:Qualified Electronic Attestation of Attributes (QEAA) Provider
@@ -301,7 +301,7 @@ entity:Wallet-Relying Party (WRP)
 certificate:Wallet-Relying Party Access Certificate (WRPAC)
 :  A certificate for electronic seals or signatures authenticating and validating the (Wallet-) Relying Party, issued by a provider of wallet-relying party access certificates.
 
-certificate:Wallet-Relying Party Registration Certificate (WRPRC)
+data object:Wallet-Relying Party Registration Certificate (WRPRC)
 :  A data object that indicates the attributes the Relying Party has registered to intend to request from Users.
 
 component:Wallet Secure Cryptographic Application (WSCA)
