@@ -153,7 +153,7 @@ artifacts:Wallet-Relying Party Registration Certificate (WRPRC)
 ## Credentials
 
 credentials:Attestation
-: Collective term for QEAA, PuB-EAA, or non-qualified EAA.
+: When not further qualified, a collective term for a QEAA, PuB-EAA, or (non-qualified) EAA. [ARF]
 
 credentials:electronic Certificate of Conformity (eCoC)
 : Manufacturer's electronic certificate; selected entries are mapped into EU-mVRC.
