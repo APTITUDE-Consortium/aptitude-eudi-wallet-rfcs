@@ -67,6 +67,7 @@ plugins:
         - 'rulebook/wp2-trust-specifications/references/**'
         - 'rulebook/wp2-trust-specifications/requirements/**'
         - 'rulebook/wp2-trust-specifications/topics/**'
+        - 'rulebook/wp2-trust-specifications/docs/topics/**'
   - include-markdown:
       comments: true
   - search
@@ -97,6 +98,8 @@ markdown_extensions:
   - sane_lists
   - tables
   - def_list
+  - admonition
+  - pymdownx.details
   - pymdownx.highlight:
       use_pygments: true
   - pymdownx.superfences:
