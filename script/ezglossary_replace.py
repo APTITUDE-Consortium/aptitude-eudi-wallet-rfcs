@@ -46,12 +46,12 @@ TERMS = [
      r'<components:Wallet Instance Attestation (WIA)\|Wallet Instance Attestation>'),
 
     # Multi-word role/component terms
-    (r'\bCredential Issuers\b',
-     '<roles:Credential Issuer|Credential Issuers>',
-     r'<roles:Credential Issuer\|Credential Issuers>'),
-    (r'\bCredential Issuer\b',
-     '<roles:Credential Issuer>',
-     '<roles:Credential Issuer>'),
+    (r'\bAttestation Providers\b',
+     '<roles:Attestation Provider (AP)|Attestation Providers>',
+     r'<roles:Attestation Provider (AP)\|Attestation Providers>'),
+    (r'\bAttestation Provider\b',
+     '<roles:Attestation Provider (AP)|Attestation Provider>',
+     r'<roles:Attestation Provider (AP)\|Attestation Provider>'),
     (r'\bAuthorisation Servers\b',
      '<components:Authorisation Server|Authorisation Servers>',
      r'<components:Authorisation Server\|Authorisation Servers>'),
