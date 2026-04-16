@@ -80,8 +80,12 @@ plugins:
       sections:
         - roles
         - components
+        - artifacts
         - credentials
         - protocols
+        - processes
+        - formats
+        - data-elements
   - git-revision-date-localized:
       locale: en
       fallback_to_build_date: true
