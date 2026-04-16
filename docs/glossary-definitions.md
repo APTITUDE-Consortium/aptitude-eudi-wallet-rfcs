@@ -1,30 +1,44 @@
 # Glossary Definitions
 
-
 ## Roles
 
 roles:Attestation Provider (AP)
 : When not further qualified, a collective term for QEAA Provider, PuB-EAA Provider, or (non-qualified) EAA Provider. [ARF]
 
+roles:Conformity Assessment Body (CAB)
+: A conformity assessment body as defined in Article 2, point 13, of Regulation (EC) No 765/2008, which is accredited in accordance with that Regulation as competent to carry out conformity assessment of a qualified trust service provider and the qualified trust services it provides, or as competent to carry out certification of European Digital Identity Wallets or electronic identification means.
+
+roles:Credential Issuer
+: Entity that decides to issue Verifiable Credentials and operates, or is associated with, the issuance service.
+
+roles:Holder
+: A User wishing to use their Wallet Unit to present attributes from a PID or attestation to the User of another Wallet Unit (when used in the context of wallet-to-wallet interactions).
+
 roles:Issuer Authority Certificate Authority (IACA)
-: The issuing authority/CA used in the mDL/mVRC trust infrastructure under ISO (may be shared with mDL or set up separately).
+: The issuing authority/CA used in the MDL/MVRC trust infrastructure under ISO (may be shared with MDL or set up separately).
+
+roles:National Accreditation Bodies (NAB)
+: A body that performs accreditation with authority derived from a Member State under Regulation (EC) No 765/2008.
 
 roles:Owner of a Scheme for the Attestation of Attribute
 : An entity responsible for establishing and maintaining a scheme for the attestation of attributes. [CIR 2025/1569]
 
-roles:PID Provider
+roles:Person Identification Data (PID) Provider
 : A natural or legal person responsible for issuing and revoking the person identification data and ensuring that the person identification data of a user is cryptographically bound to a Wallet Unit. [ARF, CIR 2024/2979]
 
-roles:Provider of Wallet Relying Party Access Certificate (Provider of WRPAC)
+roles:Provider of Wallet Relying Party Access Certificate (WRPAC)
 : A natural or legal person mandated by a Member State to issue relying party access certificates to wallet-relying parties registered in that Member State. [ARF, CIR 2024/2979, CIR 2024/2980, CIR 2025/848]
 
-roles:Provider of Wallet Relying Party Registration Certificate (Provider of WRPRC)
+roles:Provider of Wallet Relying Party Registration Certificate (WRPRC)
 : A natural or legal person mandated by a Member State to issue wallet-relying party registration certificates to wallet-relying parties registered in that Member State. [ARF, CIR 2025/848]
 
-roles:PuB-EAA Provider
+roles:Public Electronic Attestation of Attributes (PuB-EAA) Provider
 : Provider of PuB-EAAs.
 
-roles:QEAA Provider
+roles:Public Sector Body
+: A state, regional or local authority, a body governed by public law or an association formed by one or several such authorities or one or several such bodies governed by public law, or a private entity mandated by at least one of those authorities, bodies or associations to provide public services, when acting under such a mandate.
+
+roles:Qualified Electronic Attestation of Attributes (QEAA) Provider
 : Provider of QEEAs.
 
 roles:Qualified Trust Service Provider (QTSP)
@@ -45,6 +59,9 @@ roles:Trusted Entity
 roles:User
 : A natural or legal person, or a natural person representing another natural person or a legal person, that uses trust services or electronic identification means provided in accordance with the European Digital Identity Regulation. [ARF]
 
+roles:Verifier
+: A User wishing to use their Wallet Unit to request attributes from a PID or attestation from the User of another Wallet Unit (when used in the context of wallet-to-wallet interactions).
+
 roles:Wallet Provider (WP)
 : A natural or legal person who provides Wallet Solutions. [ARF, CIR 2024/2979, CIR 2024/2980, CIR 2025/848, CIR 2025/1569]
 
@@ -58,11 +75,17 @@ roles:Wallet-Relying Party (WRP)
 components:Authorisation Server
 : OAuth 2.0 / OpenID component responsible for authenticating the Holder and issuing tokens authorising access to protected endpoints.
 
-components:EUDI Wallet
+components:EUDI (European Digital Identity) Wallet
 : European Digital Identity Wallet used in APTITUDE pilots.
+
+components:Holder Wallet Unit
+: A Wallet Unit used by a Holder.
 
 components:Keystore
 : Hardware-backed repository for generating, storing, and using non-critical cryptographic assets.
+
+components:Public Key Infrastructure (PKI)
+: Systems, software, and communication protocols that are used by EUDI Wallet ecosystem components to distribute, manage, and control public keys. A PKI publishes public keys and establishes trust within an environment by validating and verifying the public keys mapping to an entity.
 
 components:Register
 : An electronic register used by a Member State to make information on WRP registered in that Member State publicly available as set out in Article 5b(5) of Regulation (EU) No 910/2014. [CIR 2024/2980]
@@ -70,8 +93,14 @@ components:Register
 components:Relying Application
 : User-facing application, service, or workflow in which credential verification is performed.
 
+components:Relying Party Instance
+: A software and/or hardware module with the capability to interact with a Wallet Unit and to perform Relying Party authentication, that is controlled by a Relying Party.
+
 components:Verifier Backend
 : Server-side component that creates presentation requests, receives presentation responses, validates them, and returns the result to the relying application.
+
+components:Verifier Wallet Unit
+: A Wallet Unit used by a Verifier.
 
 components:Wallet Instance
 : The application installed and configured on a User's device or environment, which is part of a Wallet Unit, and that the User uses to interact with the Wallet Unit. [ARF, CIR 2024/2979, CIR 2024/2980, CIR 2025/848, CIR 2025/1569]
@@ -104,14 +133,20 @@ artifacts:Catalogue of Schemes for the Attestation of Attributes
 artifacts:Credential Offer
 : Data structure created by a Credential Issuer to initiate issuer-initiated issuance, containing grant information and credential configuration references.
 
+artifacts:Electronic Seal
+: Data in electronic form which is attached to or logically associated with other data in electronic form to ensure the latter’s origin and integrity.
+
+artifacts:Electronic Signature
+: Data in electronic form which is attached to or logically associated with other data in electronic form and which is used by the signatory to sign.
+
 artifacts:Embedded Disclosure Policy (EDP)
 : A set of rules, embedded in an EAAs by its APs, that indicates the conditions that a WRP has to meet to access the EAAs. [ARF, CIR 2024/2979]
 
 artifacts:EU Member State Trusted List (EUMS TL)
 : European Member State Trusted List.
 
-artifacts:List of Trusted Entities (LoTE)
-: It take the form of a list of entities that have been granted a particular status under the given approval scheme. [ETSI TS 119 602]
+artifacts:List of Trusted Entities (LOTE)
+: It takes the form of a list of entities that have been granted a particular status under the given approval scheme. [ETSI TS 119 602]
 
 artifacts:List Of Trusted Lists (LOTL)
 : In order to allow access to the TLs of all Member States in an easy manner, the European Commission (EC) publishes a central list, called the List Of Trusted Lists (LOTL), with links to the locations where the TLs are published as notified by Member States. [ETSI TS 119 615]
@@ -125,11 +160,17 @@ artifacts:Official Journal of the European Union (OJEU)
 artifacts:Presentation Request
 : A request from a Verifier, conveyed in a Request Object, that specifies which credentials or attributes the Wallet must present, typically using a Presentation Definition (DIF PE).
 
+artifacts:Qualified Electronic Signature (QES)
+: An advanced electronic signature that is created by a qualified electronic signature creation device, and which is based on a qualified certificate for electronic signatures.
+
 artifacts:Request Object
 : A JWT carrying OAuth 2.0 authorization request parameters as defined in RFC 9101, which may be passed by value or by reference (JAR); used in OID4VP to convey the Verifier's presentation request.
 
 artifacts:Scheme for the Attestation of Attributes
 : A set of rules applicable to one or more types of electronic attestation of attributes. [CIR 2025/1569]
+
+artifacts:Strong User Authentication (SUA) Attestation
+: An attestation used for strong user authentication in the context of electronic payments, such that, when a Relying Party sends a presentation request for the attestation to a Wallet Unit, it includes transactional data in the request.
 
 artifacts:Trust Anchor
 : An authoritative entity represented by a public key and associated data. [ARF]
@@ -156,26 +197,26 @@ artifacts:Wallet-Relying Party Registration Certificate (WRPRC)
 credentials:Attestation
 : Collective term for QEAA, PuB-EAA, or non-qualified EAA.
 
-credentials:electronic Certificate of Conformity (eCoC)
-: Manufacturer's electronic certificate; selected entries are mapped into EU-mVRC.
+credentials:Electronic Certificate of Conformity (ECOC)
+: Manufacturer's electronic certificate; selected entries are mapped into EU-MVRC.
 
 credentials:Electronic Attestation of Attributes (EAA)
 : An attestation in electronic form that allows attributes to be authenticated. [ARF]
 
-credentials:European Union mobile Vehicle Registration Certificate (EU-mVRC)
-: The mobile (digital) vehicle registration certificate as an attestation in the EUDI Wallet; a profile of mVC under ISO/IEC 7367-2.
+credentials:European Union Mobile Vehicle Registration Certificate (EU-MVRC)
+: The mobile (digital) vehicle registration certificate as an attestation in the EUDI Wallet; a profile of MVC under ISO/IEC 7367-2.
 
-credentials:IANA JWT Claims (Internet Assigned Numbers Authority JSON Web Token Claims)
+credentials:Internet Assigned Numbers Authority JSON Web Token (IANA JWT) Claims
 : IANA registry of standard JWT claim names.
 
-credentials:mobile Driving Licence (mDL)
-: The mobile driving licence per ISO/IEC 18013-5/-7; used alongside mVRC and mTR in the EUDI Wallet.
+credentials:Mobile Driving Licence (MDL)
+: The mobile driving licence per ISO/IEC 18013-5/-7; used alongside MVRC and MTR in the EUDI Wallet.
 
-credentials:mobile Technical Report (mTR)
-: A mobile roadworthiness/inspection report (companion to mVRC/mDL) per ISO/IEC 7367-3.
+credentials:Mobile Technical Report (MTR)
+: A mobile roadworthiness/inspection report (companion to MVRC/MDL) per ISO/IEC 7367-3.
 
-credentials:mobile Vehicle Certificate (mVC)
-: The family of mobile vehicle certificates defined in ISO/IEC 7367-2, on which the EU-mVRC is profiled.
+credentials:Mobile Vehicle Certificate (MVC)
+: The family of mobile vehicle certificates defined in ISO/IEC 7367-2, on which the EU-MVRC is profiled.
 
 credentials:Person Identification Data (PID)
 : Data set that enables the establishment of a person's identity.
@@ -199,8 +240,11 @@ protocol:Attestation Revocation List
 protocol:Attestation Status List
 : Mechanism publishing status (valid/invalid) for relevant PIDs or attestations.
 
-protocols:DPoP
-: Demonstrating Proof of Possession. A mechanism that binds access tokens and refresh tokens to a client key pair, preventing token replay by third parties. [RFC 9449]
+protocol:Certificate Policy (CP)
+: A named set of rules that indicates the applicability of a certificate to a particular community and/or class of application with common security requirements.
+
+protocols: Demonstrating Proof of Possession (DPOP)
+: A mechanism that binds access tokens and refresh tokens to a client key pair, preventing token replay by third parties. [RFC 9449]
 
 protocols:High Assurance Interoperability Profile (HAIP)
 : OpenID4VC profile aimed at higher assurance interoperability.
@@ -211,8 +255,8 @@ protocols:OpenID for Verifiable Credentials Issuance (OID4VCI)
 protocols:OpenID for Verifiable Presentation (OID4VP)
 : OID4VP is a standard that defines how a user presents Verifiable Credentials from their wallet to a verifier.
 
-protocols:PKCE
-: Proof Key for Code Exchange. An extension to the OAuth 2.0 authorization code flow that prevents authorization-code interception attacks using a code verifier and code challenge. [RFC 7636]
+protocols: Proof Key for Code Exchange (PKCE)
+: An extension to the OAuth 2.0 authorization code flow that prevents authorization-code interception attacks using a code verifier and code challenge. [RFC 7636]
 
 protocols:Proximity Flow
 : Short-range presentation protocol (NFC/BLE/Wi-Fi Aware) per ISO/IEC 18013-5/-7.
@@ -224,11 +268,20 @@ protocols:Remote Flow
 
 ## Processes
 
+processes:Authentication
+: An electronic process that enables the confirmation of the electronic identification of a natural or legal person or the confirmation of the origin and integrity of data in electronic form.
+
 processes:Device Binding
 : Association of a credential or session with a specific device, establishing that the credential can only be used from the bound device.
 
+processes:Electronic Identification Scheme
+: A system for electronic identification under which electronic identification means are issued to natural or legal persons or natural persons representing other natural persons or legal persons.
+
 processes:Key Binding
 : Cryptographic binding of a credential to a specific key pair held by the Wallet, ensuring only the key holder can present that credential.
+
+processes:Notification
+: The act of transferring information to the European Commission.
 
 processes:Proof of Possession
 : Cryptographic proof demonstrating control of a private key, produced by signing a server-issued challenge; used to bind credentials and tokens to a Wallet key.
@@ -236,11 +289,14 @@ processes:Proof of Possession
 processes:Selective Disclosure
 : Capability for a User to present only a subset of attributes from a PID or attestation.
 
+processes:Strong User Authentication
+: An authentication based on the use of at least two authentication factors from different categories of either knowledge, something only the user knows, possession, something only the user possesses or inherence, something the user is, that are independent, in that the breach of one does not compromise the reliability of the others, and is designed in such a way as to protect the confidentiality of the authentication data.
+
 ---
 
 ## Formats
 
-formats:CDDL (Concise Data Definition Language)
+formats: Concise Data Definition Language (CDDL)
 : The language to define CBOR structures (e.g., `tstr`, `uint`, `bstr`, `tdate`).
 
 formats:Concise Binary Object Representation (CBOR)
@@ -256,17 +312,20 @@ formats:W3C Verifiable Credentials Data Model v2.0 (W3C VCDM v2.0)
 
 ## Data Elements
 
-data-elements:Administrative validity period
+data-elements:Administrative Validity Period
 : Dates during which attributes in an attestation remain valid as represented inside it.
 
-data-elements:Attestation type
+data-elements:Attestation Type
 : Identifier for a type of attestation, unique within the EUDI Wallet ecosystem.
+
+data-elements:Attribute
+: A characteristic, quality, right or permission of a natural or legal person or of an object.
 
 data-elements:Entitlement
 : It represents the WRP role and is uniquely identified by a suitable identifier in form of an OID or URI. [CIR 2025/848]
 
 data-elements:Mobile Security Object (MSO)
-: A security object carrying metadata and the issuer's signature over data elements in mdoc/mDL/mVRC.
+: A security object carrying metadata and the issuer's signature over data elements in mdoc/MDL/MVRC.
 
 data-elements:Namespace
 : Specification of attribute identifiers, syntax, and semantics for an attestation.
@@ -277,5 +336,5 @@ data-elements:Nonce
 data-elements:Pseudonym
 : Data uniquely representing a User without revealing their attributes by itself.
 
-data-elements:Technical validity period
+data-elements:Technical Validity Period
 : Metadata dates/times during which the attestation is valid; typically shorter than the administrative period.
