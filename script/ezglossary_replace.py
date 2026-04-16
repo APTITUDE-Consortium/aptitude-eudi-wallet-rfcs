@@ -152,12 +152,12 @@ TERMS = [
      '<protocols:DeviceResponse>'),
 
     # === Single-word terms ===
-    (r'\bHolders\b',
-     '<roles:Holder|Holders>',
-     r'<roles:Holder\|Holders>'),
-    (r'\bHolder\b',
-     '<roles:Holder>',
-     '<roles:Holder>'),
+    (r'\bUsers\b',
+     '<roles:User|Users>',
+     r'<roles:User\|Users>'),
+    (r'\bUser\b',
+     '<roles:User>',
+     '<roles:User>'),
     (r'\bVerifiers\b',
      '<roles:Verifier|Verifiers>',
      r'<roles:Verifier\|Verifiers>'),
