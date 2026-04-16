@@ -1,5 +1,6 @@
 # Glossary Definitions
 
+
 ## Roles
 
 roles:Attestation Provider (AP)
