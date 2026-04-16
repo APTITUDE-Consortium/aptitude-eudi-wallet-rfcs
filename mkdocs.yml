@@ -67,6 +67,7 @@ plugins:
         - 'rulebook/wp2-trust-specifications/references/**'
         - 'rulebook/wp2-trust-specifications/requirements/**'
         - 'rulebook/wp2-trust-specifications/topics/**'
+        - 'rulebook/wp2-trust-specifications/docs/topics/**'
   - include-markdown:
       comments: true
   - search
