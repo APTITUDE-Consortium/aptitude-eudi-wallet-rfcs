@@ -11,9 +11,6 @@ roles:Conformity Assessment Body (CAB)
 roles:Credential Issuer
 : Entity that decides to issue Verifiable Credentials and operates, or is associated with, the issuance service.
 
-roles:Holder
-: A User wishing to use their Wallet Unit to present attributes from a PID or attestation to the User of another Wallet Unit (when used in the context of wallet-to-wallet interactions).
-
 roles:Issuer Authority Certificate Authority (IACA)
 : The issuing authority/CA used in the MDL/MVRC trust infrastructure under ISO (may be shared with MDL or set up separately).
 
@@ -23,23 +20,23 @@ roles:National Accreditation Bodies (NAB)
 roles:Owner of a Scheme for the Attestation of Attribute
 : An entity responsible for establishing and maintaining a scheme for the attestation of attributes. [CIR 2025/1569]
 
-roles:Person Identification Data (PID) Provider
-: A natural or legal person responsible for issuing and revoking the person identification data and ensuring that the person identification data of a user is cryptographically bound to a Wallet Unit. [ARF, CIR 2024/2979]
+roles:PID Provider
+: Person Identification Data Provider. A natural or legal person responsible for issuing and revoking the person identification data and ensuring that the person identification data of a user is cryptographically bound to a Wallet Unit. [ARF, CIR 2024/2979]
 
-roles:Provider of Wallet Relying Party Access Certificate (WRPAC)
+roles:Provider of Wallet Relying Party Access Certificate (Provider of WRPAC)
 : A natural or legal person mandated by a Member State to issue relying party access certificates to wallet-relying parties registered in that Member State. [ARF, CIR 2024/2979, CIR 2024/2980, CIR 2025/848]
 
-roles:Provider of Wallet Relying Party Registration Certificate (WRPRC)
+roles:Provider of Wallet Relying Party Registration Certificate (Provider of WRPRC)
 : A natural or legal person mandated by a Member State to issue wallet-relying party registration certificates to wallet-relying parties registered in that Member State. [ARF, CIR 2025/848]
 
-roles:Public Electronic Attestation of Attributes (PuB-EAA) Provider
-: Provider of PuB-EAAs.
+roles:PuB-EAA Provider
+: Provider of Public Electronic Attestation of Attributes (PuB-EAAs).
 
 roles:Public Sector Body
 : A state, regional or local authority, a body governed by public law or an association formed by one or several such authorities or one or several such bodies governed by public law, or a private entity mandated by at least one of those authorities, bodies or associations to provide public services, when acting under such a mandate.
 
-roles:Qualified Electronic Attestation of Attributes (QEAA) Provider
-: Provider of QEEAs.
+roles:QEAA Provider
+: Provider of Qualified Electronic Attestation of Attributes (QEEAs).
 
 roles:Qualified Trust Service Provider (QTSP)
 : A qualified trust services provider authorised, among other things, to issue QEAA under eIDAS/eIDAS2.
@@ -75,7 +72,7 @@ roles:Wallet-Relying Party (WRP)
 components:Authorisation Server
 : OAuth 2.0 / OpenID component responsible for authenticating the Holder and issuing tokens authorising access to protected endpoints.
 
-components:EUDI (European Digital Identity) Wallet
+components:EUDI Wallet
 : European Digital Identity Wallet used in APTITUDE pilots.
 
 components:Holder Wallet Unit
@@ -145,8 +142,8 @@ artifacts:Embedded Disclosure Policy (EDP)
 artifacts:EU Member State Trusted List (EUMS TL)
 : European Member State Trusted List.
 
-artifacts:List of Trusted Entities (LOTE)
-: It takes the form of a list of entities that have been granted a particular status under the given approval scheme. [ETSI TS 119 602]
+artifacts:LOTE
+: List of Trusted Entities. It takes the form of a list of entities that have been granted a particular status under the given approval scheme. [ETSI TS 119 602]
 
 artifacts:List Of Trusted Lists (LOTL)
 : In order to allow access to the TLs of all Member States in an easy manner, the European Commission (EC) publishes a central list, called the List Of Trusted Lists (LOTL), with links to the locations where the TLs are published as notified by Member States. [ETSI TS 119 615]
@@ -197,13 +194,13 @@ artifacts:Wallet-Relying Party Registration Certificate (WRPRC)
 credentials:Attestation
 : Collective term for QEAA, PuB-EAA, or non-qualified EAA.
 
-credentials:Electronic Certificate of Conformity (ECOC)
+credentials:electronic Certificate of Conformity (eCoC)
 : Manufacturer's electronic certificate; selected entries are mapped into EU-MVRC.
 
 credentials:Electronic Attestation of Attributes (EAA)
 : An attestation in electronic form that allows attributes to be authenticated. [ARF]
 
-credentials:European Union Mobile Vehicle Registration Certificate (EU-MVRC)
+credentials:European Union mobile Vehicle Registration Certificate (EU-mVRC)
 : The mobile (digital) vehicle registration certificate as an attestation in the EUDI Wallet; a profile of MVC under ISO/IEC 7367-2.
 
 credentials:Internet Assigned Numbers Authority JSON Web Token (IANA JWT) Claims
@@ -215,7 +212,7 @@ credentials:Mobile Driving Licence (MDL)
 credentials:Mobile Technical Report (MTR)
 : A mobile roadworthiness/inspection report (companion to MVRC/MDL) per ISO/IEC 7367-3.
 
-credentials:Mobile Vehicle Certificate (MVC)
+credentials:mobile Vehicle Certificate (mVC)
 : The family of mobile vehicle certificates defined in ISO/IEC 7367-2, on which the EU-MVRC is profiled.
 
 credentials:Person Identification Data (PID)
@@ -243,8 +240,8 @@ protocol:Attestation Status List
 protocol:Certificate Policy (CP)
 : A named set of rules that indicates the applicability of a certificate to a particular community and/or class of application with common security requirements.
 
-protocols: Demonstrating Proof of Possession (DPOP)
-: A mechanism that binds access tokens and refresh tokens to a client key pair, preventing token replay by third parties. [RFC 9449]
+protocols:DPOP
+: Demonstrating Proof of Possession. A mechanism that binds access tokens and refresh tokens to a client key pair, preventing token replay by third parties. [RFC 9449]
 
 protocols:High Assurance Interoperability Profile (HAIP)
 : OpenID4VC profile aimed at higher assurance interoperability.
@@ -255,8 +252,8 @@ protocols:OpenID for Verifiable Credentials Issuance (OID4VCI)
 protocols:OpenID for Verifiable Presentation (OID4VP)
 : OID4VP is a standard that defines how a user presents Verifiable Credentials from their wallet to a verifier.
 
-protocols: Proof Key for Code Exchange (PKCE)
-: An extension to the OAuth 2.0 authorization code flow that prevents authorization-code interception attacks using a code verifier and code challenge. [RFC 7636]
+protocols:PKCE
+: Proof Key for Code Exchange. An extension to the OAuth 2.0 authorization code flow that prevents authorization-code interception attacks using a code verifier and code challenge. [RFC 7636]
 
 protocols:Proximity Flow
 : Short-range presentation protocol (NFC/BLE/Wi-Fi Aware) per ISO/IEC 18013-5/-7.
@@ -325,7 +322,7 @@ data-elements:Entitlement
 : It represents the WRP role and is uniquely identified by a suitable identifier in form of an OID or URI. [CIR 2025/848]
 
 data-elements:Mobile Security Object (MSO)
-: A security object carrying metadata and the issuer's signature over data elements in mdoc/MDL/MVRC.
+: A security object carrying metadata and the issuer's signature over data elements in mdoc/mDL/mVRC.
 
 data-elements:Namespace
 : Specification of attribute identifiers, syntax, and semantics for an attestation.
