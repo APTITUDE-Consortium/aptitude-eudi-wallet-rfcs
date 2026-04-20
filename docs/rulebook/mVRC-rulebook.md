@@ -218,7 +218,7 @@ The engine information contains information describing the relevant data element
 | ``engine_capacity`` | EU - corresponding harmonised Union code:<br> **(P.1)** capacity (in cm3)<br> eCoC corresponding code: EngineCapacity, mandatory if available | C |
 | ``engine_power`` | EU - corresponding harmonised Union code:<br> **(P.2)** maximum net power (in kW) (if available)<br> eCoC corresponding code: MaximumNetPower, MaximumContinuousRatedPower, RatedEngineNetPower, , mandatory if available | C |
 | ``class_off_hybrid_vehicle_code`` | no further information | O |
-| ``energy_source`` | EU - corresponding harmonised Union code:<br> **(P.3)** type of fuel or power source (where applicable)<br> eCoC corresponding code: EnergySource, , mandatory if available | C |
+| ``energy_source`` | EU - corresponding harmonised Union code:<br> **(P.3)** type of fuel or power source (where applicable)<br> eCoC corresponding code: EnergySource, <br> _Note:_ according to [EU DIR 2025/0096] it is mandatory if available | O |
 
 ##### 3.1.2.8 Seating info
 
@@ -228,8 +228,8 @@ The seating information contains information describing the seating and standing
 
 | **Identifier** | **EU additional description** | **Presence** |
 | --- | --- | --- |
-| ``number_of_seating_positions_including_driver`` | EU - corresponding harmonised Union code:<br> **(S.1)** number of seats, including the driver's seat<br> eCoC corresponding code: NrOfSeatingPositions, mandatory if available | C |
-| ``number_of_standing_places`` | EU - corresponding harmonised Union code:<br> **(S.2)** number of standing places (where appropriate)<br> eCoC corresponding code: NumberOfStandingPlaces, mandatory if available | C |
+| ``number_of_seating_positions_including_driver`` | EU - corresponding harmonised Union code:<br> **(S.1)** number of seats, including the driver's seat<br> eCoC corresponding code: NrOfSeatingPositions, <br> _Note:_ according to [EU DIR 2025/0096] it is mandatory if available | O |
+| ``number_of_standing_places`` | EU - corresponding harmonised Union code:<br> **(S.2)** number of standing places (where appropriate)<br> eCoC corresponding code: NumberOfStandingPlaces, <br> _Note:_ according to [EU DIR 2025/0096] it is mandatory if available | O |
 
 ##### 3.1.2.9   Dimensions info
 
@@ -240,23 +240,23 @@ The dimension information contains details about the dimensions of a vehicle suc
 | **Identifier** | **EU additional description** | **Presence** |
 | --- | --- | --- |
 | ``wheelbase`` | EU - corresponding harmonised Union code:<br> **(M)** wheelbase (in mm)<br> eCoC corresponding code: Wheelbase | C |
-| ``wheelbase_adjustable_min`` | no further information | C |
-| ``wheelbase_adjustable_max`` | no further information | C |
-| ``length`` | no further information | C |
-| ``length_adjustable_min`` | no further information | C |
-| ``length_adjustable_max`` | no further information | C |
-| ``width`` | no further information | C |
-| ``width_adjustable_min`` | no further information | C |
-| ``width_adjustable_max`` | no further information | C |
-| ``height`` | no further information | C |
-| ``height_adjustable_min`` | no further information | C |
-| ``height_adjustable_max`` | no further information | C |
-| ``distance_frontend_centrecoupling`` | no further information | C |
-| ``distance_frontend_centrecoupling_adjustable_min`` | no further information | C |
-| ``distance_frontend_centrecoupling_adjustable_max`` | no further information | C |
-| ``distance_centrecoupling_rearend`` | no further information | C |
-| ``distance_centrecoupling_rearend_adjustable_min`` | no further information | C |
-| ``distance_centrecoupling_rearend_adjustable_max`` | no further information | C |
+| ``wheelbase_adjustable_min`` | no further information | O |
+| ``wheelbase_adjustable_max`` | no further information | O |
+| ``length`` | no further information | O |
+| ``length_adjustable_min`` | no further information | O |
+| ``length_adjustable_max`` | no further information | O |
+| ``width`` | no further information | O |
+| ``width_adjustable_min`` | no further information | O |
+| ``width_adjustable_max`` | no further information | O |
+| ``height`` | no further information | O |
+| ``height_adjustable_min`` | no further information | O |
+| ``height_adjustable_max`` | no further information | O |
+| ``distance_frontend_centrecoupling`` | no further information | O |
+| ``distance_frontend_centrecoupling_adjustable_min`` | no further information | O |
+| ``distance_frontend_centrecoupling_adjustable_max`` | no further information | O |
+| ``distance_centrecoupling_rearend`` | no further information | O |
+| ``distance_centrecoupling_rearend_adjustable_min`` | no further information | O |
+| ``distance_centrecoupling_rearend_adjustable_max`` | no further information | O |
 
 #### 3.1.3 EU-mVRC EU data elements
 
@@ -266,7 +266,7 @@ The data elements are specified in Table 11 in clause 3.1.3.2.
 
 — The "Identifier" column is used for ``DataElementIdentifier`` in the mdoc request in accordance with ISO/IEC TS 23220-4.
 
-— The "Presence" column indicates whether the presence of the element on an mVC is mandatory (M), optional (O) or conditional (C). If an element is conditional the respective condition is given.
+— The "Presence" column indicates whether the presence of the element on an mVC is mandatory (M), optional (O) or conditional (C). A mandatory data elemement SHALL be present in an EU-mVRC whereas an optional data element MAY be present. If a data element is conditional the respective condition is given in the specification. If the condition is met the data element SHALL be present.
 
 — The “Encoding format” column indicates how the data elements SHALL be encoded. “tstr”, “uint”, “bstr”, “bool” and “tdate” are CDDL representation types as defined in RFC 8610. “full-date” SHALL be implemented according to the additional information tag 1004 for full-date elements as defined in RFC 8943.
 
@@ -308,26 +308,24 @@ VehicleInfoExtEU = {
 
 | **Identifier** | **Meaning** | **Description** | **Presence** | Encoding format |
 | --- | --- | --- | --- | --- |
-| ``bodywork`` | Bodywork | EU - corresponding harmonised Union code:<br> **(J.21)** bodywork<br> eCoC corresponding code: CodeForBodywork, mandatory if available | C  | tstr |
+| ``bodywork`` | Bodywork | EU - corresponding harmonised Union code:<br> **(J.21)** bodywork<br> eCoC corresponding code: CodeForBodywork, <br> _Note:_ according to [EU DIR 2025/0096] it is mandatory if available | O  | tstr |
 | ``whole_vehicle_max_mass`` | Whole vehicle maximum mass | EU - corresponding harmonised Union code:<br> **(F.3)** maximum permissible laden mass of the whole vehicle in service in the Member State of registration<br> eCoC corresponding code: InServiceMaximumPermissibleMassCombination | O | uint |
-| ``power_mass_ratio`` | Power mass ratio | EU - corresponding harmonised Union code:<br> **(Q)** power/weight ratio (in kW/kg) (only for motorcycles)<br> eCoC corresponding code: PowerMassRatio, mandatory if available | C  | uint |
+| ``power_mass_ratio`` | Power mass ratio | EU - corresponding harmonised Union code:<br> **(Q)** power/weight ratio (in kW/kg) (only for motorcycles)<br> eCoC corresponding code: PowerMassRatio, <br> _Note:_ according to [EU DIR 2025/0096] it is mandatory if available | O  | uint |
 | ``rated_speed`` | Rated speed | EU - corresponding harmonised Union code:<br> **(P.4)** rated speed (in min-1) | O | uint |
 | ``max_speed`` | Maximum speed | EU - corresponding harmonised Union code:<br> **(T)** maximum speed (in km/h)<br> eCoC corresponding code: MaximumSpeed | O | uint |
 | ``fuel_tank`` | Capacity fuel tank | EU - corresponding harmonised Union code:<br> **(W)** fuel tank(s) capacity (in litres) | O | uint |
 
 ##### 3.1.3.5 Consumer info extended EU
 
-The data element ``consumer_info_ext_eu`` contains information describing the name and address of the recorded consumer of the vehicle. A consumer is natural person or organization who may use the vehicle by virtue of a legal right other than that of ownership. There can only be one consumer. The definition of the elements in the personal information are given in paragraph 6.2.3.2 User information of [ISO/IEC 7367-2] and Table 2, Table 3 and Table 4 of this document.
+The data element ``consumer_info_ext_eu`` contains information describing the name and address of the recorded consumer of the vehicle. A consumer is natural person or organization who may use the vehicle by virtue of a legal right other than that of ownership. There SHALL be one consumer. The data element ``consumer_info_ext_eu`` contains one recorded entity with the specific personal details. A consumer SHALL be either a natural person with details given in Table 2 or an organization with details given in Table 3. The encoding of the structure ``RecordedEntity`` as given in clause 6.2.3.2 in [ISO/IEC 7367-2] applies.
 
 The structure is absent when none of the data elements is applicable.
 
 The ``ConsInfoExt`` structure SHALL be encoded as CBOR for device retrieval and SHALL be formatted as following CDDL structure:
 
 ```cddl
-ConsInfoExt = {
- ? naturalPerson: NaturalPerson,     ; according to paragraph 6.2.3.2 User information of [ISO/IEC 7367-2] and Table 2 of this document
- ? organization: Organization        ; according to paragraph 6.2.3.2 User information of [ISO/IEC 7367-2] and Table 3 of this document
-}
+ConsInfoExt = [+RecordedEntity]      ; according to paragraph 6.2.3.2 User information of [ISO/IEC 7367-2] and
+                                     ; Table 2 and Table 3 of this document
 ```
 
 ##### 3.1.3.6 Axle info EU
@@ -349,7 +347,7 @@ axledata =  {
  }
 ```
 
-###### Table 15 — Axle info EU key details
+###### Table 13 — Axle info EU key details
 
 | **Identifier** | **Meaning** | **Description** | **Presence** | Encoding format |
 | --- | --- | --- | --- | --- |
@@ -397,20 +395,20 @@ EnvInfoEU = {
 | ``sound_speed`` | sound level engine speed | EU - corresponding harmonised Union code:<br> **(U.2)** sound level engine speed (in min-1)<br> eCoC corresponding code: SoundLevelStationaryEngineSpeed | O | uint |
 | ``sound_drive_by`` | sound level drive-by | EU - corresponding harmonised Union code:<br> **(U.3)** sound level drive-by (in dB(A)) | O | uint |
 | ``co`` | CO | EU - corresponding harmonised Union code:<br> **(V.1)** Value of the CO ((in g/km, mg/km, g/kWh or mg/kWh) | O | uint |
-| ``co_unit`` | unit of CO | unit ((in g/km, mg/km, g/kWh or mg/kWh) of the CO as mentioned in item CO, mandatory in case of a CO-value, not present if co-element is not present<br> EU - corresponding harmonised Union code:<br> **(V.1)** Value of the CO ((in g/km, mg/km, g/kWh or mg/kWh) | C | tstr |
+| ``co_unit`` | unit of CO | unit ((in g/km, mg/km, g/kWh or mg/kWh) of the CO as mentioned in item CO, <br> EU - corresponding harmonised Union code:<br> **(V.1)** Value of the CO ((in g/km, mg/km, g/kWh or mg/kWh) <br><br> _Condition:_ mandatory in case of a CO-value, not present if co-element is not present | C | tstr |
 | ``thc`` | THC | EU - corresponding harmonised Union code:<br> **(V.2)** THC (in g/km or g/kWh) | O | uint |
-| ``thc_unit`` | unit of THC | unit ((in g/km, mg/km, g/kWh or mg/kWh) of the THC as mentioned in item thc, mandatory in case of a thc-value, not present if thc-element is not present<br> EU - corresponding harmonised Union code:<br> **(V.2)** THC (in g/km or g/kWh) | C | tstr |
+| ``thc_unit`` | unit of THC | unit ((in g/km, mg/km, g/kWh or mg/kWh) of the THC as mentioned in item thc,<br> EU - corresponding harmonised Union code:<br> **(V.2)** THC (in g/km or g/kWh) <br><br> _Condition:_ mandatory in case of a thc-value, not present if thc-element is not present | C | tstr |
 | ``nox`` | NOx | EU - corresponding harmonised Union code:<br> **(V.3)** NOx (in g/km, mg/km, g/kWh or mg/kWh) | O | uint |
-| ``nox_unit`` | unit of NOx | unit (in g/km or/kWh) of the NOx as mentioned in item nox, mandatory in case of a nox-value, not present if nox-elment is not present<br> EU - corresponding harmonised Union code:<br> **(V.3)** NOx (in g/km, mg/km, g/kWh or mg/kWh) | C | tstr |
+| ``nox_unit`` | unit of NOx | unit (in g/km or/kWh) of the NOx as mentioned in item nox, <br> EU - corresponding harmonised Union code:<br> **(V.3)** NOx (in g/km, mg/km, g/kWh or mg/kWh) <br><br> _Condition:_ mandatory in case of a nox-value, not present if nox-elment is not present | C | tstr |
 | ``thc_nox`` | THC and NOx | EU - corresponding harmonised Union code:<br> **(V.4)** THC + NOx (in g/km) | O | uint |
-| ``thc_nox_unit`` | unit of THC and NOx | unit (in g/km) of the THC and NOx as mentioned in item thc_nox, mandatory in case of a thc_nox-value, not present if thc_nox-element is not present<br> EU - corresponding harmonised Union code:<br> **(V.4)** THC + NOx (in g/km) | C | tstr |
+| ``thc_nox_unit`` | unit of THC and NOx | unit (in g/km) of the THC and NOx as mentioned in item thc_nox, <br> EU - corresponding harmonised Union code:<br> **(V.4)** THC + NOx (in g/km) <br><br> _Condition:_ mandatory in case of a thc_nox-value, not present if thc_nox-element is not present | C | tstr |
 | ``pm`` | Mass of particulate matter | EU - corresponding harmonised Union code:<br> **(V.5)** Mass of particulate matter (PM) (in g/km or g/kWh) | O | uint |
-| ``pm_unit`` | unit of Mass of particulate matter | unit  (in g/km or g/kWh) of the mass of particulate matter (PM) as mentioned in item pm, mandatory in case of a pm-value, not present if pm-element is not present<br> EU - corresponding harmonised Union code:<br> **(V.5)** Mass of particulate matter (PM) (in g/km or g/kWh) | C | tstr |
+| ``pm_unit`` | unit of Mass of particulate matter | unit  (in g/km or g/kWh) of the mass of particulate matter (PM) as mentioned in item pm, <br> EU - corresponding harmonised Union code:<br> **(V.5)** Mass of particulate matter (PM) (in g/km or g/kWh) <br><br> _Condition:_ mandatory in case of a pm-value, not present if pm-element is not present | C | tstr |
 | ``corr_abs_coefficient`` | corrected absorption coefficient | EU - corresponding harmonised Union code:<br> **(V.6)** corrected absorption coefficient for diesel (in min-1) | O | uint |
-| ``co2`` | CO2 | EU - corresponding harmonised Union code:<br> **(V.7)** CO2 (in g/km) or Specific CO2 emissions where indicated at entry 49.5 of the Certificate of Conformity of heavy-duty vehicles defined in the Appendix to Annex VIII to Commission Implementing Regulation (EU) 2020/6831 or at entry 49.5 of the individual vehicle approval certificate defined in Appendix 1 to Annex III to that Regulation, mandatory if available | C  | uint |
-| ``co2_unit`` | unit of CO2 | unit  (in g/km or g/kWh) of the CO2 as mentioned in item CO2, mandatory in case of a CO2-value, not present if CO2-element is not present<br> EU - corresponding harmonised Union code:<br> **(V.7)** CO2 (in g/km) or Specific CO2 emissions where indicated at entry 49.5 of the Certificate of Conformity of heavy-duty vehicles defined in the Appendix to Annex VIII to Commission Implementing Regulation (EU) 2020/6831 or at entry 49.5 of the individual vehicle approval certificate defined in Appendix 1 to Annex III to that Regulation | C | tstr |
+| ``co2`` | CO2 | EU - corresponding harmonised Union code:<br> **(V.7)** CO2 (in g/km) or Specific CO2 emissions where indicated at entry 49.5 of the Certificate of Conformity of heavy-duty vehicles defined in the Appendix to Annex VIII to Commission Implementing Regulation (EU) 2020/6831 or at entry 49.5 of the individual vehicle approval certificate defined in Appendix 1 to Annex III to that Regulation, <br> _Note:_ according to [EU DIR 2025/0096] it is mandatory if available | O  | uint |
+| ``co2_unit`` | unit of CO2 | unit  (in g/km or g/kWh) of the CO2 as mentioned in item CO2, <br> EU - corresponding harmonised Union code:<br> **(V.7)** CO2 (in g/km) or Specific CO2 emissions where indicated at entry 49.5 of the Certificate of Conformity of heavy-duty vehicles defined in the Appendix to Annex VIII to Commission Implementing Regulation (EU) 2020/6831 or at entry 49.5 of the individual vehicle approval certificate defined in Appendix 1 to Annex III to that Regulation <br><br> _Condition:_ mandatory in case of a CO2-value, not present if CO2-element is not present | C | tstr |
 | ``comb_fuel_consumption`` | combined fuel consumption | EU - corresponding harmonised Union code:<br> **(V.8)** combined fuel consumption (in l/100 km), | O | uint |
-| ``environmental_category`` | exhaust emission level environmental category | EU - corresponding harmonised Union code:<br> **(V.9)** indication of the exhaust emission level environmental category at entry 47 of part 2 of the Certificate of Conformity as defined in the Appendix to Annex VIII to Commission Implementing Regulation (EU) 2020/683 or at entry 47 of the individual approval certificate defined in Appendix 1 to Annex III to that Regulation, mandatory if available | C  | tstr |
+| ``environmental_category`` | exhaust emission level environmental category | EU - corresponding harmonised Union code:<br> **(V.9)** indication of the exhaust emission level environmental category at entry 47 of part 2 of the Certificate of Conformity as defined in the Appendix to Annex VIII to Commission Implementing Regulation (EU) 2020/683 or at entry 47 of the individual approval certificate defined in Appendix 1 to Annex III to that Regulation, <br> _Note:_ according to [EU DIR 2025/0096] it is mandatory if available | O  | tstr |
 | ``co2_emission_class`` | CO2 emission class | EU - corresponding harmonised Union code:<br> **(V.10)** CO2 emission class of heavy-duty vehicles determined at the moment of first registration, in accordance with Article 7ga(2) of Directive 1999/62/EC of the European Parliament and of the Council (5) | O | tstr |
 
 ## 4 Attestation usage
