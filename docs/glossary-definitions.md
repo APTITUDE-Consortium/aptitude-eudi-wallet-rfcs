@@ -8,9 +8,6 @@ roles:Attestation Provider (AP)
 roles:Conformity Assessment Body (CAB)
 : A conformity assessment body as defined in Article 2, point 13, of Regulation (EC) No 765/2008, which is accredited in accordance with that Regulation as competent to carry out conformity assessment of a qualified trust service provider and the qualified trust services it provides, or as competent to carry out certification of European Digital Identity Wallets or electronic identification means.
 
-roles:Credential Issuer
-: Entity that decides to issue Verifiable Credentials and operates, or is associated with, the issuance service.
-
 roles:Issuer Authority Certificate Authority (IACA)
 : The issuing authority/CA used in the MDL/MVRC trust infrastructure under ISO (may be shared with MDL or set up separately).
 
@@ -56,9 +53,6 @@ roles:Trusted Entity
 roles:User
 : A natural or legal person, or a natural person representing another natural person or a legal person, that uses trust services or electronic identification means provided in accordance with the European Digital Identity Regulation. [ARF]
 
-roles:Verifier
-: A User wishing to use their Wallet Unit to request attributes from a PID or attestation from the User of another Wallet Unit (when used in the context of wallet-to-wallet interactions).
-
 roles:Wallet Provider (WP)
 : A natural or legal person who provides Wallet Solutions. [ARF, CIR 2024/2979, CIR 2024/2980, CIR 2025/848, CIR 2025/1569]
 
@@ -74,9 +68,6 @@ components:Authorisation Server
 
 components:EUDI Wallet
 : European Digital Identity Wallet used in APTITUDE pilots.
-
-components:Holder Wallet Unit
-: A Wallet Unit used by a Holder.
 
 components:Keystore
 : Hardware-backed repository for generating, storing, and using non-critical cryptographic assets.
