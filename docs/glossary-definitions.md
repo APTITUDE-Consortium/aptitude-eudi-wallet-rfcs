@@ -206,7 +206,7 @@ credentials:European Union mobile Vehicle Registration Certificate (EU-mVRC)
 credentials:Internet Assigned Numbers Authority JSON Web Token (IANA JWT) Claims
 : IANA registry of standard JWT claim names.
 
-credentials:Mobile Driving Licence (MDL)
+credentials:mobile Driving Licence (mDL)
 : The mobile driving licence per ISO/IEC 18013-5/-7; used alongside MVRC and MTR in the EUDI Wallet.
 
 credentials:Mobile Technical Report (MTR)
