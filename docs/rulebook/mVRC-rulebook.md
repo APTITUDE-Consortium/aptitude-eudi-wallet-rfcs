@@ -397,7 +397,7 @@ EnvInfoEU = {
 | ``co`` | CO | EU - corresponding harmonised Union code:<br> **(V.1)** Value of the CO ((in g/km, mg/km, g/kWh or mg/kWh) | O | uint |
 | ``co_unit`` | unit of CO | unit ((in g/km, mg/km, g/kWh or mg/kWh) of the CO as mentioned in item CO, <br> EU - corresponding harmonised Union code:<br> **(V.1)** Value of the CO ((in g/km, mg/km, g/kWh or mg/kWh) <br><br> *Condition:* mandatory in case of a CO-value, not present if co-element is not present | C | tstr |
 | ``thc`` | THC | EU - corresponding harmonised Union code:<br> **(V.2)** THC (in g/km or g/kWh) | O | uint |
-| ``thc_unit`` | unit of THC | unit ((in g/km, mg/km, g/kWh or mg/kWh) of the THC as mentioned in item thc,<br> EU - corresponding harmonised Union code:<br> **(V.2)** THC (in g/km or g/kWh) <br><br> _Condition:_ mandatory in case of a thc-value, not present if thc-element is not present | C | tstr |
+| ``thc_unit`` | unit of THC | unit ((in g/km, mg/km, g/kWh or mg/kWh) of the THC as mentioned in item thc,<br> EU - corresponding harmonised Union code:<br> **(V.2)** THC (in g/km or g/kWh) <br><br> *Condition:* mandatory in case of a thc-value, not present if thc-element is not present | C | tstr |
 | ``nox`` | NOx | EU - corresponding harmonised Union code:<br> **(V.3)** NOx (in g/km, mg/km, g/kWh or mg/kWh) | O | uint |
 | ``nox_unit`` | unit of NOx | unit (in g/km or/kWh) of the NOx as mentioned in item nox, <br> EU - corresponding harmonised Union code:<br> **(V.3)** NOx (in g/km, mg/km, g/kWh or mg/kWh) <br><br> _Condition:_ mandatory in case of a nox-value, not present if nox-elment is not present | C | tstr |
 | ``thc_nox`` | THC and NOx | EU - corresponding harmonised Union code:<br> **(V.4)** THC + NOx (in g/km) | O | uint |
