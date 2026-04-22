@@ -190,7 +190,7 @@ The mass information contains information describing the mass data elements of a
 | --- | --- | --- |
 | ``techn_perm_max_laden_mass`` | EU - corresponding harmonised Union code:<br> **(F.1)** maximum technically permissible laden mass, except for motorcycles<br> eCoC corresponding code: TechnPermMaxLadenMass | O |
 | ``vehicle_max_mass`` | EU - corresponding harmonised Union code:<br> **(F.2)** maximum permissible laden mass of the vehicle in service in the Member State of registration<br> eCoC corresponding code: InServiceMaximumPermissibleMass | O |
-| ``mass_in_running_order`` | EU - corresponding harmonised Union code:<br> **(G)** mass of the vehicle in service with bodywork, and with coupling device in the case of a towing vehicle in service from any category other than M1<br> eCoC corresponding code: MassOfTheVehicleInRunningOrder, <br> _Note:_ according to [EU DIR 2025/0096] it is mandatory if available | O |
+| ``mass_in_running_order`` | EU - corresponding harmonised Union code:<br> **(G)** mass of the vehicle in service with bodywork, and with coupling device in the case of a towing vehicle in service from any category other than M1<br> eCoC corresponding code: MassOfTheVehicleInRunningOrder, <br> *Note:* according to [EU DIR 2025/0096] it is mandatory if available | O |
 | ``mass_in_running_order_variable_min`` | no further information | O |
 | ``mass_in_running_order_variable_max`` | no further information | O |
 
