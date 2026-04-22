@@ -192,10 +192,10 @@ processes:Selective Disclosure Java Web Token Verifiable Credential (SD-JWT VC)
 
 ## Protocols
 
-protocol:Attestation Revocation List
+protocols:Attestation Revocation List
 : List-based mechanism for communicating revoked PIDs or attestations.
 
-protocol:Attestation Status List
+protocols:Attestation Status List
 : Mechanism publishing status (valid/invalid) for relevant PIDs or attestations.
 
 protocols:DPoP
