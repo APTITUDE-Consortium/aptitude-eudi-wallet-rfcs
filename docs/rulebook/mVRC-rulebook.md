@@ -308,7 +308,7 @@ VehicleInfoExtEU = {
 
 | **Identifier** | **Meaning** | **Description** | **Presence** | Encoding format |
 | --- | --- | --- | --- | --- |
-| ``bodywork`` | Bodywork | EU - corresponding harmonised Union code:<br> **(J.21)** bodywork<br> eCoC corresponding code: CodeForBodywork, <br> _Note:_ according to [EU DIR 2025/0096] it is mandatory if available | O  | tstr |
+| ``bodywork`` | Bodywork | EU - corresponding harmonised Union code:<br> **(J.21)** bodywork<br> eCoC corresponding code: CodeForBodywork, <br> *Note:* according to [EU DIR 2025/0096] it is mandatory if available | O  | tstr |
 | ``whole_vehicle_max_mass`` | Whole vehicle maximum mass | EU - corresponding harmonised Union code:<br> **(F.3)** maximum permissible laden mass of the whole vehicle in service in the Member State of registration<br> eCoC corresponding code: InServiceMaximumPermissibleMassCombination | O | uint |
 | ``power_mass_ratio`` | Power mass ratio | EU - corresponding harmonised Union code:<br> **(Q)** power/weight ratio (in kW/kg) (only for motorcycles)<br> eCoC corresponding code: PowerMassRatio, <br> _Note:_ according to [EU DIR 2025/0096] it is mandatory if available | O  | uint |
 | ``rated_speed`` | Rated speed | EU - corresponding harmonised Union code:<br> **(P.4)** rated speed (in min-1) | O | uint |
