@@ -94,7 +94,7 @@ The EU-mVRC ISO compliant data elements SHALL be as defined in Table 1 and belon
 | **Identifier** | **EU additional description** | **Presence in EU-mVRC** |
 | --- | --- | --- |
 | ``issue_date`` | no further information | M |
-| ``expiry_date`` | EU - corresponding harmonised Union code: <br> **(H)** period of validity<br><br> _Condition_: mandatory if not unlimited | C  |
+| ``expiry_date`` | EU - corresponding harmonised Union code: <br> **(H)** period of validity<br><br> *Condition:* mandatory if not unlimited | C  |
 | ``issuing_authority_unicode`` | EU - the name of the competent authority according to Annex I, clause (d)(iii) of [EU DIR 2025/0096] | M |
 | ``issuing_authority_latin1`` | no further information | M |
 | ``issuing_country`` | no further information | M |
