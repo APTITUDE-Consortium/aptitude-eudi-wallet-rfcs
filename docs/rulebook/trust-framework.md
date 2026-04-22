@@ -1,0 +1,1 @@
+{% include-markdown "./wp2-trust-specifications/docs/trust-framework.md" %}
