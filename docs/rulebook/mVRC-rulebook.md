@@ -229,7 +229,7 @@ The seating information contains information describing the seating and standing
 | **Identifier** | **EU additional description** | **Presence** |
 | --- | --- | --- |
 | ``number_of_seating_positions_including_driver`` | EU - corresponding harmonised Union code:<br> **(S.1)** number of seats, including the driver's seat<br> eCoC corresponding code: NrOfSeatingPositions, <br> *Note:* according to [EU DIR 2025/0096] it is mandatory if available | O |
-| ``number_of_standing_places`` | EU - corresponding harmonised Union code:<br> **(S.2)** number of standing places (where appropriate)<br> eCoC corresponding code: NumberOfStandingPlaces, <br> _Note:_ according to [EU DIR 2025/0096] it is mandatory if available | O |
+| ``number_of_standing_places`` | EU - corresponding harmonised Union code:<br> **(S.2)** number of standing places (where appropriate)<br> eCoC corresponding code: NumberOfStandingPlaces, <br> *Note:* according to [EU DIR 2025/0096] it is mandatory if available | O |
 
 ##### 3.1.2.9   Dimensions info
 
