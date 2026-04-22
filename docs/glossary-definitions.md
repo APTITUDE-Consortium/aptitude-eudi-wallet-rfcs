@@ -66,11 +66,11 @@ components:Keystore
 components:Register
 : An electronic register used by a Member State to make information on WRP registered in that Member State publicly available as set out in Article 5b(5) of Regulation (EU) No 910/2014. [CIR 2024/2980]
 
-components:Relying Application
-: User-facing application, service, or workflow in which credential verification is performed.
+components:Relying Party Instance
+: A software and/or hardware module with the capability to interact with a Wallet Unit and to perform Relying Party authentication, that is controlled by a Relying Party. [ARF]
 
-components:Verifier Backend
-: Server-side component that creates presentation requests, receives presentation responses, validates them, and returns the result to the relying application.
+components:Relying Party Backend
+: Server-side component that creates presentation requests, receives presentation responses, validates them, and returns the result to the Relying Party Instance.
 
 components:Wallet Instance
 : The application installed and configured on a User's device or environment, which is part of a Wallet Unit, and that the User uses to interact with the Wallet Unit. [ARF, CIR 2024/2979, CIR 2024/2980, CIR 2025/848, CIR 2025/1569]
@@ -153,7 +153,7 @@ artifacts:Wallet-Relying Party Registration Certificate (WRPRC)
 ## Credentials
 
 credentials:Attestation
-: Collective term for QEAA, PuB-EAA, or non-qualified EAA.
+: When not further qualified, a collective term for a QEAA, PuB-EAA, or (non-qualified) EAA. [ARF]
 
 credentials:electronic Certificate of Conformity (eCoC)
 : Manufacturer's electronic certificate; selected entries are mapped into EU-mVRC.
