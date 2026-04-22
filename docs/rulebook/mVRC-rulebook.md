@@ -168,7 +168,7 @@ The basic vehicle information contains information describing the basic data ele
 
 | **Identifier** | **EU additional description** | **Presence in EU-mVRC** |
 | --- | --- | --- |
-| ``vehicle_category_code`` | EU - the European vehicle category as mentioned in 167/2013, 168/2013 and 2018/858 <br> EU - corresponding harmonised Union code:<br> **(J)** vehicle category<br> eCoC corresponding code: VehicleCategory, <br> _Note:_ according to [EU DIR 2025/0096] it is mandatory if available | O |
+| ``vehicle_category_code`` | EU - the European vehicle category as mentioned in 167/2013, 168/2013 and 2018/858 <br> EU - corresponding harmonised Union code:<br> **(J)** vehicle category<br> eCoC corresponding code: VehicleCategory, <br> *Note:* according to [EU DIR 2025/0096] it is mandatory if available | O |
 | ``vehicle_category_national`` | no further information | O |
 | ``approval_number`` | EU - corresponding harmonised Union code:<br> **(K)** whole-vehicle vehicle type-approval number or the European Individual approval number (if available),<br> CoC corresponding code: TypeApprovalNumber, mandatory if available | C |
 | ``make`` | EU - corresponding harmonised Union code:<br> **(D.1)** make<br> eCoC corresponding code: Make | M |
