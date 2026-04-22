@@ -175,7 +175,7 @@ The basic vehicle information contains information describing the basic data ele
 | ``type`` | EU - corresponding harmonised Union code:<br> **(D.2)** type,<br> *Note:* according to [EU DIR 2025/0096] it is mandatory if available | O  |
 | ``variant`` | EU - corresponding harmonised Union code:<br> **(D.2.1)** variant,<br> *Note:* according to [EU DIR 2025/0096] it is mandatory if available | O |
 | ``version`` | EU - corresponding harmonised Union code:<br> **(D.2.2)** version,<br> *Note:* according to [EU DIR 2025/0096] it is mandatory if available | O |
-| ``commercial_name`` | EU - corresponding harmonised Union code:<br> **(D.3)** commercial description(s)<br> eCoC corresponding code: CommercialName,<br> _Note:_ according to [EU DIR 2025/0096] it is mandatory if available | O |
+| ``commercial_name`` | EU - corresponding harmonised Union code:<br> **(D.3)** commercial description(s)<br> eCoC corresponding code: CommercialName,<br> *Note:* according to [EU DIR 2025/0096] it is mandatory if available | O |
 | ``colours`` | EU - corresponding harmonised Union code:<br> **(R)** colour of the vehicle<br> eCoC corresponding code: Colour | O |
 | ``automation_level`` | no further information | O |
 | ``status_vehicle`` | no further information | O |
