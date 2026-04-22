@@ -218,7 +218,7 @@ The engine information contains information describing the relevant data element
 | ``engine_capacity`` | EU - corresponding harmonised Union code:<br> **(P.1)** capacity (in cm3)<br> eCoC corresponding code: EngineCapacity, mandatory if available | C |
 | ``engine_power`` | EU - corresponding harmonised Union code:<br> **(P.2)** maximum net power (in kW) (if available)<br> eCoC corresponding code: MaximumNetPower, MaximumContinuousRatedPower, RatedEngineNetPower, , mandatory if available | C |
 | ``class_off_hybrid_vehicle_code`` | no further information | O |
-| ``energy_source`` | EU - corresponding harmonised Union code:<br> **(P.3)** type of fuel or power source (where applicable)<br> eCoC corresponding code: EnergySource, <br> _Note:_ according to [EU DIR 2025/0096] it is mandatory if available | O |
+| ``energy_source`` | EU - corresponding harmonised Union code:<br> **(P.3)** type of fuel or power source (where applicable)<br> eCoC corresponding code: EnergySource, <br> *Note:* according to [EU DIR 2025/0096] it is mandatory if available | O |
 
 ##### 3.1.2.8 Seating info
 
