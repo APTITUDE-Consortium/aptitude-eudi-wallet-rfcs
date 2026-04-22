@@ -58,7 +58,6 @@ extra_javascript:
   - media/mermaid-init.js
 
 plugins:
-  - monorepo
   - tags
   - exclude:
       glob:
@@ -117,7 +116,7 @@ nav:
   - Rulebook:
     - Overview: rulebook/index.md
     - mVRC: rulebook/mVRC-rulebook.md
-    - Trust Framework: rulebook/wp2-trust-specifications/docs/trust-framework.md
+    - Trust Framework: rulebook/trust-framework.md
   - RFCs:
     - Overview: horizontal-RFCs/index.md
     - RFC-01 Credential Issuance Profile: horizontal-RFCs/RFC001.md
