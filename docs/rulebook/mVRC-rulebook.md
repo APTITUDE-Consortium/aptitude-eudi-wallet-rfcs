@@ -172,7 +172,7 @@ The basic vehicle information contains information describing the basic data ele
 | ``vehicle_category_national`` | no further information | O |
 | ``approval_number`` | EU - corresponding harmonised Union code:<br> **(K)** whole-vehicle vehicle type-approval number or the European Individual approval number (if available),<br> CoC corresponding code: TypeApprovalNumber, mandatory if available | C |
 | ``make`` | EU - corresponding harmonised Union code:<br> **(D.1)** make<br> eCoC corresponding code: Make | M |
-| ``type`` | EU - corresponding harmonised Union code:<br> **(D.2)** type,<br> _Note:_ according to [EU DIR 2025/0096] it is mandatory if available | O  |
+| ``type`` | EU - corresponding harmonised Union code:<br> **(D.2)** type,<br> *Note:* according to [EU DIR 2025/0096] it is mandatory if available | O  |
 | ``variant`` | EU - corresponding harmonised Union code:<br> **(D.2.1)** variant,<br> _Note:_ according to [EU DIR 2025/0096] it is mandatory if available | O |
 | ``version`` | EU - corresponding harmonised Union code:<br> **(D.2.2)** version,<br> _Note:_ according to [EU DIR 2025/0096] it is mandatory if available | O |
 | ``commercial_name`` | EU - corresponding harmonised Union code:<br> **(D.3)** commercial description(s)<br> eCoC corresponding code: CommercialName,<br> _Note:_ according to [EU DIR 2025/0096] it is mandatory if available | O |
