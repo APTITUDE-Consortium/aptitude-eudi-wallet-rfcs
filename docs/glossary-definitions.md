@@ -9,7 +9,7 @@ roles:Conformity Assessment Body (CAB)
 : A conformity assessment body as defined in Article 2, point 13, of Regulation (EC) No 765/2008, which is accredited in accordance with that Regulation as competent to carry out conformity assessment of a qualified trust service provider and the qualified trust services it provides, or as competent to carry out certification of European Digital Identity Wallets or electronic identification means.
 
 roles:Issuer Authority Certificate Authority (IACA)
-: The issuing authority/CA used in the MDL/MVRC trust infrastructure under ISO (may be shared with MDL or set up separately).
+: The issuing authority/CA used in the mDL/mVRC trust infrastructure under ISO (may be shared with mDL or set up separately).
 
 roles:National Accreditation Bodies (NAB)
 : A body that performs accreditation with authority derived from a Member State under Regulation (EC) No 765/2008.
@@ -133,11 +133,11 @@ artifacts:Embedded Disclosure Policy (EDP)
 artifacts:EU Member State Trusted List (EUMS TL)
 : European Member State Trusted List.
 
-artifacts:LOTE
+artifacts:LoTE
 : List of Trusted Entities. It takes the form of a list of entities that have been granted a particular status under the given approval scheme. [ETSI TS 119 602]
 
-artifacts:List Of Trusted Lists (LOTL)
-: In order to allow access to the TLs of all Member States in an easy manner, the European Commission (EC) publishes a central list, called the List Of Trusted Lists (LOTL), with links to the locations where the TLs are published as notified by Member States. [ETSI TS 119 615]
+artifacts:List of Trusted Lists (LoTL)
+: In order to allow access to the TLs of all Member States in an easy manner, the European Commission (EC) publishes a central list, called the List of Trusted Lists (LoTL), with links to the locations where the TLs are published as notified by Member States. [ETSI TS 119 615]
 
 artifacts:mdoc
 : Document or application that resides on a mobile device or requires a mobile device as part of the process to gain access to the document or application. [ISO/IEC 18013-5]
@@ -186,25 +186,25 @@ credentials:Attestation
 : Collective term for QEAA, PuB-EAA, or non-qualified EAA.
 
 credentials:electronic Certificate of Conformity (eCoC)
-: Manufacturer's electronic certificate; selected entries are mapped into EU-MVRC.
+: Manufacturer's electronic certificate; selected entries are mapped into EU-mVRC.
 
 credentials:Electronic Attestation of Attributes (EAA)
 : An attestation in electronic form that allows attributes to be authenticated. [ARF]
 
 credentials:European Union mobile Vehicle Registration Certificate (EU-mVRC)
-: The mobile (digital) vehicle registration certificate as an attestation in the EUDI Wallet; a profile of MVC under ISO/IEC 7367-2.
+: The mobile (digital) vehicle registration certificate as an attestation in the EUDI Wallet; a profile of mVC under ISO/IEC 7367-2.
 
 credentials:Internet Assigned Numbers Authority JSON Web Token (IANA JWT) Claims
 : IANA registry of standard JWT claim names.
 
 credentials:mobile Driving Licence (mDL)
-: The mobile driving licence per ISO/IEC 18013-5/-7; used alongside MVRC and MTR in the EUDI Wallet.
+: The mobile driving licence per ISO/IEC 18013-5/-7; used alongside mVRC and mTR in the EUDI Wallet.
 
-credentials:Mobile Technical Report (MTR)
-: A mobile roadworthiness/inspection report (companion to MVRC/MDL) per ISO/IEC 7367-3.
+credentials:mobile Technical Report (mTR)
+: A mobile roadworthiness/inspection report (companion to mVRC/mDL) per ISO/IEC 7367-3.
 
 credentials:mobile Vehicle Certificate (mVC)
-: The family of mobile vehicle certificates defined in ISO/IEC 7367-2, on which the EU-MVRC is profiled.
+: The family of mobile vehicle certificates defined in ISO/IEC 7367-2, on which the EU-mVRC is profiled.
 
 credentials:Person Identification Data (PID)
 : Data set that enables the establishment of a person's identity.
@@ -231,7 +231,7 @@ protocol:Attestation Status List
 protocol:Certificate Policy (CP)
 : A named set of rules that indicates the applicability of a certificate to a particular community and/or class of application with common security requirements.
 
-protocols:DPOP
+protocols:DPoP
 : Demonstrating Proof of Possession. A mechanism that binds access tokens and refresh tokens to a client key pair, preventing token replay by third parties. [RFC 9449]
 
 protocols:High Assurance Interoperability Profile (HAIP)
