@@ -87,9 +87,6 @@ components:Relying Party Instance
 components:Verifier Backend
 : Server-side component that creates presentation requests, receives presentation responses, validates them, and returns the result to the relying application.
 
-components:Verifier Wallet Unit
-: A Wallet Unit used by a Verifier.
-
 components:Wallet Instance
 : The application installed and configured on a User's device or environment, which is part of a Wallet Unit, and that the User uses to interact with the Wallet Unit. [ARF, CIR 2024/2979, CIR 2024/2980, CIR 2025/848, CIR 2025/1569]
 
