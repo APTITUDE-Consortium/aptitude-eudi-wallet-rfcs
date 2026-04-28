@@ -109,13 +109,14 @@ markdown_extensions:
           format: !!python/name:pymdownx.superfences.fence_code_format
   - toc:
       permalink: true
+      toc_depth: 3
 
 nav:
   - Home: index.md
   - Rulebook:
     - Overview: rulebook/index.md
     - mVRC: rulebook/mVRC-rulebook.md
-    - Trust Framework: rulebook/trust-rulebook.md
+    - Trust Framework: rulebook/trust-framework.md
   - RFCs:
     - Overview: horizontal-RFCs/index.md
     - RFC-01 Credential Issuance Profile: horizontal-RFCs/RFC001.md
