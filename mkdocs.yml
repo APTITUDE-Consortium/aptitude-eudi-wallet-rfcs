@@ -106,16 +106,17 @@ markdown_extensions:
       custom_fences:
         - name: mermaid
           class: mermaid
-          format: !!python/name:pymdownx.superfences.fence_code_format
+          format: pymdownx.superfences.fence_code_format
   - toc:
       permalink: true
       toc_depth: 3
 
 nav:
   - Home: index.md
-  - Rulebook:
+  - Attestation Rulebooks:
     - Overview: rulebook/index.md
     - mVRC: rulebook/mVRC-rulebook.md
+  - Trust Specifications:
     - Trust Framework: rulebook/trust-framework.md
   - RFCs:
     - Overview: horizontal-RFCs/index.md
