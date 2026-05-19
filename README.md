@@ -57,7 +57,7 @@ Primary audience: software developers, conformance test tools integrators.
 
 An RFC is a technical specification focused on implementation for the APTITUDE pilot.
 Primary audience: developers and teams configuring interoperability and conformance testing platforms.
-
+Horizontal RFCs define protocol profiles that apply across all APTITUDE use cases and attestation types.
 Vertical RFCs should exist only when a credential needs protocol mechanisms that are not already covered by horizontal RFCs and that may be reusable across other use cases.
 
 Typical RFC objectives in this repository:
