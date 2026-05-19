@@ -8,14 +8,23 @@ Published specifications are available on [GitHub Pages](https://aptitude-consor
 
 This repository uses MkDocs to build documentation from the `/docs/` folder. The generated site is available at [APTITUDE Technical Specification](https://aptitude-consortium.github.io/aptitude-eudi-wallet-specs/).
 
-- `/docs/` - Documentation sources (rulebooks, standards, glossaries, images, and media)
-  - `/docs/rulebook/` - Attestation rulebooks
+- `/docs/` - Documentation sources included in the published site
+  - `/docs/horizontal-RFCs/` - RFC documents and index pages
+  - `/docs/rulebook/` - Rulebooks, including `/docs/rulebook/wp2-trust-specifications/`
   - `/docs/img/` - Images and diagrams
-  - `/docs/media/` - CSS and style assets
+  - `/docs/media/` - CSS and frontend assets
   - `/docs/overrides/` - MkDocs theme customizations
 - `/reference/` - Git submodules with upstream rulebooks and specifications ([Git submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules))
-- `mkdocs.yml` - MkDocs configuration
+  - `/reference/eid-wallet-it-docs/`
+  - `/reference/eudi-doc-architecture-and-reference-framework/`
+  - `/reference/eudi-doc-attestation-rulebooks-catalog/`
+  - `/reference/eudi-doc-standards-and-technical-specifications/`
+  - `/reference/ewc-eudi-wallet-rulebooks-and-schemas/`
+  - `/reference/webuild-wp4-architecture/`
 - `/script/` - Helper maintenance scripts
+- `/.github/workflows/` - CI jobs for linting, pages publishing, and submodule updates
+- `mkdocs.yml` - MkDocs configuration
+- `/site/` - Generated static output (build artifact)
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for guidance on proposing and merging changes.
 
