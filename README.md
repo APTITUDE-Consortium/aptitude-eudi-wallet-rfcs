@@ -47,12 +47,13 @@ It describes content and form of the attestation and typically includes:
 If the required protocols are already covered by horizontal RFCs, credential profiling should be documented directly in the Rulebook.
 Primary audience: business and service designers integrating attestations into application processes.
 
-### Attestation Scheme (Schema)
+### Attestation Schema (Schema)
 
-The Attestation Scheme is the machine-readable counterpart of the Rulebook.
+The Attestation Schema is the machine-readable counterpart of the Rulebook.
 It is expressed as a JSON Schema that defines the credential attribute structure so software components, wallets, and test beds can process it automatically.
+Primary audience: software developers, conformance test tools integrators.
 
-### Vertical RFCs
+### RFCs
 
 An RFC is a technical specification focused on implementation for the APTITUDE pilot.
 Primary audience: developers and teams configuring interoperability and conformance testing platforms.
