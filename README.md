@@ -42,7 +42,7 @@ It describes content and form of the attestation and typically includes:
 1. ARF-related topics and profile context.
 2. Level of assurance.
 3. Applicable legal, sector, and technical standards.
-4. References to the relevant data scheme and, when needed, use case manuals.
+4. References to the relevant data schema and, when needed, use case manuals.
 
 If the required protocols are already covered by horizontal RFCs, credential profiling should be documented directly in the Rulebook.
 Primary audience: business and service designers integrating attestations into application processes.
