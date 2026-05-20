@@ -5,11 +5,23 @@
 roles:Attestation Provider (AP)
 : When not further qualified, a collective term for QEAA Provider, PuB-EAA Provider, or (non-qualified) EAA Provider. [ARF]
 
+roles:Certificate Authority (CA)
+: An entity which is trusted by one or more parties in the EUDI Wallet ecosystem to create and seal certificates. [ARF]
+
 roles:Conformity Assessment Body (CAB)
 : A conformity assessment body as defined in Article 2, point 13, of Regulation (EC) No 765/2008, which is accredited in accordance with that Regulation as competent to carry out conformity assessment of a qualified trust service provider and the qualified trust services it provides, or as competent to carry out certification of European Digital Identity Wallets or electronic identification means.
 
+roles:EAA Provider
+: Provider of EEAs.
+
 roles:Issuer Authority Certificate Authority (IACA)
 : The issuing authority/CA used in the mDL/mVRC trust infrastructure under ISO (may be shared with mDL or set up separately).
+
+roles:LoTE Provider
+: A body responsible for maintaining, managing, and publishing Lists of Trusted Entities (LoTE). [ARF]
+
+roles:LOTL Scheme Operator (LOTLSO)
+: An entity responsible for maintaining, updating, and digitally signing the List of Trusted Lists (LOTL).
 
 roles:National Accreditation Bodies (NAB)
 : A body that performs accreditation with authority derived from a Member State under Regulation (EC) No 765/2008.
@@ -49,6 +61,9 @@ roles:Relying Party Intermediary (RPI)
 
 roles:Trusted Entity
 : An entity that is recognized as trustworthy within a given approval scheme for a specific scope or purpose. [ETSI TS 119 602]
+
+roles:Trusted List Provider
+: A body responsible for maintaining, managing, and publishing Trusted Lists. [ARF]
 
 roles:User
 : A natural or legal person, or a natural person representing another natural person or a legal person, that uses trust services or electronic identification means provided in accordance with the European Digital Identity Regulation. [ARF]
@@ -115,6 +130,12 @@ artifacts:Catalogue of Attributes
 artifacts:Catalogue of Schemes for the Attestation of Attributes
 : A digital repository listing schemes for the attestation of attributes registered in accordance with this Regulation and that is maintained (and published online) by the Commission. [CIR 2025/1569]
 
+artifacts:Certificate Revocation List (CRL)
+: A time-stamped list identifying revoked certificates that is signed by a CA or CRL issuer and made freely available in a public repository. [RFC 5280]
+
+artifacts:Credential Issuer Metadata
+: Artifact containing information on the Credential Issuer's technical capabilities, supported Credentials, and (internationalized) display information. [OID4VCI]
+
 artifacts:Credential Offer
 : Data structure created by a Credential Issuer to initiate issuer-initiated issuance, containing grant information and credential configuration references.
 
@@ -138,6 +159,9 @@ artifacts:List of Trusted Lists (LoTL)
 
 artifacts:mdoc
 : Document or application that resides on a mobile device or requires a mobile device as part of the process to gain access to the document or application. [ISO/IEC 18013-5]
+
+artifacts:Normalised Certificate Policy (NCP)
+: A standardized set of rules and requirements that a Trust Service Provider must adhere to when issuing digital certificates. These include, e.g., organizational liability, security management, data privacy, and rigorous identity verification of the certificate subscriber.
 
 artifacts:Official Journal of the European Union (OJEU)
 : The Official Journal of the European Union, published by the EU's Publications Office, is the official publication for EU legal acts. The authenticity and integrity of the machine processable version of the LOTL is ensured through a digital signature supported by a certificate which can be authenticated through a publication in the OJEU.
@@ -163,11 +187,14 @@ artifacts:Trust Anchor
 artifacts:Trusted List (TL)
 : A repository of information about authoritative entities in a particular legal or contractual context which provides information about their current and historical status. [ARF]
 
+artifacts:Key Attestation (KA)
+: An artifact containing attested information about the security of cryptographic keys stored in the Wallet Unit. KAs allow PID Providers and Attestation Providers to determine the security level of the keys to which they are binding PIDs or attestations, and to revoke their credentials (if needed) in case a security vulnerability affecting the WSCD or keystore is identified, or -- when the Wallet Provider uses a per-KA index -- upon user request. [TS03]
+
 artifacts:Wallet Instance Attestation (WIA)
-: Client attestation material presented by a Wallet Instance at the PAR and Token endpoints to authenticate the Wallet during issuance flows.
+: An artifact containing attested information about the Wallet Instance. WIAs allow PID Providers and Attestation Providers to verify the integrity and authenticity of the Wallet Instance and to revoke their credentials (if needed) in case a Wallet Provider revokes a Wallet Instance. [TS03]
 
 artifacts:Wallet Unit Attestation (WUA)
-: Data object describing Wallet Unit components or enabling their authentication/validation.
+: A set of attestations provided by the Wallet Provider to PID Providers and Attestation Providers to ensure interoperability across the ecosystem. WUAs comprise two types: Wallet Instance Attestations (WIAs) and Key Attestations (KAs).
 
 artifacts:Wallet-Relying Party Access Certificate (WRPAC)
 : A certificate for electronic seals or signatures authenticating and validating the WRP issued by a Provider of WRPAC. [ARF, CIR 2024/2979, CIR 2024/2980, ETSI TS 119 475]
@@ -225,7 +252,7 @@ protocols:Attestation Revocation List
 protocols:Attestation Status List
 : Mechanism publishing status (valid/invalid) for relevant PIDs or attestations.
 
-protocol:Certificate Policy (CP)
+protocols:Certificate Policy (CP)
 : A named set of rules that indicates the applicability of a certificate to a particular community and/or class of application with common security requirements.
 
 protocols:DPoP
@@ -233,6 +260,9 @@ protocols:DPoP
 
 protocols:High Assurance Interoperability Profile (HAIP)
 : OpenID4VC profile aimed at higher assurance interoperability.
+
+protocols:Online Certificate Status Protocol (OCSP)
+: Enables applications to determine the (revocation) state of an identified certificate. [RFC 2560]
 
 protocols:OpenID for Verifiable Credentials Issuance (OID4VCI)
 : OID4VCI is an open standard that defines a secure API for issuing Verifiable Credentials (VCs) to a user's digital wallet.
@@ -266,7 +296,7 @@ processes:Key Binding
 : Cryptographic binding of a credential to a specific key pair held by the Wallet, ensuring only the key holder can present that credential.
 
 processes:Notification
-: The act of transferring information to the European Commission.
+: The act of transferring information to the European Commission. [ARF]
 
 processes:Proof of Possession
 : Cryptographic proof demonstrating control of a private key, produced by signing a server-issued challenge; used to bind credentials and tokens to a Wallet key.
