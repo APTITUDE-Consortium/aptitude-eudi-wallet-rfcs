@@ -56,6 +56,8 @@ extra_css:
 extra_javascript:
   - https://unpkg.com/mermaid@10.9.1/dist/mermaid.min.js
   - media/mermaid-init.js
+  - media/mathjax-init.js
+  - media/mathjax-tex-mml-chtml.js
 
 plugins:
   - tags
@@ -110,6 +112,8 @@ markdown_extensions:
   - toc:
       permalink: true
       toc_depth: 3
+  - pymdownx.arithmatex:
+      generic: true
 
 nav:
   - Home: index.md
