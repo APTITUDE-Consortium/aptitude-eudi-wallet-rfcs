@@ -13,4 +13,4 @@ This section contains the official attestation rulebooks for the APTITUDE projec
 | RB02 DTC Rulebook | Digital Travel Credential attestation rulebook |
 | RB03 Boarding Pass | Digital Boarding Pass attestation rulebook |
 | RB04 Train Ticket | Digital Train Ticket attestation rulebook |
-| RV05 Hotel Booking | Digital Hotel Booking attestation rulebook |
+| RB05 Hotel Booking | Digital Hotel Booking attestation rulebook |
