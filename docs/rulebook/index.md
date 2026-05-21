@@ -6,7 +6,7 @@ This section contains the official attestation rulebooks for the APTITUDE projec
 |----------|-------------|
 | RB01 [mVRC Rulebook](mVRC-rulebook.md) | Mobile Vehicle Registration Certificate attestation rulebook |
 
-## Candidate rolebooks
+## Candidate rulebooks
 
 | Document | Description |
 | --- | --- |
