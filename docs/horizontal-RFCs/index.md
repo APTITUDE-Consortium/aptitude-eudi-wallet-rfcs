@@ -12,4 +12,4 @@ This section contains the Request for Comments (RFCs) that define the technical 
 | Document | Description |
 |----------|-------------|
 | RFC-03 Trust Framework RFC | Test matrix for piloting and Interoperability Test Bed with the Trust Framework piloting requirements |
-| RFC004: Revocation RFC | Test matrix for piloting and Interoperability Test Bed with the revocation piloting requirements. |
+| RFC-04 Revocation RFC | Test matrix for piloting and Interoperability Test Bed with the revocation piloting requirements. |
