@@ -3,7 +3,7 @@
 ## Roles
 
 roles:Attestation Provider (AP)
-: When not further qualified, a collective term for QEAA Provider, PuB-EAA Provider, or (non-qualified) EAA Provider. [ARF]
+: When not further qualified, a collective term for QEAA Provider, PuB-EAA Provider, or (non-qualified) EAA Provider [ARF], acting as an Issuer of electronic attestations of attributes.
 
 roles:Certificate Authority (CA)
 : An entity which is trusted by one or more parties in the EUDI Wallet ecosystem to create and seal certificates. [ARF]
@@ -15,7 +15,7 @@ roles:EAA Provider
 : Provider of EEAs.
 
 roles:Issuer Authority Certificate Authority (IACA)
-: The issuing authority/CA used in the mDL/mVRC trust infrastructure under ISO (may be shared with mDL or set up separately).
+: The issuing authority/CA used in the mDL/mVRC trust infrastructure under ISO standarts (may be shared with mDL or set up separately).
 
 roles:LoTE Provider
 : A body responsible for maintaining, managing, and publishing Lists of Trusted Entities (LoTE). [ARF]
@@ -79,13 +79,13 @@ roles:Wallet-Relying Party (WRP)
 ## Components
 
 components:Authorisation Server
-: OAuth 2.0 / OpenID component responsible for authenticating the Holder and issuing tokens authorising access to protected endpoints.
+: OAuth 2.0 / OpenID component responsible for authenticating the User (Holder) and issuing tokens authorising access to protected endpoints.
 
 components:EUDI Wallet
-: European Digital Identity Wallet used in APTITUDE pilots.
+: European Digital Identity Wallet, in accordance with Regulation (EU) 910/2014 (as amended), used in APTITUDE pilots.
 
 components:Keystore
-: Hardware-backed repository for generating, storing, and using non-critical cryptographic assets.
+: Hardware-backed repository for generating, storing, and using non-critical cryptographic assets,  including keys managed by the WSCD.
 
 components:Public Key Infrastructure (PKI)
 : Systems, software, and communication protocols that are used by EUDI Wallet ecosystem components to distribute, manage, and control public keys. A PKI publishes public keys and establishes trust within an environment by validating and verifying the public keys mapping to an entity.
@@ -112,7 +112,7 @@ components:Wallet Secure Cryptographic Device (WSCD)
 : Tamper-resistant device providing the secure environment and crypto functions used by a WSCA.
 
 components:Wallet Solution
-: A combination of software, hardware, services, settings, and configurations, including wallet instances, one or more wallet secure cryptographic applications and one or more wallet secure cryptographic devices. [CIR 2024/2979, CIR 2024/2980, CIR 2025/848, CIR 2025/1569]
+: A combination of software, hardware, services, settings, and configurations, including wallet instances, one or more wallet secure cryptographic applications and one or more wallet secure cryptographic devices. [CIR 2024/2979, CIR 2024/2980, CIR 2025/848, CIR 2025/1569]. _For clarity: a Wallet Solution is instantiated as one or more Wallet Units. Each Wallet Unit typically comprises a Wallet Instance (user interface), a Wallet Secure Cryptographic Application (WSCA), and a Wallet Secure Cryptographic Device (WSCD)._
 
 components:Wallet Unit
 : A unique configuration of a wallet solution that includes wallet instances, wallet secure cryptographic applications and wallet secure cryptographic devices provided by a wallet provider to an individual User. [CIR 2024/2979, CIR 2024/2980, CIR 2025/848, CIR 2025/1569]
