@@ -26,3 +26,6 @@ This section contains the official attestation rulebooks for the APTITUDE projec
 | RB15 | Campus Access Credential | Proximity credential granting physical access to campus facilities such as libraries, labs, and turnstiles. |
 | RB16 | Stadium Event Ticket | Attests the holder's right to enter a specific stadium event, verified at the entry gate via proximity presentation. |
 | RB17 | Mobile Vehicle Registration Delegation Credential | Delegated credential issued to a third party by the vehicle owner |
+
+
+![Rulebooks schema](/docs/img/RFC-Rulebooks-Diagram.png)
