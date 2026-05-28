@@ -2,8 +2,8 @@
 
 * Author(s):
   * ...
-  * joenne.kriener@bdr.de
-
+  * [joenne.kriener@bdr.de](mailto:joenne.kriener@bdr.de)
+  
 | Version | Date | Description |
 |---------|------------|------------|
 | 0.1 | 11-02-2026 | First draft version - Filled par 1.1 |
@@ -135,10 +135,11 @@ This section defines which data sets must be present and preserved.
 This chapter defines the credential format and encoding requirements for the APTITUDE Digital Travel Credential (DTC). The APTITUDE DTC SHALL use exactly one credential format: the ISO/IEC 23220-4 PhotoID profile, encoded as ISO/IEC 18013-5 mdoc-cbor.
 
 The objective is to preserve a single interoperable DTC representation that is:
-- aligned with ICAO DTC Type 2 and eMRTD LDS semantics,
-- compatible with EUDI Wallet proximity presentation,
-- suitable for both on-site border-control use cases and remote wallet-driven presentations,
-- capable of preserving the cryptographic binding between the virtual credential and the Wallet Secure Component (WSCD).
+
+* aligned with ICAO DTC Type 2 and eMRTD LDS semantics,
+* compatible with EUDI Wallet proximity presentation,
+* suitable for both on-site border-control use cases and remote wallet-driven presentations,
+* capable of preserving the cryptographic binding between the virtual credential and the Wallet Secure Component (WSCD).
 
 | Index | Requirement specification |
 | --- | --- |
@@ -156,36 +157,38 @@ The objective is to preserve a single interoperable DTC representation that is:
 The APTITUDE DTC SHALL be encoded using the ISO/IEC 23220-4 PhotoID profile and carried as an ISO/IEC 18013-5 mdoc-cbor payload with document type `org.iso.23220.photoID.1`.
 
 This single-format approach is consistent with the APTITUDE architecture described in WP3_Architektur-20260527.txt:
-- the DTC is derived from physical eMRTD LDS data groups,
-- the DTC payload is signed by the national issuing authority,
-- the DTC is bound to both the physical eMRTD and the Wallet Secure Component,
-- the PhotoID format supports the border-control use case and wallet presentation flows.
+
+* the DTC is derived from physical eMRTD LDS data groups,
+* the DTC payload is signed by the national issuing authority,
+* the DTC is bound to both the physical eMRTD and the Wallet Secure Component,
+* the PhotoID format supports the border-control use case and wallet presentation flows.
 
 ### 3.1.1 Supported encoding and semantics
 
 The APTITUDE DTC SHALL support the following:
 
-- ISO/IEC 23220-4 PhotoID as the canonical DTC credential format.
-- ISO/IEC 18013-5 mdoc-cbor encoding for proximity presentation and secure transport.
-- NFC engagement for reader interaction.
-- BLE data retrieval for proximity presentation on both Android and iOS devices.
-- Preservation of ICAO LDS semantics and the PhotoID profile.
-- A hybrid trust structure that allows DTC validation against both ICAO PKI and EUDI Wallet / eIDAS trust mechanisms.
-- A single payload model for issuance, storage, and presentation, avoiding a separate SD-JWT DTC format.
+* ISO/IEC 23220-4 PhotoID as the canonical DTC credential format.
+* ISO/IEC 18013-5 mdoc-cbor encoding for proximity presentation and secure transport.
+* NFC engagement for reader interaction.
+* BLE data retrieval for proximity presentation on both Android and iOS devices.
+* Preservation of ICAO LDS semantics and the PhotoID profile.
+* A hybrid trust structure that allows DTC validation against both ICAO PKI and EUDI Wallet / eIDAS trust mechanisms.
+* A single payload model for issuance, storage, and presentation, avoiding a separate SD-JWT DTC format.
 
 ### 3.1.2 PhotoID mdoc encoding profile
 
 For proximity presentation and wallet-native use, APTITUDE DTC SHALL use ISO/IEC 18013-5 mdoc-cbor with the PhotoID payload defined by ISO/IEC 23220-4 Annex C.
 
 The following encoding rules SHALL apply:
-- `tstr`, `uint`, `bstr`, `bool`, and `tdate` are CDDL representation types defined in RFC 8610.
-- A `tstr` SHALL be encoded in UTF-8 and SHALL support the full Unicode range.
-- `tstr` attributes SHALL be limited to 150 characters unless otherwise specified.
-- `full-date` SHALL be defined as `#6.1004(tstr)` per RFC 8943.
-- `tdate` attributes SHALL use RFC 3339 date-time strings.
-- Fractions of seconds SHALL NOT be used.
-- Time values SHALL use UTC (`Z`) only.
-- Canonical CBOR rules from RFC 8949 section 4.2 SHALL be followed.
+
+* `tstr`, `uint`, `bstr`, `bool`, and `tdate` are CDDL representation types defined in RFC 8610.
+* A `tstr` SHALL be encoded in UTF-8 and SHALL support the full Unicode range.
+* `tstr` attributes SHALL be limited to 150 characters unless otherwise specified.
+* `full-date` SHALL be defined as `#6.1004(tstr)` per RFC 8943.
+* `tdate` attributes SHALL use RFC 3339 date-time strings.
+* Fractions of seconds SHALL NOT be used.
+* Time values SHALL use UTC (`Z`) only.
+* Canonical CBOR rules from RFC 8949 section 4.2 SHALL be followed.
 
 The mdoc SHALL include the document type `org.iso.23220.photoID.1` and SHALL contain the APTITUDE DTC payload as attestation content.
 
@@ -193,9 +196,9 @@ The mdoc SHALL include the document type `org.iso.23220.photoID.1` and SHALL con
 
 The APTITUDE DTC credential format profile is designed around three namespaces:
 
-- `org.iso.23220.photoID.1` as the ISO/IEC 18013-5 mdoc document type for the PhotoID credential envelope.
-- `urn:eu:eudi-wallet:att:dtc` as the core DTC attribute namespace for APTITUDE-specific credential content derived from eMRTD LDS data groups.
-- A domestic or profile-specific namespace for any rulebook-specific attributes that are not part of the EU-wide core DTC profile.
+* `org.iso.23220.photoID.1` as the ISO/IEC 18013-5 mdoc document type for the PhotoID credential envelope.
+* `urn:eu:eudi-wallet:att:dtc` as the core DTC attribute namespace for APTITUDE-specific credential content derived from eMRTD LDS data groups.
+* A domestic or profile-specific namespace for any rulebook-specific attributes that are not part of the EU-wide core DTC profile.
 
 Each APTITUDE DTC attribute SHALL use the namespace `urn:eu:eudi-wallet:att:dtc` for core attributes. Domestic or profile-specific namespaces MAY be used only for rulebook-specific attributes outside EU-wide or sectoral definitions.
 
@@ -220,8 +223,9 @@ The APTITUDE DTC is derived from the physical eMRTD LDS data groups and signed b
 The DTC SHALL be issued as an ICAO DTC Type 2 credential. The PhotoID payload SHALL preserve the cryptographic binding between the virtual credential and the Wallet Secure Component, while preserving the PhotoID semantics of ISO/IEC 23220-4.
 
 The DTC payload SHALL include:
-- DG1, DG2, SOD from the physical eMRTD,
-- DTCSecurityInfo, DTCIdentifier, DTCDOE,
-- optional eMRTD fallback elements such as EF.CardAccess / PACE SecurityInfos, MRZ or CAN, and DG14 chip authentication data where needed for Tap & Go with eMRTD.
+
+* DG1, DG2, SOD from the physical eMRTD,
+* DTCSecurityInfo, DTCIdentifier, DTCDOE,
+* optional eMRTD fallback elements such as EF.CardAccess / PACE SecurityInfos, MRZ or CAN, and DG14 chip authentication data where needed for Tap & Go with eMRTD.
 
 This single-format definition keeps the APTITUDE DTC aligned with the architecture guidance in WP3_Architektur-20260527.txt and avoids introducing a second credential format for the DTC.
