@@ -218,7 +218,7 @@ The APTITUDE DTC credential format profile is designed around four namespaces:
 The APTITUDE DTC is derived from the physical eMRTD LDS data groups and signed by the national issuing authority. The PhotoID credential SHALL carry the same derived content as the DTC data model, ensuring the credential remains linked to the physical document and the wallet secure component.
 
 The DTC SHALL be issued as an ICAO DTC Type 2 credential. The PhotoID payload SHALL preserve the cryptographic binding between the virtual credential and the Wallet Secure Component, while preserving the PhotoID semantics of ISO/IEC 23220-4.
-
+ICAO DTC Type 2 credential requires a DTC-VC and a DTC-PC as well, We assume the eMRTD as the DTC-PC.
 
 ### 3.2 ICAO based encoding
 
