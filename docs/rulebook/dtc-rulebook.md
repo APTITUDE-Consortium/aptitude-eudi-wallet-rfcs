@@ -229,3 +229,4 @@ The DTC payload SHALL include:
 * optional eMRTD fallback elements such as EF.CardAccess / PACE SecurityInfos, MRZ or CAN, and DG14 chip authentication data where needed for Tap & Go with eMRTD.
 
 This single-format definition keeps the APTITUDE DTC aligned with the architecture guidance in WP3_Architektur-20260527.txt and avoids introducing a second credential format for the DTC.
+
