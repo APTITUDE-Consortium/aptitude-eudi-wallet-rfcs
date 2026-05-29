@@ -156,24 +156,21 @@ The objective is to preserve a single interoperable DTC representation that is:
 
 The APTITUDE DTC SHALL be encoded using the ISO/IEC 23220-4 PhotoID profile and carried as an ISO/IEC 18013-5 mdoc-cbor payload with document type `org.iso.23220.photoID.1`.
 
-This single-format approach is consistent with the APTITUDE architecture described in WP3_Architektur-20260527.txt:
-
 * the DTC is derived from physical eMRTD LDS data groups,
-* the DTC payload is signed by the national issuing authority,
-* the DTC is bound to both the physical eMRTD and the Wallet Secure Component,
 * the PhotoID format supports the border-control use case and wallet presentation flows.
 
 ### 3.1.1 Supported encoding and semantics
 
 The APTITUDE DTC SHALL support the following:
 
-* ISO/IEC 23220-4 PhotoID as the canonical DTC credential format.
-* ISO/IEC 18013-5 mdoc-cbor encoding for proximity presentation and secure transport.
-* NFC engagement for reader interaction.
-* BLE data retrieval for proximity presentation on both Android and iOS devices.
-* Preservation of ICAO LDS semantics and the PhotoID profile.
-* A hybrid trust structure that allows DTC validation against both ICAO PKI and EUDI Wallet / eIDAS trust mechanisms.
-* A single payload model for issuance, storage, and presentation, avoiding a separate SD-JWT DTC format.
+
+- ISO/IEC 23220-4 PhotoID as the canonical DTC credential format.
+- ISO/IEC 18013-5 mdoc-cbor encoding for proximity presentation and secure transport.
+- NFC engagement for reader interaction.
+- BLE data retrieval for proximity presentation on both Android and iOS devices.
+- Preservation of ICAO LDS semantics and the PhotoID profile.
+- A hybrid trust structure that allows DTC validation against both ICAO PKI and EUDI Wallet / eIDAS trust mechanisms.
+- A single payload model for issuance, storage, and presentation, avoiding a separate SD-JWT DTC format.
 
 ### 3.1.2 PhotoID mdoc encoding profile
 
@@ -194,27 +191,25 @@ The mdoc SHALL include the document type `org.iso.23220.photoID.1` and SHALL con
 
 ### 3.1.3 Attribute namespace and identifiers
 
-The APTITUDE DTC credential format profile is designed around three namespaces:
+The APTITUDE DTC credential format profile is designed around four namespaces:
 
-* `org.iso.23220.photoID.1` as the ISO/IEC 18013-5 mdoc document type for the PhotoID credential envelope.
-* `urn:eu:eudi-wallet:att:dtc` as the core DTC attribute namespace for APTITUDE-specific credential content derived from eMRTD LDS data groups.
-* A domestic or profile-specific namespace for any rulebook-specific attributes that are not part of the EU-wide core DTC profile.
-
-Each APTITUDE DTC attribute SHALL use the namespace `urn:eu:eudi-wallet:att:dtc` for core attributes. Domestic or profile-specific namespaces MAY be used only for rulebook-specific attributes outside EU-wide or sectoral definitions.
+- `org.iso.23220.photoID.1` contains the data elements for the photoID 
+- `org.iso.23220.datagroups.1` contains the datagroups defined by ICAO 9303
+- `org.iso.23220.1` contains information for holder binding, will not be used for APPTITUDE DTC
+- A domestic or profile-specific namespace for any rulebook-specific attributes that are not part of the EU-wide core DTC profile.
 
 | Data Identifier | Attribute identifier | Encoding format | Namespace |
-| --- | --- | --- | --- |
-| family_name | family_name | tstr | urn:eu:eudi-wallet:att:dtc |
-| given_name | given_name | tstr | urn:eu:eudi-wallet:att:dtc |
-| date_of_birth | date_of_birth | tdate | urn:eu:eudi-wallet:att:dtc |
-| document_number | document_number | tstr | urn:eu:eudi-wallet:att:dtc |
-| nationality | nationality | tstr | urn:eu:eudi-wallet:att:dtc |
-| photo | face_image | bstr | urn:eu:eudi-wallet:att:dtc |
-| dtcSecurityInfo | dtcSecurityInfo | bstr | urn:eu:eudi-wallet:att:dtc |
-| dtcIdentifier | dtcIdentifier | tstr | urn:eu:eudi-wallet:att:dtc |
-| dtcDOE | dtcDOE | tdate | urn:eu:eudi-wallet:att:dtc |
-| sod | sod | bstr | urn:eu:eudi-wallet:att:dtc |
-| attestation_legal_category | attestation_legal_category | tstr | urn:eu:eudi-wallet:att:dtc |
+| --- |----------------------| --- | --- |
+| family_name | family_name          | tstr | org.iso.23220.photoID.1 |
+| given_name | given_name           | tstr | org.iso.23220.photoID.1 |
+| date_of_birth | date_of_birth        | tdate | org.iso.23220.photoID.1 |
+| document_number | document_number      | tstr | org.iso.23220.photoID.1 |
+| nationality | nationality          | tstr | org.iso.23220.photoID.1 |
+| photo | face_image           | bstr | org.iso.23220.photoID.1 |
+| sod | dg1                  | bstr | org.iso.23220.datagroups.1 |
+| sod | dg2                  | bstr | org.iso.23220.datagroups.1 |
+| sod | dg14                 | bstr | org.iso.23220.datagroups.1 |
+| sod | sod                  | bstr | org.iso.23220.datagroups.1 |
 
 ### 3.1.4 Relationship to APTITUDE architecture
 
