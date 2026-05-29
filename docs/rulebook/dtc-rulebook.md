@@ -2,12 +2,14 @@
 
 * Author(s):
   * ...
+  * [frank.dietrich@bdr.de](mailto:frank.dietrich@bdr.de)
   * [joenne.kriener@bdr.de](mailto:joenne.kriener@bdr.de)
   
 | Version | Date | Description |
 |---------|------------|------------|
 | 0.1 | 11-02-2026 | First draft version - Filled par 1.1 |
 | 0.2 | 27-05-2026 | Updated based on design assumptions from D3.1  |
+| 0.3 | 29-05-2026 | addition of schema and mapping |
 
 ## 1 Introduction
 
@@ -317,5 +319,4 @@ dtcOtherInfos [23] EXPLICIT DTCOtherInfos OPTIONAL,
 | sod| | EF.sod |
 |    |birth_date | EF.DG1 |
 |    |age_over_18 | EF.DG1 |
-|    |portrait | EF.DG2 |
 |    |portrait | EF.DG2 |
