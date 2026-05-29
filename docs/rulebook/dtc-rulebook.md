@@ -163,7 +163,6 @@ The APTITUDE DTC SHALL be encoded using the ISO/IEC 23220-4 PhotoID profile and 
 
 The APTITUDE DTC SHALL support the following:
 
-
 - ISO/IEC 23220-4 PhotoID as the canonical DTC credential format.
 - ISO/IEC 18013-5 mdoc-cbor encoding for proximity presentation and secure transport.
 - NFC engagement for reader interaction.
@@ -211,8 +210,112 @@ The APTITUDE DTC credential format profile is designed around four namespaces:
 | sod | dg14                 | bstr | org.iso.23220.datagroups.1 |
 | sod | sod                  | bstr | org.iso.23220.datagroups.1 |
 
+
 ### 3.1.4 Relationship to APTITUDE architecture
 
 The APTITUDE DTC is derived from the physical eMRTD LDS data groups and signed by the national issuing authority. The PhotoID credential SHALL carry the same derived content as the DTC data model, ensuring the credential remains linked to the physical document and the wallet secure component.
 
 The DTC SHALL be issued as an ICAO DTC Type 2 credential. The PhotoID payload SHALL preserve the cryptographic binding between the virtual credential and the Wallet Secure Component, while preserving the PhotoID semantics of ISO/IEC 23220-4.
+
+
+### 3.2 ICAO based encoding
+
+The ICAO based encoding for DTC-VC is defined in the Technical report "Virtual component data structure and PKI Mechanisms" version 1.2 october 2020.
+The ICAO based encoding for DTC-PC is defined in the Technical report "Physical component and protocols" version 1.1 october 2022.
+
+```asn.1
+DTCContentInfo ::= SEQUENCE {
+version Version,
+dtcData DTCData,
+dtcTBS [0] EXPLICIT DTCTBSValues OPTIONAL,
+-- MUST be present if DTC is eMRTD-PC Bound or PC
+-- Bound. This field MUST NOT be present if DTC is
+-- eMRTD Bound.
+dtcSignerInfo [1] EXPLICIT DTCSignerInfo OPTIONAL
+-- MUST be present if DTC is eMRTD-PC Bound or PC
+-- Bound. This field MUST NOT be present if DTC is
+-- eMRTD Bound.
+}
+DTCTBSValues ::= SEQUENCE SIZE (3..ub-DTCData) OF DTCTBSValue
+Version ::= INTEGER { v1(1) }
+ub-DTCData INTEGER ::= 31
+DTCData ::= SEQUENCE {
+dtcSOD [0] IMPLICIT OCTET STRING OPTIONAL,
+-- Contains the encoding of SOD defined
+-- in [Doc 9303]-10.
+-- MUST be present if DTC is eMRTD Bound or
+-- eMRTD-PC Bound. This field MUST NOT be present
+dtcDG1 [1] IMPLICIT OCTET STRING,
+-- Contains the encoding of Data Group 1 defined
+-- in [Doc 9303]-10.
+dtcDG2 [2] IMPLICIT OCTET STRING,
+-- Contains the encoding of Data Group 2 defined
+-- in [Doc 9303]-10.
+dtcDG3 [3] IMPLICIT OCTET STRING OPTIONAL,
+-- Contains the encoding of Data Group 3 defined
+-- in [Doc 9303]-10.
+dtcDG4 [4] IMPLICIT OCTET STRING OPTIONAL,
+-- Contains the encoding of Data Group 4 defined
+-- in [Doc 9303]-10.
+dtcDG5 [5] IMPLICIT OCTET STRING OPTIONAL,
+-- Contains the encoding of Data Group 5 defined
+-- in [Doc 9303]-10.
+dtcDG6 [6] IMPLICIT OCTET STRING OPTIONAL,
+-- Contains the encoding of Data Group 6 defined
+-- in [Doc 9303]-10.
+dtcDG7 [7] IMPLICIT OCTET STRING OPTIONAL,
+-- Contains the encoding of Data Group 7 defined
+-- in [Doc 9303]-10.
+dtcDG8 [8] IMPLICIT OCTET STRING OPTIONAL,
+-- Contains the encoding of Data Group 8 defined
+-- in [Doc 9303]-10.
+dtcDG9 [9] IMPLICIT OCTET STRING OPTIONAL,
+-- Contains the encoding of Data Group 9 defined
+-- in [Doc 9303]-10.
+dtcDG10 [10] IMPLICIT OCTET STRING OPTIONAL,
+-- Contains the encoding of Data Group 10 defined
+-- in [Doc 9303]-10.
+dtcDG11 [11] IMPLICIT OCTET STRING OPTIONAL,
+-- Contains the encoding of Data Group 11 defined
+-- in [Doc 9303]-10.
+dtcDG12 [12] IMPLICIT OCTET STRING OPTIONAL,
+-- Contains the encoding of Data Group 12 defined
+-- in [Doc 9303]-10.
+dtcDG13 [13] IMPLICIT OCTET STRING OPTIONAL,
+-- Contains the encoding of Data Group 13 defined
+-- in [Doc 9303]-10.
+dtcDG14 [14] IMPLICIT OCTET STRING OPTIONAL,
+-- Contains the encoding of Data Group 14 defined
+-- in [Doc 9303]-10.
+dtcDG15 [15] IMPLICIT OCTET STRING OPTIONAL,
+-- Contains the encoding of Data Group 15 defined
+-- in [Doc 9303]-10.
+dtcDG16 [16] IMPLICIT OCTET STRING OPTIONAL,
+-- Contains the encoding of Data Group 16 defined
+-- in [Doc 9303]-10.
+...,
+dtcSecurityInfo [22] EXPLICIT DTCSecurityInfo OPTIONAL,
+-- MUST be present if DTC is eMRTD-PC Bound or PC
+-- Bound. This field MUST NOT be present if DTC
+-- is eMRTD Bound.
+dtcOtherInfos [23] EXPLICIT DTCOtherInfos OPTIONAL,
+-- The dtcOtherInfos is for internal State use.
+-- MAY be present if DTC is eMRTD-PC Bound or PC
+-- Bound. This field MUST NOT be present if DTC
+-- is eMRTD Bound as it is not part of signed
+-- data.
+}
+```
+
+### 3.3 Mapping from photoId to ICAO based encoding
+
+|org.iso.23220.photoID.1 | org.iso.23220.datagroups.1 |eMRTD|
+|----                   | ----------          |---|
+| dg1 | | EF.DG1 |
+| dg2 | | EF.DG2 |
+| dg14 | | EF.DG14 |
+| sod| | EF.sod |
+|    |birth_date | EF.DG1 |
+|    |age_over_18 | EF.DG1 |
+|    |portrait | EF.DG2 |
+|    |portrait | EF.DG2 |
