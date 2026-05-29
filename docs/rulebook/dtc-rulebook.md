@@ -55,12 +55,12 @@ The cross‑border value of a DTC critically depends on preserving full alignmen
 
 | Index | Requirement specification |
 | --- | --- |
-| XX_XX | According to ICAO’s DTC-VC data model, the APTITUDE DTC SHALL contain DG1, DG2, SOD as from the physical eMRTD passport |
-| XX_XX | According to ICAO's DTC-VC data model, the APTITUDE DTC SHALL contain fields like: dtcSecurityInfo, DTCIdentifier, DTCDOE, and a signature structure for validation |
-| XX_XX | The APTITUDE DTC SHALL be encapsulated as a Verifiable Credential (VC), ensuring compatibility with the EUDI Wallet data formats (e.g., SD-JWT or mDL). |
-| XX_XX | For Type 2 credentials, the data model SHALL include a cryptographic binding between the Virtual Component (VC) and the Physical Component (PC) stored in the Wallet's secure element. |
-| XX_XX | APTITUDE DTC MAY contain additional attributes beyond the derived eMRTD dataset |
-| XX_XX | The data model SHALL support Selective Disclosure, allowing the traveller to share only the strictly necessary attributes (e.g., only DG2 for biometric match) with Relying Parties. |
+| XX_XX | According to ICAO’s DTC-VC data model, the APTITUDE DTC SHALL contain DG1, DG2, SOD as from the physical eMRTD passport.|
+| XX_XX | According to ICAO's DTC-VC data model, the APTITUDE DTC MAY contain fields like: dtcSecurityInfo, DTCIdentifier, DTCDOE, and a signature structure for validation in case of eMRTD-PC bound    |
+| XX_XX | The APTITUDE DTC SHALL be encapsulated as a Verifiable Credential (VC), ensuring compatibility with the EUDI Wallet data formats (e.g., SD-JWT or mDoc acc. ISO 23220-4).                      |
+| XX_XX | APTITUDE DTC MAY contain additional attributes beyond the derived eMRTD dataset                                                                                                                |
+| XX_XX | The data model SHALL support Selective Disclosure, allowing the traveller to share only the strictly necessary attributes (e.g., only DG2 for biometric match) with Relying Parties.           |
+
 
 ### Attributes
 
@@ -221,11 +221,3 @@ Each APTITUDE DTC attribute SHALL use the namespace `urn:eu:eudi-wallet:att:dtc`
 The APTITUDE DTC is derived from the physical eMRTD LDS data groups and signed by the national issuing authority. The PhotoID credential SHALL carry the same derived content as the DTC data model, ensuring the credential remains linked to the physical document and the wallet secure component.
 
 The DTC SHALL be issued as an ICAO DTC Type 2 credential. The PhotoID payload SHALL preserve the cryptographic binding between the virtual credential and the Wallet Secure Component, while preserving the PhotoID semantics of ISO/IEC 23220-4.
-
-The DTC payload SHALL include:
-
-* DG1, DG2, SOD from the physical eMRTD,
-* DTCSecurityInfo, DTCIdentifier, DTCDOE,
-* optional eMRTD fallback elements such as EF.CardAccess / PACE SecurityInfos, MRZ or CAN, and DG14 chip authentication data where needed for Tap & Go with eMRTD.
-
-This single-format definition keeps the APTITUDE DTC aligned with the architecture guidance in WP3_Architektur-20260527.txt and avoids introducing a second credential format for the DTC.
